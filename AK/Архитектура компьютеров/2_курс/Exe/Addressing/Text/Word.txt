@@ -1,0 +1,7 @@
+WORD
+ Sizeof	16бит
+ Min..Max Value [0h..FFFFh]
+Integer
+ Min..Max Value	[0..65535]
+Integer with sign
+ Min..Max Value	[Ц32768..32767]

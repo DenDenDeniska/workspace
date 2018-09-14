@@ -1,0 +1,48 @@
+<Schema xmlns="urn:schemas-microsoft-com:xml-data"
+        xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+ <ElementType name="Title"  content="textOnly"/>
+ <ElementType name="Value"  content="textOnly"/>
+ <ElementType name="Icon"   content="textOnly"/>
+ <ElementType name="Format" content="textOnly"/>
+
+ <ElementType name="InfoItem" content="eltOnly">
+   <element type="Title"/>
+   <element type="Icon"/>
+   <element type="Format"/>
+   <element type="Value"/>
+ </ElementType>
+
+ <ElementType name="InfoGroup" content="eltOnly">
+   <element type="Title"/>
+   <element type="Icon"/>
+   <element type="InfoItem"/>
+ </ElementType>
+
+ <ElementType name="Device" content="eltOnly">
+   <element type="Title"/>
+   <element type="Icon"/>
+   <element type="InfoGroup"/>
+ </ElementType>
+
+ <ElementType name="DeviceClass" content="eltOnly">
+   <element type="Title"/>
+   <element type="Icon"/>
+   <element type="Device"/>
+ </ElementType>
+
+ <ElementType name="Module" content="eltOnly">
+   <element type="Title"/>
+   <group>
+     <element type="DeviceClass"/>
+     <element type="Device"/>
+     <element type="InfoGroup"/>
+     <element type="InfoItem"/>
+   </group>
+ </ElementType>
+
+ <ElementType name="Report" content="eltOnly">
+   <element type="Module"/>
+ </ElementType>
+
+</Schema>

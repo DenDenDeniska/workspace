@@ -1,0 +1,212 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - CPU Benchmark</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - CPU Benchmark</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft
+Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: What is the Dhrystone benchmark?<BR>
+A:</B> The original Dhrystone benchmark is still widely used to measure CPU performance in industry under various versions/variants. The benchmark is designed to contain a representative sample of types of operations, mostly numerical, used by applications. Unfortunately this does not always represent a true real-life performance, but is useful to compare the speed of various CPUs.
+<P>
+
+The Dhrystone benchmark used here is a multi-threaded, 32-bit variant of the original one which runs under UNIX. Up to 32 CPUs in SMP systems are supported. The result is determined by measuring the time it takes to perform some sequences of instructions. Due to various changes, the result is not directly comparable with other Dhrystone benchmarks. However the MIPS (Million Instructions Per Second) should be the same for the same system (+5-10% variation) between benchmarks.
+<P>
+
+While the original benchmark does not compute anything, this version does check the results with the expected ones just in case there are problems with the CPU/memory.
+<P>
+
+<B>Q: What is the Whetstone benchmark?<BR>
+A:</B> The Whetstone benchmark is widely used in the computer industry as a measure of FPU or Co-Processor performance. Floating-point arithmetic is most significant in programs that require a Co-Processor. These are mostly scientific, engineering, statistical and computer-aided design programs.
+<P>
+The Whetstone benchmark used here is a multi-threaded, 32-bit variant of the original one which runs under UNIX. Up to 32 CPUs in SMP systems are supported. The result is determined by measuring the time it takes to perform some sequences of floating-point instructions. Due to various changes, the result is not directly comparable with other Whetstone benchmarks. However the MFLOPS (Million FLoating OPerations per Second) should be the same for the same system (+5-10% variation) between benchmarks.
+<P>
+
+<B>Q: What is the SSE2 Whetstone benchmark?<BR>
+A:</B> With the introduction of SSE2 and its support for double floats (64-bit) it is now possible to write code that does not use the legacy FPU at all. This version shows that the full Whetstone benchmark can be implemented using SSE2 and thus take advantage of the SIMD mode of operation.
+<P>
+
+<B>Q: Why does the rating vary between sequential runs?<BR>
+A:</B> On most systems, the value of the rating shouldn't change by more than about +/-5% from run to run. On systems with limited memory it may vary by +/-10% due to memory swapping. If you're seeing variations higher than this, some hardware or software is probably to blame. Do note that &quot;limited memory&quot; depends on operating system, installed drivers, running programs, etc. A badly configured system with 64MB may be worse memory-wise than an 16MB system...
+<P>
+
+Software Causes:
+<UL>
+<LI>Do not move the mouse! Playing with the mouse/rodent (!) will affect the result considerably.
+<LI>Do not play MIDI, Wave, CD or other music playing/generating programs. AVI, MPEG, DVD or other type of movies (or TV) are out too...
+<LI>Other programs running. Close all programs. If this doesn't solve the problem, check for programs that are loaded in the Startup group, WIN.INI (load and run lines) or in the AUTOEXEC.BAT file.
+<LI>Problematic device drivers. Some drivers which are not correctly configured or incompatible may slow-down the system. Also some drivers &quot;poll&quot; the system for various reasons, e.g., the CD-ROM auto-run feature.
+<LI>Power-saving options are turned on (APM). These options may cause the CPU to automatically slow down after even a few seconds of inactivity. Often, &quot;inactivity&quot; is defined as nobody typing on the keyboard or moving the mouse, even if a program is working away.
+<LI>If you're benchmarking a SMP system, some variation may occur due to the synchronising algorithm in the benchmark. Since the work done by threads must be synchronised, there is a small overhead which may be more apparent in some systems.
+</UL>
+<P>
+
+Hardware Causes:
+<UL>
+<LI>Insufficient memory for program to function properly. Close all programs. Also, you may try unloading some drivers which you don't need anymore.
+<LI>Insufficient secondary (L2/L3) cache memory or <I>poor </I>cache controller. Some old 486 mainboards do not have enough cache (tag) to cache all the system RAM (core). Other have limited logic to cache only 8-16MB. Even many new ones cannot cache above 64MB. Evidently, at the low-price end of the mainboard market there are Pentium boards which behave the same way. Programs which reside in uncached memory (or are moved there by Windows) will run very slowly. Usually you need: 256KB L2 cache for up to 32MB, 512KB cache for up to 128MB and 1MB cache for anything larger. The bigger the cache the faster the machine so if you can specify a larger cache do so. 
+</UL>
+<P>
+
+<B>Q: Why does the rating vary between random runs?<BR>
+<B>A:</B></B> You may find that running the program straight after Windows loads you get a higher benchmark rating than after running and closing programs. This should not happen in practice very often, but it does sometimes.<BR>
+<P>
+
+Software Causes:
+<UL>
+<LI>Programs which do not clean up after closing down. Crashed programs leave &quot;orphaned&quot; objects which take up system resources. While Windows does garbage-collecting, sometimes you just have to restart...
+<LI>Memory fragmentation. After programs load and close down, memory may still be fragmented after memory is taken and freed. Again, due to various reasons the de-fragmentation does not yield 100% results. 
+</UL>
+<P>
+
+Hardware Causes:
+<UL>
+<LI>Insufficient secondary (L2/L3) cache memory or <i>poor</i> cache controller. Some old 486 mainboards do not have enough cache (tag) to cache all the system RAM. Other have limited logic to cache only 8-16MB. Evidently, at the low-price end of the mainboard market there are Pentium boards which behave the same way. Programs which reside in un-cached memory (or are moved there by Windows) will run very slowly. 
+</UL>
+<P>
+
+<B>Q: The benchmark scores in Sandra 2001/2000/99 are different from earlier versions!<BR>
+A:</B> The benchmarks change from release to release in order to keep up with new technology developments. Please compare results using the same version of Sandra.
+<P>
+
+<B>Q: Why does my Pentium 4 does so badly on FPU Whetstone?<BR>
+A:</B> The Pentium 4 is optimised for SSE2 and not for legacy FPU code. The SSE2 Whetstone shows the performance improvements once SSE2 is used. Almost all new software will be SSE2 optimised and thus run much faster.
+<P>
+
+<B>Q: Why do Intel CPUs (e.g. Pentium III) score higher than other CPUs (e.g. Athlon) with more advanced FPUs in Whetstone?<BR>
+A:</B> The Whetstone benchmark uses the slowest functions of the FPU (computing transcendentals, e.g. sin/cos/tan) in a way that cannot be parallelised (one serial chain). This was done in order to prevent <i>cheating</i> by manufacturers as much as possible. Unfortunately, this means that features like out-of-order execution, pipelining, etc. are bypassed. These are paramout to today's processors but that's not what is tested here.
+<P>
+
+Thus on processors that transcendental instructions have been optimised the benchmark index will be much higher. Other CPU manufacturers (e.g. AMD) have chosen to optimise other instructions - which they consider more widely used than transcendentals - thus the benchmark index on such CPUs (e.g. K6 series, Athlon) will be lower even if the FPU is <i>more advanced</i>.
+<P>
+
+<B>Q: My SMP system scores the same or lower than a single CPU system! What's wrong?<br>
+A: </B>Here's the most likely causes:
+<P>
+
+<UL>
+<LI>Make sure you use Sandra 2000 or later. Earlier versions do not support SMP.
+<LI>Make sure you use Windows NT/2000. Windows 9X/Me do not support SMP systems.
+<LI>Make sure you're using the SMP kernel. You should see all your CPUs in task manager for example.
+<LI>If you're using the SMP ACPI kernel, make sure each CPU can go up to 100%. Some BIOSes contain bugs that do not allow full usage of all CPUs (e.g. old Asus P2B-D).
+<LI>Make sure no background processes are using the CPU(s), i.e. utilisation is 0% before you're starting the benchmark.
+</UL>
+<P>
+
+<B>Q: Why does the benchmark support only 32 CPUs?<BR>
+A: </B>Windows NT/2000 support a maximum of 32 CPUs, so there is no point to support more. We will revise this should it change.
+<P>
+
+<B>Q: Why does the benchmark use as many CPUs as threads?<BR>
+A: </B>A proper CPU benchmark is CPU bound, thus one thread per CPU should use 100% of power. Using more threads just increases the synchronisation overhead. Otherwise, more threads would help.
+<P>
+
+<B>Q: I have a X MHz CPU and an Y (X < Y) MHz CPU in my SMP system and the benchmark index is 2*X instead of X+Y!<BR>
+A: </B>Sandra 2000 uses a static load balancer, thus assigns the same amount of work on both CPUs. Thus, the benchmark time depends on the slowest CPU. Update to Sandra version 6.20 or later.
+<P>
+
+<B>Q: Should I use different speed CPUs in my SMP system?<BR>
+A: </B>Due to the above, we think no. While you may get away with it, your system becomes AMP (asymetric) rather than SMP. This may freak out quite a few operating systems and software out there.
+<P>
+
+<B>Q: When should I use the Dynamic Load Balance?<BR>
+A: </B>Always use the Static Load Balance unless the CPUs are running at different speeds internally. The calibration and synchronisation algorithms of the Dynamic Load balancer are more complex and have a higher overhead thus they should be avoided. We've provided them for testing purposes only.
+<P>
+
+<B>Q: Changing the CPU speed by SoftFSB has no effect on benchmarks on Windows NT/2000!<br>
+A: </B>The timer routines in Windows NT/2000 are do not reinitialise. Windows 9X/Me are not affected. We are looking for alternatives.
+<P>
+
+<B>Q: What is this <i>CPU Multi-Media Benchmark</i>? What does it do?<br>
+A: </B>This benchmark generates a picture (640x480) of the well-known Mandelbrot fractal, using 255 iterations for each data pixel, in 32 colours. It is a real-life benchmark rather than a synthetic benchmark, designed to show the improvements MMX/Enhanced, 3DNow!/Enhanced, SSE(2) bring to such an algorithm.
+<P>
+
+The benchmark is multi-threaded for up to 32 CPUs maximum on SMP systems. This works by interlacing, i.e. each thread computes the next column not being worked on by other threads. Sandra creates as many threads as there are CPUs in the system and assignes each thread to a different CPU.
+<P>
+
+The benchmark contains 5 versions (ALU, MMX, MMX Enhanced, SSE and SSE2) that use integers to simulate floating point numbers, as well as 5 versions that use floating point numbers (FPU, 3DNow!, 3DNow! Enhanced, SSE and SSE2). This illustrates why older fractal generation programs used integers (e.g. the well-known FractInt): on 386/486 CPUs the integer version is 3-4x times faster.
+<P>
+
+The (E)MMX, 3DNow! and SSE(2) versions compute 2/4/8 Mandelbrot point iterations at once - rather than one at a time - thus taking advantage of the SIMD instructions. Even so, 2/4/8x improvement cannot be expected (due to other overheads), generally a 2.5-3x improvement has been achieved. The ALU & FPU of 6/7 generation of processors are very advanced (e.g. 2+ execution units) thus bridging the gap as well. We found it useful to see the differences between the old and new versions of CPUs within a family as well as comparing similar CPUs from different manufacturers (e.g. Intel vs. AMD).
+<P>
+
+<B>Q: Isn't comparing an ALU index to a (E)MMX/SSE(2)/etc. index like comparing apples to oranges?<BR>
+Q: Isn't comparing a FPU index to a 3DNow!/SSE(2)/etc. index like comparing apples to oranges?<BR>
+A: </B>It depends on what you're trying to test; the index shows what gain the new instructions bring in getting the task (computing the Mandelbrot fractal in this case) done. If you want to test how two processors perform using the same test, go to <i>Options</i> and disable the test(s) that use(s) the more advanced instructions.
+<P>
+
+<B>Q: Are the tests in the CPU Multi-Media Benchmark optimised for a specific CPU?<BR>
+A: </B>Yes, the tests are optimised as far as possible but without introducing instructions that would generate large penalties on other processors.
+
+<UL>
+<LI>ALU (Integer) Test - Optimised for Intel Pentium core.
+<LI>FPU (Floating Point) Test - Optimised for Intel Pentium core.
+<LI>MMX (Integer) Test - Optimised for Intel Pentium MMX core.
+<LI>Enhanced MMX (Integer) Test - Optimised for AMD Athlon.
+<LI>SSE (Integer & Floating Point) Test - Optimised for Intel Pentium III.
+<LI>SSE2 (Integer & Floating Point) Test - Optimised for Intel Pentium 4.
+<LI>3DNow! (Floating Point) Test - Optimised for AMD K6.
+<LI>3DNow! Enhanced (Floating Point) Test - Optimised for AMD Athlon.
+</UL>
+<P>
+
+<B>Q: Will you optimise the benchmarks for other CPUs, e.g. Intel Itanium, AMD Mustang, etc?<BR>
+A: </B>No. Each version is targeted at a <i>instruction family</i> not at a specific processor. There will never be, say, a MMX K6-2, MMX Cyrix and a MMX PII version. However, if a processor introduces new instructions that make a big difference to the algorithm, we will write a new version of the test to use the new instructions.
+<P>
+
+<B>Q: Why 3DNow! Enhanced and/or SSE integer benchmarks?<BR>
+A: </B>Both add a very useful set of data comparison & manipulation instructions which do help in achieving higher speeds.
+<P>
+
+<B>Q: My AMD K6-2+, K6-III+ CPU does not run the 3DNow! Enhanced benchmark!<BR>
+A: </B>This benchmark also uses MMX Enhanced instructions which are not implemented in the K6-2+/III+ CPUs, thus the test cannot run on it. The instructions are used for speed-ups.
+<P>
+
+<B>Q: My VIA Cyrix III, IDT WinChip-2/3 runs slow on the 3DNow! benchmark!<BR>
+A: </B>These processors offer great <i>value for money</i> and thus are not designed to match the AMD K6-X running at the same speed. They offer other benefits.
+<P>
+
+<B>Q: How much faster is MMX on a P5/P6 class CPU in the CPU Multi-Media Benchmark?<BR>
+A: </B>On a P5-class processor (e.g. Pentium MMX) the MMX test runs about 170% (i.e. 2.7x) faster than the ALU test. It is 194% (i.e. 3x) faster than the FPU test.
+<P>
+On a P6-class processor (e.g. Pentium II/III) the MMX test runs only 24% (i.e. 1.24x) faster than the ALU test as there are multiple, superpipelined ALUs built-in.
+<P>
+On a P7-class processor (e.g. Athlon, Pentium 4) the MMX test gets similar indexes to the ALU test. This does not mean that MMX is useless now, just that it has been overtaken by other instruction sets.
+<P>
+
+<B>Q: My Pentium 4 gets beaten by a Pentium III in MMX/SSE!<BR>
+A: </B>Update to Sandra 2001 with SSE2 support.
+<P>
+
+<B>Q: My Coppermine Pentium III is not much faster than a Katmai Pentium III!<BR>
+A: </B>The Coppermine does not have lower SSE latencies; the ATC L2 cache is the only one that provides any real benefit.
+<P>
+
+<B>Q: The SSE(2) benchmark crashes on my system!<BR>
+A: </B>If you're running Windows NT, install SP6. If you're running Windows 95 you'll need to upgrade to Windows 98/Me/2000 that support the new SSE(2) state.
+<P>
+
+<B>Q: I have a PIII and PII in my SMP system and SSE benchmark crashes!<BR>
+A: </B>Make sure the PII is the boot CPU. The CPU with the lowest function support or lower version should always be the boot processor. Thus software will use only the features supported by all processors.
+<P>
+
+<B>Q: My Cyrix 6x86/MX/MII/MIII or AMD K5, K6-X get very low FPU scores!<BR>
+A: </B>The built-in FPU in these processors is not pipelined like those in Intel P6+ CPUs or AMD Athlon. The actual FPU performance is roughly on a par with the original Pentium running at the same clock rate and therefore are lower than the performance rating.
+<P>
+
+<B>Q: Why doesn't the benchmark include my super-duper XXXXMHz CPU?<BR>
+A: </B>While we do buy and test each and every CPU model on the market, we cannot afford to buy all the very latest speed grades of each CPU. Even if we did, we cannot update the benchmark when a new speed grade is released - we'd need to do it every week.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

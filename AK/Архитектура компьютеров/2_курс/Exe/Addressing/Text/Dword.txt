@@ -1,0 +1,9 @@
+DWORD
+ Sizeof 	32бит
+ Min..Max Value	[0h..FFFFFFFFh]
+Short integer
+ Min..Max Value	[0..4294967295]
+Short integer with sign
+ Min..Max Value [Ц2147483648..2147483647]
+Digit with float point
+ Min..Max Value [1.5 x 10^Ц45 .. 3.4 x 10^38]

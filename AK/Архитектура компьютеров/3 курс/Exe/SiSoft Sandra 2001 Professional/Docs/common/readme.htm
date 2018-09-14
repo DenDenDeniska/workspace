@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Read Me! document</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../style/default.css">
+</HEAD>
+<BODY>
+
+<h3>Installing the Program</h3>
+<P>
+Please run <B>Setup.exe</B> and follow the instructions.
+<P>
+
+<h3>Un-Installing/De-Installing the Program</h3>
+<P>
+Go to <I><B>Control Panel - Add/Remove Programs</B></I> and choose
+<I><B>SiSoft Sandra</B></I>. Click on <I><B>Add/Remove</B></I>
+button and follow the instructions. If you did not like this release
+maybe you'd care to try other versions. Thanks.
+<P>
+
+<h3>The Install Disk</h3>
+<P>
+The installation disk should contain the following files:
+<P>
+<TABLE >
+<TR><TD WIDTH=150><B>_inst32i.ex_</B></TD><TD WIDTH=313>Installer 32bit engine
+</TD></TR>
+<TR><TD WIDTH=150><B>_isdel.exe</B></TD><TD WIDTH=313>De-installer engine
+</TD></TR>
+<TR><TD WIDTH=150><B>_setup.dll</B></TD><TD WIDTH=313>Installer library
+</TD></TR>
+<TR><TD WIDTH=150><B>_sys1.cab</B></TD><TD WIDTH=313>Installer library cabinet file
+</TD></TR>
+<TR><TD WIDTH=150><B>_user1.cab</B></TD><TD WIDTH=313>Installer library cabinet file
+</TD></TR>
+<TR><TD WIDTH=150><B>data.tag</B></TD><TD WIDTH=313>Installer configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>data1.cab</B></TD><TD WIDTH=313>Program cabinet file
+</TD></TR>
+<TR><TD WIDTH=150><B>data2.cab</B></TD><TD WIDTH=313>Program cabinet file
+</TD></TR>
+<TR><TD WIDTH=150><B>file_id.diz</B></TD><TD WIDTH=313>FTP/BBS Program information file
+</TD></TR>
+<TR><TD WIDTH=150><B>lang.dat</B></TD><TD WIDTH=313>Language data file
+</TD></TR>
+<TR><TD WIDTH=150><B>layout.bin</B></TD><TD WIDTH=313>Program layout configuration
+</TD></TR>
+<TR><TD WIDTH=150><B>os.dat</B></TD><TD WIDTH=313>Operating system data file
+</TD></TR>
+<TR><TD WIDTH=150><B>setup.bmp</B></TD><TD WIDTH=313>Installer splash screen
+</TD></TR>
+<TR><TD WIDTH=150><B>setup.exe</B></TD><TD WIDTH=313>Installer executable
+</TD></TR>
+<TR><TD WIDTH=150><B>setup.ini</B></TD><TD WIDTH=313>Installer configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>setup.ins</B></TD><TD WIDTH=313>Installer configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>setup.lid</B></TD><TD WIDTH=313>Installer configuration file
+</TD></TR>
+</TABLE>
+<P>
+If any of the above files are missing, try to download the package
+from another site. If some are corrupted - there must have been
+an error during transmission (check that you downloaded in <B>binary</B>
+mode) - repeat the operation. <BR>
+<P>
+All program files are compressed, so you should let the <I>Install
+Wizard</I> decompress &amp; copy them to the hard disk. The Install
+program will also create a program group and add the program items.
+The <A HREF="http://www.installshield.com"><I>InstallShield</I></A>
+is <B>the</B> installer for Windows applications and is used by
+most commercial and shareware applications. It is arguably the
+best so you are very likely to have it already installed on your
+machine.
+<P>
+
+<h3>Making a 1.44MB Floppy Disk Install</h3>
+<P>
+While the total size of the ZIP is more than 1.44MB, the files
+have been designed to fit on two (or more) floppy disks. To create
+a 1.44MB floppy disk install do the following:<BR>
+<UL>
+<LI><B>Disk 2 </B>- Copy file <B>data2.cab</B> only on this disk.
+<LI><B>Disk 1 </B>- Copy <B>all other</B> files on this disk.
+They should fit
+</UL>
+<P>
+That's it<B>!</B> Unfortunately, you cannot make an install using
+smaller floppy disks. If this is a problem, <A HREF="contact.htm">contact us</A>.
+<P>
+
+<h3>The Installed Files</h3>
+<P>
+After installation, this is what you should have in the <B>Sandra</B>'s folder:
+<P>
+<TABLE >
+<TR><TD WIDTH=150><B>sandra.exe</B></TD><TD WIDTH=313>Main program file
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.hlp</B></TD><TD WIDTH=313>Program help file
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.cnt</B></TD><TD WIDTH=313>Program help file index
+</TD></TR>
+<TR><TD WIDTH=150><B>san16.exe</B></TD><TD WIDTH=313>Helper library
+</TD></TR>
+<TR><TD WIDTH=150><B>script.ini</B></TD><TD WIDTH=313>Sample batch-mode report generation script
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.str</B></TD><TD WIDTH=313>Configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.bio</B></TD><TD WIDTH=313>Configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.cpu</B></TD><TD WIDTH=313>Configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.mmm</B></TD><TD WIDTH=313>Configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.mon</B></TD><TD WIDTH=313>Configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.pci</B></TD><TD WIDTH=313>Configuration file
+</TD></TR>
+<TR><TD WIDTH=150><B>sandra.tip</B></TD><TD WIDTH=313>Configuration file
+</TD></TR>
+</TABLE>
+<P>
+And in the <B>Windows\System</B> folder:<BR>
+<P>
+<TABLE >
+<TR><TD WIDTH=150><B>mfc42.dll</B></TD><TD WIDTH=313>Microsoft VC++ MFC library
+</TD></TR>
+<TR><TD WIDTH=150><B>msvcrt.dll</B></TD><TD WIDTH=313>Microsoft VC++ MFC library
+</TD></TR>
+</TABLE>
+<P>
+These files are used by most MFC applications written in Microsoft
+Visual C++ 98, i.e. most modern Windows applications, so it's
+likely that you have them already on your system in which case
+they will not be copied.<BR>
+<P>
+
+<h3><FONT SIZE=6 FACE="Wingdings">N</FONT> WARNING !!! <FONT SIZE=6 FACE="Wingdings">N</FONT></h3>
+<P>
+<B>IT IS STRONGLY RECOMMENDED THAT YOU SAVE/CLOSE EVERYTHING
+YOU ARE WORKING AT (open documents, files, etc.) BEFORE RUNNING
+THE PROGRAM FOR THE FIRST TIME. THE PROGRAM WAS TESTED FOR INCOMPATIBILITIES
+BUT YOU NEVER KNOW&#133;
+</B>
+<P>
+If you find no problems then you can cool down. But <B>do</B>
+save regularly.
+<P>
+
+<h3>Technical Support</h3>
+<P>
+Free technical support is available to registered users. See <A HREF="contact.htm">points of contact</A>.
+<P>
+While technical support is available to unregistered users this
+is provided at our discretion. This means that if there is free
+time at the end of the day and as long as the questions are not
+in the <A HREF="qa.htm">FAQ</A> (documentation, web page, etc.)
+then they will be dealt with.
+<P>
+
+<h3>Updates &amp; Fixes</h3>
+<P>
+Sandra is regularly updated, usually every <B>3-4</B>
+months. If you have problems or need new features, then make sure
+you check whether a new version is available..
+</BODY>
+</HTML>

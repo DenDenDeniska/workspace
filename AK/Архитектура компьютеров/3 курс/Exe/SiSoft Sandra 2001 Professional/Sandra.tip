@@ -1,0 +1,346 @@
+;
+; SiSoft Sandra - Performance tips internal information file
+;
+; WARNING: Do not mess up this file! But you can delete it if you want...
+;
+; Compiled for SiSoft Sandra by Adrian@sisoftware.co.uk
+;
+; Credits: P.Kinnaly, P.B.Madsen, Craig Hart
+;
+; Version=100
+
+[Tip]
+; Warnings
+1=Please read the help file and make sure you know what you're doing before proceeding.
+2=For more information about tips, press F1 and scroll to the Tips section.
+
+; CPU & BIOS Tips
+200=SMBIOS/DMI Interface not supported. Check for a BIOS update.
+201=System BIOS is old. Check for an update.
+202=CPU is slow. Windows runs optimally on 5x86 class or better CPUs.
+203=Use a Plug & Play system BIOS. Check for an update.
+204=Generic CPU. Some high-performance applications may have problems.
+205=A MMX processor is recommended for modern multimedia applications and games.
+206=Intel Pentium floating-point flaw detected.
+207=A SMBIOS/DMI 2.3 or later compliant BIOS is recommended. Check for a BIOS update.
+208=BIOS does not support the EDD (Enhanced Disk Drive) specification. Check for an update.
+209=PC is not NEC PC98 compliant.
+210=Mainboard supports faster CPUs, so the CPU can be upgraded when needed.
+211=BIOS is flash-able and socketed so it can be upgraded when needed.
+212=BIOS can be shadowed so check whether it is.
+213=BIOS cannot be updated (flashed). All new mainboards should support this function.
+214=BIOS is flash-able but surface-mounted. An unsuccessful flash may be fatal.
+215=CPU temperature is too high!
+216=CPU fan has failed! Check it.
+217=Enable ECC on L2 cache for stability.
+218=A 3DNow! processor is recommended for modern multimedia applications and games.
+219=A SSE(2) processor is recommended for modern multimedia applications and games.
+220=The CPU Serial Number is enabled.
+221=The CPU Serial Number is disabled.
+222=CPU speed higher than rated speed! Reduce CPU speed.
+223=CPU rated speed is may be innacurate.
+224=SMBIOS/DMI information may be inaccurate.
+225=CPU is not a production version but ES.
+
+; Video Tips
+300=Unknown monitor. Install the driver for the monitor (or similar model) for optimum performance.
+301=Install more video memory. Modern video cards need 4MB or more for optimum performance.
+302=Use at least 256 colours. 16 colour modes may be incompatible with modern applications.
+303=Use a 32-bit colour depth instead of 24-bit for better performance if available.
+304=A desktop resolution of at least 640x480 is required for modern applications.
+305=Use a 32-bit Windows video driver. Check for a driver update.
+306=Use a Plug & Play/DDC compliant video driver. Check for a driver update.
+307=Video acceleration is not fully enabled. Enable it and see if it works.
+308=A VESA video BIOS may be required for DOS games. Check for a VESA TSR emulator.
+309=A VESA 2.0 video BIOS may offer better performance/support. Check for an update.
+310=DirectDraw support is required for Windows games or multimedia titles. Install DirectX.
+311=Direct3D support may be required for Windows games or multimedia titles. Install DirectX.
+312=OpenGL support may be required for 3D rendering applications or games. Install OpenGL.
+313=Font smoothing reduces video performance.
+314=Video BIOS is too old. Check for an update.
+315=Use a 16-bit colour palette instead of 15-bit for better performance/support.
+316=Use a Energy Star (DPMS) power saving monitor.
+317=Video card is not VGA compatible. DOS VGA programs may be adversely affected.
+318=A larger/better monitor is recommended for this video mode. Consider reducing the resolution.
+319=A refresh rate of at least 75Hz is recommended. Increase it if possible.
+320=The hardware cursor is disabled. Check that it was not disabled by mistake.
+321=Enable the Linear Frame Buffer for maximum performance. See the driver manual.
+322=Turn off screen savers. Use the monitor power saving mode.
+323=Remove the desktop wallpaper to save memory and improve performance.
+324=You are running the driver that came with Windows. An updated driver may be available from the video adapter manufacturer.
+325=Turn off window animation to reduce delays.
+326=Turn off animated cursors to conserve memory and improve performance.
+327=Reduce colour depth to improve video performance. 16-bit may be enough.
+328=Reduce resolution to improve video performance.
+329=Use True Colour (24/32-bit) for video playback if available.
+330=Use small icons to maximise usable desktop space.
+331=Use small fonts to maximise usable desktop space.
+332=Use a Plug & Play/DDC compatible monitor and video adapter.
+
+; Printer Tips
+400=Printer driver is obsolete. Check for an update.
+401=Printer resolution may have been set too low. Check settings.
+402=Print quality may have been set too low. Check settings.
+403=Print to an EMF data type to improve printing speed.
+404=Use print spooling to regain control of the computer sooner.
+405=Use printer's built-in fonts for faster printing.
+406=Use a lower resolution to increase printing speed.
+407=Optimise Postscript print driver settings.
+
+; WinSock Tips
+500=Update to WinSock 2.02 or later for better performance.
+501=Remove the IPX/SPX protocol if it not used to conserve memory.
+502=16-bit WinSock stack not found. Legacy applications may not work.
+
+; Sound Card Tips
+700=No sound drivers are installed! Games or multimedia titles may not run at all.
+701=No wave recording driver installed. Sound recording is unavailable.
+702=No wave playback driver installed. Games or multimedia titles may not run at all.
+703=No MIDI input driver installed. External MIDI devices are not supported.
+704=No MIDI playback driver installed. MIDI playback is unavailable.
+705=No mixer driver installed. Sound devices are muted.
+706=No auxiliary driver installed. Some sound devices may be unavailable.
+707=8-bit sound devices are obsolete. Use a 16-bit sound device for better sound quality.
+708=Mono sound devices are obsolete. Use a Stereo sound device for better sound experience.
+709=Low sample rate device. Use a 44.1kHz sampling device for better sound quality.
+710=Driver may be obsolete. Check that it is the latest version.
+
+; Mouse tips
+800=Uninstall Accessibility Features if you don't use them to conserve memory.
+801=DOS mouse driver version is obsolete. Check for a mouse driver update.
+802=Double-click speed may have been set too low.
+803=A mouse with wheel is recommended for better control.
+804=A USB or PS/2 mouse is recommended.
+
+; Keyboard tips
+900=Uninstall Accessibility Features if you don't use them to conserve memory.
+901=Non-standard keyboard detected. Check that this is correct.
+902=The Keyboard.sys driver is required for non-US systems in DOS mode.
+
+; APM tips
+1100=Disable APM from the BIOS if you don't use it. Performance may improve.
+1101=Using APM on desktops may result in reduced performance or delays.
+1102=Clock slowdown may reduce performance.
+1103=Battery level is low. Find a mains supply!
+1104=An APM BIOS Ver 1.02 or later may offer better performance/support. Check for a BIOS update.
+1105=Drive spin-down time may be too low. Generally a value of 30-60 min is recommended.
+1106=Drive spin-down may be unnecessary on desktops or while on AC power.
+1107=System does not support ACPI. Check for a BIOS update.
+
+; PCI & AGP tips
+1200=PCI Ver 2.20 or later offers better performance/support. Check for a BIOS update.
+1201=Early versions of hardware may contain bugs or incompatibilities.
+1202=Device does not support bus mastering.
+1203=VGA palette snooping seriously reduces video performance. Disable it if you don't need it.
+1204=Slow device. Bus efficiency may be reduced.
+1205=AGP Ver 2.00 or later may offer better performance.
+1206=PCI latency too high. Device could hog the bus for too long.
+1207=AGP Ver 2.00 devices may be incompatible with early AGP 1.0 boards.
+1208=Video card shares an interrupt with other PCI device.
+1209=Video card does not have an interrupt assigned.
+
+; Windows Tips
+1300=Enter your company name or "Home" instead of "Unknown".
+1301=Enter your name or licence holder's instead of "Unknown".
+1302=Double-Buffering is only needed for real mode SCSI devices.
+1303=DoubleSpace & DriveSpace are only needed if you use disk compression.
+1304=Install the MS-Plus! pack or Internet Explorer 4.0+.
+1305=Restart Windows. Running it for too long may reduce performance.
+1306=Shrink the Win.ini configuration file. Remove orphaned entries.
+1307=Clean-up the registry. Remove orphaned entries by running RegClean.
+1308=Boot without the Windows logo to reduce boot delay.
+1309=Set task-bar to auto-hide to maximise available desktop space.
+1310=Install the Windows 95 OSR1 patch (950a+).
+1311=Upgrade to Windows 98.
+1312=Shrink the System.ini configuration file. Remove orphaned entries.
+
+; Ports Tips
+1400=An 16550AF+ UART is recommended for good Windows comms.
+
+; Processes Tips
+1600=Program was written for an older version of Windows. Check for an update.
+1601=Program consumes a large amount of memory.
+
+; Modules Tips
+1700=Module was written for an older version of Windows. Check for an update.
+
+; Drives Tips
+1800=Increase free disk space. Some programs may run out of disk space.
+1801=Disk compression may reduce performance or introduce incompatibilities.
+1802=Large cluster sizes waste disk space. Break drive into smaller partitions or use FAT32.
+1803=Increase max. disk cache. It should be at least 25% of system memory.
+1804=Decrease min. disk cache. It should be at most 25% of system memory.
+1805=Change typical role to 'Network Server' to improve disk performance.
+1806=Change typical role to 'Mobile Computer' to increase usable memory.
+1807=Increase read-ahead buffer size to improve disk performance.
+1808=Large cluster sizes waste disk space. Break drive into smaller partitions or use NTFS.
+1809=Reduce CD-ROM cache size to increase usable memory.
+1810=Use a 32-bit Windows disk driver. Check controller settings as well.
+1811=Turn off troubleshooting options. Performance may be adversely affected.
+1812=Reduce Recycle Bin size. Free drive space is low.
+1813=Scan drive for errors at least weekly.
+1814=Optimise drive at least monthly.
+1815=Change typical role to 'Desktop Computer' to improve performance.
+1816=Check CD-ROM cache optimise pattern setting to improve CD-ROM performance.
+1817=Backup drive at least weekly.
+1818=Scan drive for viruses at least weekly.
+1819=Image drive at least weekly.
+1820=Update virus definition files at least quarterly.
+1821=Label (name) drive.
+1822=DMA transfers improve performance. Enable it if possible.
+1823=SCSI drives usually offer higher performance.
+1824=Empty the Recycle Bin. Free drive space is low.
+1825=Consider compressing the drive. Compress or delete unneeded files to increase free space.
+1826=Clean your drive of unneeded files to increase free space.
+1827=Adjust BIOS drive settings. Performance may improve.
+1828=Increase CD-ROM cache size to improve CD-ROM performance.
+
+; DOS Memory Tips
+1900=Increase free base memory. Remove DOS device drivers/TSR programs from the configuration files.
+1901=EMS support may be required for older DOS games or applications.
+1902=DPMI support may be required for new DOS games or applications.
+1903=Increase free DPMI memory. See DOS program settings.
+1904=A EMS page-frame is required for compatibility with EMS 3.2 or older DOS applications.
+1905=Load DOS into HMA (High Memory Area).
+
+; Windows Memory Tips
+2000=Install more memory. Windows runs optimally on machines with 16MB RAM or more.
+2001=Low system resources. Close down some applications or restart Windows.
+2002=Memory load is at 200%. Close down some applications.
+2003=Use a larger swap file or install more memory. The swap file usage is over 90%.
+2004=Swap file is too large. The swap file should be around 2.5 times system memory.
+2005=Use a fixed-size swap file. This is faster than a variable-size swap file.
+2006=Increase free base memory. Remove DOS device drivers/TSR programs from the configuration files.
+2007=Use a 32-bit swap (page) file driver. Check that the drive uses a 32-bit driver.
+2008=Move swap file to a disk with more free space.
+2009=Disable/Uninstall memory compressor to improve performance. Install more real memory.
+2010=Update the memory manager. It appears to be obsolete.
+
+; DOS Dev Tips
+2100=EMM386 may not be needed. Remove it.
+2101=QEMM may be incompatible with some programs. Remove it.
+2102=SETVER is not needed. Remove it.
+2103=DoubleSpace compression may reduce performance or introduce incompatibilities.
+2104=DoubleBuffering is only needed for DOS SCSI disk devices. Turn it off if not needed.
+2105=DOS SoundBlaster drivers are no longer needed. Remove them.
+2106=DOS SCSI drivers are no longer needed in Windows. Remove them.
+2120=DISPLAY is not needed. Remove it.
+2121=ANSI may not be needed. Remove it.
+2122=DOS CD-ROM drivers are no longer needed in Windows. Remove them.
+
+; DirectX Tips
+2200=DirectX support is required for multimedia titles or games. Install DirectX.
+2201=DirectDraw support may be required for Windows games or multimedia titles. Install DirectX or check for a video driver update.
+2202=Direct3D support may be required for Windows games or multimedia titles. Install DirectX.
+2203=DirectSound support may be required for Windows games or multimedia titles. Install DirectX or check for a sound driver update.
+2204=DirectPlay support may be required for multi-player Windows games. Install DirectX.
+2205=DirectX version is obsolete (DDv2 not supported). Install DirectX 5 or later.
+2206=DirectX driver does not support Direct3D. Install DirectX 5 or later.
+2207=Video card does not have 3D accelerated hardware. Consider upgrading.
+2208=Bank-switching reduces performance. Enable the Linear Frame Buffer.
+2209=Too little free memory for Direct3D. Increase video memory or reduce display resolution/colour depth.
+2210=DirectInput support may be required for multimedia titles or games. Install DirectX.
+2211=No hardware colour-space conversion support.
+2212=No hardware stretch support.
+2213=No hardware overlay support.
+2214=No mip-mapping support.
+2215=No texture-mapping support.
+2216=No Z-buffering support.
+2217=No dithering support.
+2218=No alpha-blending support.
+2219=No perspective-correction support.
+2220=No transparency support.
+2221=Driver is not certified.
+2222=No fog support.
+2223=DirectX version is old (DD4 not supported). Install DirectX 6 or later.
+2224=DirectX version is old (D3Dv3 not supported). Install DirectX 6 or later.
+
+; Modem (Comms Devs) Tips
+2300=Modem does not seem to be PnP.
+
+; Mainboard Tips
+2500=Slow Windows system. Install more memory or upgrade the CPU.
+2501=Lack of L2 cache greatly reduces performance. Install some.
+2502=Pipeline-burst cache improves performance. Replace it.
+2503=512KB of L2 cache is recommended for large memory systems. Some memory may not be cached.
+2504=1MB of L2 cache is recommended for very large memory systems. Some memory may not be cached.
+2505=System does not support memory error detection. Some memory errors may go unnoticed.
+2506=System does not support memory error correction. System will stop if memory errors are found.
+2507=Mainboard has too few memory slots. Upgrading the memory may be difficult or expensive.
+2508=All memory slots are full. Upgrading the memory may be difficult or expensive.
+2509=Front side bus speed seems low. Increase it while keeping the CPU speed constant.
+2510=Chipset may not be able to cache all the physical memory installed.
+2511=Some memory slots are free so the memory can be easily upgraded.
+2512=USB Host is obsolete. Some USB devices may not work.
+2513=AGP Bus is unused. An AGP card would improve 3D performance.
+2514=Memory read timing is high. Performance may be low.
+2515=Memory write timing is high. Performance may be low.
+2516=SDRAM, BEDO or EDO memory is recommended for optimum performance.
+2517=60ns or faster memory is recommended for optimum performance.
+2518=Mainboard temperature is too high!
+2519=One of the system fans has failed!
+2520=PCI bus speed is too high. Reduce FSB speed or FSB/PCI multiplier.
+2521=AGP bus speed is too high. Reduce FSB speed or FSB/AGP multiplier.
+2522=SDRAM, HSDRAM or RDRAM memory is recommended for optimum performance.
+2523=Memory bus speed exceeds memory rated speed. Reduce memory bus speed.
+2524=AGP Aperture size should be less or equal to system memory.
+2525=Current AGP data rate not optimal.
+2526=ISA/DMA bus speed is too high. Reduce PCI speed or PCI/ISA multiplier.
+2527=Compensation was added to external temperature sensors.
+2528=System monitor device implementation is known to vary.
+
+; SCSI Tips
+2600=SCSI version does not adhere to ANSI. Probably EIDE/ATAPI device.
+
+; Font Tips
+2700=Too many fonts. Consider removing some.
+
+; 3D Video Tips
+2800=Glide version is obsolete. Install Glide 3 or later.
+
+; Dial-Up Tips
+2900=No phone number specified. Possibly incorrect data.
+2901=Use IP header compression if possible.
+2902=Use software compression if possible.
+2903=Use PPP framing protocol instead of SLIP.
+2904=Consider a script file to speed up access if the connection supports it.
+
+; CPU Bench Tips
+5000=CPU utilisation is too high. Close all running programs.
+5001=Low Dhrystone index. Check ACPI/APM settings, cache settings and BIOS settings.
+5002=Low Whetstone index. Check ACPI/APM settings, cache settings and BIOS settings.
+5003=Benchmark has measured single-processor performance only.
+5004=Synthetic benchmark. May not tally with 'real-life' performance.
+5005=Use dynamic load balance in special cases only.
+5006=Only compare the results with ones obtained using the same version!
+5007=SMP system with non-SMP kernel in sigle CPU mode.
+5008=To change benchmarks, click Options.
+5009=SSE2 Whetstone not standard test.
+
+; Video Bench Tips
+5100=Low Video index. Close all running programs.
+
+; Drives Benchmark Tips
+5200=Increase Free Space. Test result may be inaccurate.
+5201=Low Disk index. Check drive & controller settings.
+5202=Use cache on to measure Windows performance.
+5203=Bypass cache to measure controller/disk performance.
+5204=CPU utilisation high. Check DMA bus-mastering is enabled.
+
+; CD Benchmark Tips
+5300=A 600MB+ VideoCD or DVD is recommended for thorough testing.
+5301=A 600MB+ data disk is recommended for thorough testing.
+5302=To test VideoCD/DVD performance, use a VideoCD or DVD.
+5303=To test data read performance, use a data CD.
+5304=Low CD-ROM index. Check drive & controller settings.
+
+; Memory Bench Tips
+5400=Low memory index. Check BIOS memory read wait states.
+5401=Low memory index. Check BIOS memory write wait states.
+5402=Low L2 cache index. Check CPU cache settings.
+5403=Tests using MMX/SSE(2) are not standard STREAM.
+5404=May need to rerun for stable result.
+
+; CPU Multi-Media Bench
+5500=No MMX/SSE(2) support, integer test executed on the ALU.
+5501=No 3DNow!/SSE(2) support, floating-point test executed on the FPU.

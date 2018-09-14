@@ -1,0 +1,186 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - Memory Detection</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - Memory Detection</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: What does the PCx-xxx-xxx marking displayed by Sandra mean?<BR>
+A:</B> There are many conventions:
+
+<UL>
+<LI>PC66/100 SDRAM Intel Specification - Version 1.0 to 1.2:
+ <UL>
+ <LI><B>PCx-abc-defm</B> (e.g. PC100-322-622R) where:
+ <LI>x - Speed rating (MHz). Memory bus speed should be equal/lower.
+ <LI>a - CAS latency (CL cycles). Lower the better (faster), but more expensive.
+ <LI>b - RAS to CAS delay (tRCD cycles). Lower the better.
+ <LI>c - Row precharge (tRP cycles). Lower the better.
+ <LI>d - Read data access time (tAC ns). Lower the better.
+ <LI>e - SPD chip revision. 2 corresponds to SPD 1.2.
+ <LI>f - Design revision. 2 corresponds to Rev 1.2.
+ <LI>m - R for registered DIMMS. 256MB and bigger modules need to be registered.
+ </UL>
+ <P>
+
+<LI>PC66/100 SDRAM Extended Intel Specification - Version 1.2b+:
+ <UL>
+ <LI><B>PCx-abc-ddeefm</B> (e.g. PC100-322-54122R) where:
+ <LI>x - Speed rating (MHz). Memory bus speed should be equal/lower.
+ <LI>a - CAS latency (CL cycles). Lower the better (faster), but more expensive.
+ <LI>b - RAS to CAS delay (tRCD cycles). Lower the better.
+ <LI>c - Row precharge (tRP cycles). Lower the better.
+ <LI>dd - Read data access time (tAC ns). 54 corresponds to 5.4ns. Lower the better.
+ <LI>ee - SPD chip revision. 12 corresponds to SPD 1.2.
+ <LI>f - Design revision. The current is 2 corresponding to Rev 1.2.
+ <LI>m - R for registered DIMMS. 256MB and bigger modules need to be registered.
+ </UL>
+ <P>
+
+<LI>PC133+ H/E/VC/SDRAM IBM/VIA/Micron/NEC Specification - Version 2.0:
+ <UL>
+ <LI><B>PCxm-abc-dde</B> (e.g. PC133U-222-452, PC133R-333-542)
+ <LI>x - Speed rating (MHz). Memory bus speed should be equal/lower.
+ <LI>m - Module Type (R = Registered, U = Unbuffered).
+ <LI>a - CAS latency (CL cycles). Lower the better (faster), but more expensive.
+ <LI>b - RAS to CAS delay (tRCD cycles). Lower the better.
+ <LI>c - Row precharge (tRP cycles). Lower the better.
+ <LI>dd - Read data access time (tAC ns). 54 corresponds to 5.4ns. Lower the better.
+ <LI>e - SPD chip revision. 2 corresponds to SPD 2.0.
+ </UL>
+ <P>
+
+<LI>PC1600+ DDR SDRAM Micron/Samsung/Hyundai Specification - Version 1.0:
+<UL>
+ <LI><B>PCxm-aabc-dde</B> (e.g. PC2100R-2533-750)
+ <LI>x - Memory bandwidth (MB/s). Memory bus speed should be 1/16 of this or lower.
+ <LI>m - Module Type (R = Registered, U = Unbuffered).
+ <LI>aa - CAS latency (CL cycles). Lower the better (faster), but more expensive.
+ <LI>b - RAS to CAS delay (tRCD cycles). Lower the better.
+ <LI>c - Row precharge (tRP cycles). Lower the better.
+ <LI>dd - Read data access time (tAC ns). 54 corresponds to 5.4ns. Lower the better.
+ <LI>e - SPD chip revision. 0 corresponds to SPD 1.0.
+ </UL>
+ <P>
+
+<LI>RDRAM Rambus Specification - Version 1.0:
+ <UL>
+ <LI><B>xMB/a b c PCd</B> (e.g. 256MB/16 ECC PC800)
+ <LI>x - Module size in Mbytes on the module.
+ <LI>a - Number of RDRAM devices on the module.
+ <LI>b - Error correcting support (e.g. ECC)
+ <LI>c - Reserved.
+ <LI>d - Speed (Mega data transfers per second, Mt/s). Memory bus speed should be 1/2 of this or lower.
+ </UL>
+</UL>
+<P>
+
+<B>Q: What is this PCxxxx marking for DDR SDRAM?<BR>
+A:</B> The marking denotes the bandwidth of the memory in MB/s. The actual frequencies used are as follows:
+
+<UL>
+<LI>PC1600 - 2x 100MHz
+<LI>PC2100 - 2x 133MHz
+<LI>PC2600 - 2x 166MHz
+</UL>
+<P>
+
+<B>Q: What does the Ax(BMxC) marking displayed by Sandra in addition to the above marking mean?<BR>
+A:</B> This marking on modules, e.g. 16x(8Mx8), and shows the device arrangement on the module, where:
+
+<UL>
+<LI>A - number of chips on module
+<LI>B - size of chip in Mbit
+<LI>C - data width of chip in bits
+</UL>
+<P>
+
+<B>Q: What are the typical ratings of a CL3 PC133 SDRAM unbuffered module?<BR>
+A:</B> A PC133 (3xx) unbuffered module <b>may</b> have the following CL settings:
+
+<UL>
+<LI>CL1 - up to ~66MHz (most chipsets only support CL2 or higher)
+<LI>CL2 - up to ~100MHz
+<LI>CL3 - up to 133MHz
+</UL>
+<P>
+
+<B>Q: What are the typical ratings of a CL3 PC100 SDRAM unbuffered module?<BR>
+A:</B> A PC100 (3xx) unbuffered module <b>may</b> have the following CL settings:
+
+<UL>
+<LI>CL2 - up to ~66MHz
+<LI>CL3 - up to 100MHz
+</UL>
+<P>
+
+<B>Q: My PC133+ VC-SDRAM is detected as SDRAM!<BR>
+Q: My PC16000+ DDR SDRAM is detected as PC133 SDRAM!<BR>
+Q: My PC133+ H/ESDRAM is detected as SDRAM!<BR>
+Q: My RDRAM is not detected!<BR>
+A:</B> Update to Sandra 6.53 or later.
+<P>
+
+<B>Q: How is H/ESDRAM different from SDRAM?<BR>
+A:</B> In terms of latencies H/ESDRAM can run at CL2 (222) while SDRAM at CL3 (333) at higher speeds. However, SDRAM is catching up.
+<P>
+
+<B>Q: How is DDR-SDRAM different from SDRAM?<BR>
+A:</B> DDR SDRAM is double pumped (similar to 2x AGP) and thus can transfer more data in the same time as SDRAM. It should, therefore, be quite a bit faster.
+<P>
+
+<B>Q: Is VC-SDRAM different from SDRAM?<BR>
+Q: Is RDRAM faster than H/E/VC/SDRAM?<BR>
+A:</B> This is beyond the scope of this document. Check reviews for benchmarks.
+<P>
+
+<B>Q: My CL3 Registered SDRAM is detected as CL4! CL4 does not exist!<BR>
+A:</B> Registered SDRAM have a one clock CL penalty due to the on-board buffering, i.e. CL2 becomes CL3 and CL3 becomes CL4. In buffered-only mode this penalty does not apply.
+<P>
+
+<B>Q: The memory access speed (e.g. SDRAM 70ns) is totally wrong!<BR>
+A:</B> Make sure the system BIOS supports SMBIOS/DMI 2.2 or later. If not, SDRAM speeds are reported w.r.t. FPM/EDO speeds since earlier SMBIOS/DMI interfaces <B>cannot</B> represent SDRAM speeds. This way 80/70ns -> PC66, 60/50ns -> PC100. This is <B>NOT</B> a bug, the value is reported verbatim. However, we've deveoped a mapping for such BIOSes - please update to Sandra 5.00 or later.
+<P>
+
+<B>Q: Sandra detects the wrong manufacturer name/serial number/version for my memory module!<BR>
+Q: Sandra does not display a manufacturer name for my memory module!<BR>
+Q: Sandra does not display a model name or serial number for my memory module!<BR>
+A:</B> First check with another SPD module detector, e.g. DIMM_ID or our own SPDINFO. It is very likely that you will get the same information. Unfortunately, some manufacturers do not set the SPD of the memory modules correctly so you will get incorrect information. There is nothing that can be done about this. Please buy from a reputable supplier/manufacturer in the future!
+<P>
+
+<B>Q: Sandra says my PC100 SDRAM is PC125! PC125 does not exist!<BR>
+A:</B> Update to Sandra 7.00 or later.
+<P>
+
+<B>Q: I get SPD information only the 1st time I run the module, but not afterwards!<BR>
+A: </B>Right-click module <i>Mainboard Information</i>, choose <i>Options</i> and uncheck <i>Include Programable Clock Generator Information</i>. The PLL IC may be locking up when read or it may be write-only.
+<P>
+
+<B>Q: My PC100 SDRAM definitely has SPD but Sandra does not display any information!<BR>
+A:</B> SPD information is displayed only on systems that contain a supported i2c or SMBus that is also supported by Sandra. Check the compatibility document for more information. Some mainboards/BIOS do not set/enable the i2c or SMBus correctly - you may need a BIOS upgrade to ensure correct operation. Update to the latest version of Sandra.
+<P>
+
+<B>Q: Sandra does not detect ECC but my SDRAM is ECC!<BR>
+A:</B> Check that ECC/parity is enabled in the BIOS. Update to Sandra 5.00 or later if you're using an earlier version.
+<P>
+
+<B>Q: Sandra says my SPD has incorrect checksum. What does that mean?<BR>
+A:</B> It means that either the SMBus/i2c controller is faulty or the board has some incorrect settings. This sometimes happens with non-Intel controllers. Alternatively, the SPD on the memory module has been programmed incorrectly. This may affect the way the board configures itself based on the SPD.
+<P>
+
+<B>Q: My SDRAM has SPD 1.0 or 1.1 rather than the latest 1.2. Is this a problem?<BR>
+A:</B> Not as far as Sandra is concerned. Older SPD versions are still supported. However, the actual timings identified by the BIOS may be different if the BIOS does not support older versions.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

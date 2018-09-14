@@ -1,0 +1,96 @@
+; SiSoft Sandra - Monitors File
+;
+; Compiled for SiSoft Sandra from various sources by
+; Adrian@sisoftware.co.uk
+;
+; Credits:	Windows 95/95b/98/NT .INF files
+;           Ralph Brown's Interrupt List
+;
+; If you want to use data from this file, for God's sake, let's help each other to
+; compile a complete version. Is that fair enough?
+;
+; Version=100
+
+[Mfg]
+AAC=AcerView
+ACS=ACS
+ADI=ADI Systems
+AOC=AOC International
+API=Acer 
+APP=Apple Computer
+AST=AST Research
+BRG=Bridge Information
+CCP=Epson
+CPL=ALFA
+CPQ=COMPAQ
+CTX=CTX - Chuntex Electronic
+DEC=Digital Equipment Corporation
+DEL=Dell Computer
+DPC=Delta Electronics
+DWE=Daewoo
+ECS=ELITEGROUP Computer Systems
+EHJ=Epson
+EIZ=EIZO
+ELS=ELSA
+EPI=Envision
+FCM=Funai
+FUJ=Fujitsu
+GSM=LG Electronics (GoldStar)
+GWY=Gateway
+HEI=Hyundai Electronics
+HIT=Hitachi
+HSL=Hansol Electronics
+HTC=Hitachi
+HWP=Hewlett Packard
+IBM=IBM
+ICL=Fujitsu ICL
+IVM=Idek Iiyama
+KFC=SMILE
+KDS=Korea Data Systems
+LKM=AZALEA
+LNK=LINK Technologies
+LTN=Liteon
+MAG=MAG InnoVision
+MAX=Maxdata Computer
+MEI=Panasonic
+MEL=Mitsubishi Electronics
+MIR=miro Computer
+MTC=MITAC
+NAN=NANAO
+NEC=NEC Technologies
+NOK=Nokia
+OLI=Olivetti
+OKI=OKI
+OQI=OPTIQUEST
+PBE=Packard Bell
+PBN=Packard Bell
+PGS=Princeton Graphic Systems
+PHL=Philips
+PLB=PLB Monitor
+PTS=ProView Technology
+REL=Relisys
+SAM=Samsung
+SEC=Seiko Epson
+SDI=Samtron
+SIB=Sanyo
+SGX=SGI (Silicon Graphics)
+SNI=Siemens Nixdorf
+SNY=SONY
+SML=Smile
+STC=Sampo Technology
+SYL=Sylvania
+TAT=Tatung
+TAX=Taxan
+TCM=Techmedia
+TEA=Teac
+TOS=Toshiba
+TRL=Royal Information Company
+TSB=Toshiba
+TTK=Totoku
+TVM=TVM Monitor
+UNM=Unisys
+VES=Vestel
+VOB=Vobis
+VSC=ViewSonic
+@@@=Nissei Sangyo
+___=Targa

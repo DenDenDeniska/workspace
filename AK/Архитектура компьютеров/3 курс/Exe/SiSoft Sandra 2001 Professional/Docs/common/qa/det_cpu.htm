@@ -1,0 +1,494 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - CPU Detection</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - CPU Detection</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft
+Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: Some of the information in <i>Mainboard Information</i> is wrong!<BR>
+<B>A:</B></B> Sandra asks the BIOS for most of the information shown. Many BIOSes (even those released in today) still contain many bugs in the DMI core. While Sandra double-checks most of the displayed information, there is no way to check all internal information (e.g. card slots). The only fix is for you to upgrade your BIOS by obtaining a newer version (see <A HREF="../../sandra/html/links.htm">Links</A>) and flash it.
+<P>
+
+Even if you do have the latest version, the DMI core <b>needs to be configured</b> correctly by the vendor. Only major vendors like Compaq, HP, etc. bother to do this, most OEMs do not. If you do spot incorrect information (double check with the board's DMICFG utility - should be on the CD that came with the board), contact the manufacturer and let them know.
+<P>
+
+<B>Q: My CPU is not detected correctly!<BR>
+<B>A:</B></B> Make sure you do the following: <BR>
+<UL>
+<LI>Read the <A HREF="../compat.htm">Compatibility document</A> to see if it is supported.
+<LI>Update to a newer version of Sandra. Sandra cannot detect CPUs released after her own release date!
+</UL>
+<P>
+
+<B>Q: The FSB of my system is not detected correctly!<BR>
+Q: The AGP/PCI/USB/ISA of my system is not detected correctly!<BR>
+A: </B>Go to <A HREF="det_bus.htm">Bus Detection</A> for relevant topics.
+<P>
+
+<B>Q: My Pentium 4 is not detected correctly.<BR>
+Q: Sandra does not detect the SSE2 instructions!<BR>
+A:</B> Update to Sandra 7.00 or later.
+<P>
+
+<B>Q: My VIA Cyrix III is not detected correctly.<BR>
+A: </B>Update to Sandra version 6.30 or later.
+<P>
+
+<B>Q: My Pentium III/Xeon III is not detected correctly.<BR>
+Q: Sandra does not detect the SSE instructions!<BR>
+A:</B> Update to Sandra version 5.00 or later.
+<P>
+
+<B>Q: My Pentium III/Xeon III serial number is not displayed!<BR>
+A:</B> The serial number may be disabled by the BIOS. See the mainboard manual for information on how to enable it.
+<P>
+
+<B>Q: How can I turn off the serial number of my Pentium III/Xeon III?<BR>
+A:</B> The serial number can be disabled by the BIOS in some cases. Check the mainboard manual for information on whether this feature is available. If not, <a href="http://www.intel.com" target="_top">Intel</a> has instroduced an utility which can disable it.
+<P>
+
+<B>Q: My AMD Duron/Thunderbird is not detected correctly.<BR>
+A:</B> Update to Sandra version 6.40 or later.
+<P>
+
+<B>Q: My AMD Athlon (K7) is not detected correctly.<BR>
+A:</B> Update to Sandra version 5.30 or later.
+<P>
+
+<B>Q: My Celeron/Pentium II Xeon is not detected correctly.<BR>
+A: </B>Upgrade to Sandra version 2.34 or later.
+<P>
+
+<B>Q: My Pentium II is detected as a Celeron!<BR>
+A: </B>Make sure the L2 cache is enabled (see CPU information). If it is not, go to BIOS Options and turn it on. If you have a PII 266 or faster, turn L2 ECC on as well. A PII with no cache is essentially a Celeron.
+<P>
+
+<B>Q: My Pentium II Xeon is detected as a PII!<BR>
+Q: My Pentium II is detected as a Xeon!<BR>
+A: </B>Intel itself does not provide a way to accurately tell them apart in software without relying on undocumented processor functionality. These algorithms may crash or lock the system completly so they are not used by default. The BIOS can distinguish them properly since the Xeon uses Slot2 while the PII uses Slot1. So a mainboard which knows which type it is has no trouble telling them apart - unlike software programs.
+<P>
+
+<B>Q: My Pentium II OverDrive for Pentium Pro is not detected correctly.<BR>
+A: </B>Upgrade to Sandra version 4.20 or later.
+<P>
+
+<B>Q: Sandra does not detect my AMD K6-2+ / K6-III+ (mobile) correctly.<BR>
+A: </B>Upgrade to Sandra version 6.30 or later.
+<P>
+
+<B>Q: Sandra does not detect the 3DNow! instructions on the AMD K6-2/3, IDT WinChip 2-3D/3/4, Cyrix 6x86 MIII!<BR>
+A: </B>Upgrade to Sandra version 4.20 or later.
+<P>
+
+<B>Q: My IDT WinChip 2/2-3D is not detected correctly.<BR>
+Q: My Cyrix MediaGXm CPU & speed is not detected correctly.<BR>
+A:</B> Update to Sandra version 4.20 or later.
+<P>
+
+<B>Q: My Rise mP6-II CPU is not detected correctly.<BR>
+A:</B> Update to Sandra 6.03 or later.
+<P>
+
+<B>Q: My Rise mP6-II speed is not detected correctly.<BR>
+A:</B> This is not a bug. The actual speed of the CPU is different from the Performance Rating (PR). Here are the <b><i>Official</b></i> ratings:<BR>
+<P>
+<TABLE BORDER="1">
+<TR>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Processor</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Actual Speed (MHz)</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>PR-Rating</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Competitor</FONT></B></TD>
+</TR>
+<TR>
+<TD>mP6-II PR466</TD>
+<TD>350=3.5x100</TD>
+<TD>466</TD>
+<TD>Pentium II 450 or <br> Celeron 466 or <BR> AMD K6-2 450</TD>
+</TR>
+<TR>
+<TD>mP6-II PR433</TD>
+<TD>333=3.5x95</TD>
+<TD>433</TD>
+<TD>Celeron 433</TD>
+</TR>
+<TR>
+<TD>mP6-II PR400</TD>
+<TD>300=3x100</TD>
+<TD>400</TD>
+<TD>Pentium II 400 or <br> Celeron 400 or <BR> AMD K6-2 400</TD>
+</TR>
+<TR>
+<TD>mP6-II PR380</TD>
+<TD>285=3x95</TD>
+<TD>380</TD>
+<TD>AMD K6-2 380</TD>
+</TR>
+<TR>
+<TD>mP6-II PR366</TD>
+<TD>250=2.5x100</TD>
+<TD>366</TD>
+<TD>Pentium II 350 or <br> Celeron 366 or <BR> AMD K6-2 366</TD>
+</TR>
+<TR>
+<TD>mP6-II PR333</TD>
+<TD>238=2.5x95</TD>
+<TD>333</TD>
+<TD>Pentium II 333 or <br> Celeron 333 or <BR> AMD K6-2 333</TD>
+</TR>
+<TR>
+<TD>mP6-II PR266</TD>
+<TD>200=2x100</TD>
+<TD>266</TD>
+<TD>Pentium II 266 or <br> Celeron 266 or <BR> AMD K6-2 266</TD>
+</TR>
+<TR>
+<TD>mP6-II PR233</TD>
+<TD>190=2x95</TD>
+<TD>233</TD>
+<TD>Pentium II 233 or <br> AMD K6 233</TD>
+</TR>
+</TABLE>
+<P>
+
+Also, you'll need to update to Sandra 6.03 or later. Do note that using a bus speed or multiplier different from the stated will yield a different PR rating. Some combinations may result in a higher PR rating even if the internal core speed is lower.
+<P>
+
+<B>Q: My Rise mP6 CPU is not detected correctly.<BR>
+A:</B> Update to Sandra version 5.10 or later.
+<P>
+
+<B>Q: My Rise mP6 speed is not detected correctly.<BR>
+A:</B> This is not a bug. The actual speed of the CPU is different from the Performance Rating (PR). Here are the <b><i>Official</b></i> ratings:<BR>
+<P>
+<TABLE BORDER="1">
+<TR>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Processor</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Actual Speed (MHz)</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>PR-Rating</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Competitor</FONT></B></TD>
+</TR>
+<TR>
+<TD>mP6 PR466</TD>
+<TD>350=3.5x100</TD>
+<TD>466</TD>
+<TD>Pentium II 450 or <br> Celeron 466 or <BR> AMD K6-2 450</TD>
+</TR>
+<TR>
+<TD>mP6 PR433</TD>
+<TD>333=3.5x95</TD>
+<TD>433</TD>
+<TD>Celeron 433</TD>
+</TR>
+<TR>
+<TD>mP6 PR400</TD>
+<TD>300=3x100</TD>
+<TD>400</TD>
+<TD>Pentium II 400 or <br> Celeron 400 or <BR> AMD K6-2 400</TD>
+</TR>
+<TR>
+<TD>mP6 PR380</TD>
+<TD>285=3x95</TD>
+<TD>380</TD>
+<TD>AMD K6-2 380</TD>
+</TR>
+<TR>
+<TD>mP6 PR366</TD>
+<TD>250=2.5x100</TD>
+<TD>366</TD>
+<TD>Pentium II 350 or <br> Celeron 366 or <BR> AMD K6-2 366</TD>
+</TR>
+<TR>
+<TD>mP6 PR333</TD>
+<TD>238=2.5x95</TD>
+<TD>333</TD>
+<TD>Pentium II 333 or <br> Celeron 333 or <BR> AMD K6-2 333</TD>
+</TR>
+<TR>
+<TD>mP6 PR266</TD>
+<TD>200=2x100</TD>
+<TD>266</TD>
+<TD>Pentium II 266 or <br> Celeron 266 or <BR> AMD K6-2 266</TD>
+</TR>
+<TR>
+<TD>mP6 PR233</TD>
+<TD>190=2x95</TD>
+<TD>233</TD>
+<TD>Pentium II 233 or <br> AMD K6 233</TD>
+</TR>
+<TR>
+<TD>mP6 PR166</TD>
+<TD>166=2x83</TD>
+<TD>166</TD>
+<TD>Pentium MMX 166 or <br> AMD K6 166</TD>
+</TR>
+<TR>
+<TD>mP6 PR150</TD>
+<TD>150=2x75</TD>
+<TD>150</TD>
+<TD>Pentium MMX 150</TD>
+</TR>
+<TR>
+<TD>mP6 PR133</TD>
+<TD>133=2x66</TD>
+<TD>133</TD>
+<TD>Pentium 133</TD>
+</TR>
+</TABLE>
+<P>
+
+Also, you'll need to update to Sandra version 5.30 or later. Do note that using a bus speed or multiplier different from the stated will yield a different PR rating. Some combinations may result in a higher PR rating even if the internal core speed is lower.
+<P>
+
+<B>Q: My Transmeta Crusoe CPU is not detected correctly.<BR>
+A: </B>Update to Sandra version 6.40 or later.
+<P>
+
+<B>Q: My Cyrix MII CPU is detected as a 6x86MX!<BR>
+A: </B>Update to Sandra version 5.10 or later.
+<P>
+
+<B>Q: My Cyrix 6x86MX/MII's speed is not detected correctly.<BR>
+A:</B> This is not a bug. The actual speed of the CPU is different from the Performance Rating (PR). Here are the <b><i>Official</b></i> ratings:<BR>
+<P>
+<TABLE BORDER="1">
+<TR>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Processor</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Actual Speed (MHz)</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>PR-Rating</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Competitor</FONT></B></TD>
+</TR>
+<TR>
+<TD>6x86MII-PR450</TD>
+<TD>400=4x100</TD>
+<TD>450</TD>
+<TD>Pentium II 450 or <BR> Celeron 466 or <br> AMD K6-3 450</TD>
+</TR>
+<TR>
+<TD>6x86MII-PR400</TD>
+<TD>380=4x95 or <br> 360=4x90 or <br> 350=3.5x100 or <br> 333=3.5x95 or <br> 333=4x83</TD>
+<TD>400</TD>
+<TD>Pentium II 400 or <BR> Celeron 400 or <br> AMD K6-3 400 or <br> AMD K6-2 400</TD>
+</TR>
+<TR>
+<TD>6x86MII-PR366</TD>
+<TD>315=3.5x90 or <br> 300=3x100 or <br> 300=4x75 or <br> 292=2.5x83</TD>
+<TD>366</TD>
+<TD>Pentium II 350 or <br> Celeron 366 or <BR> AMD K6-2 350</TD>
+</TR>
+<TR>
+<TD>6x86MII-PR350</TD>
+<TD>285=3x95 or <br> 270=3x90</TD>
+<TD>350</TD>
+<TD>Pentium II 350 or <br> AMD K6-2 350</TD>
+</TR>
+<TR>
+<TD>6x86MII-PR333</TD>
+<TD>266=4x66 or <br> 263=3.5x75 or <br> 250=3x83 or <br> 250=2.5x100</TD>
+<TD>333</TD>
+<TD>Pentium II 333 or <br> CeleronA 333 or <br> AMD K6-2 333</TD>
+</TR>
+<TR>
+<TD>6x86MII-PR300</TD>
+<TD>240=4x60 or <br> 237=2.5x95 or <br> 233=3.5x66 or <br> 225=2.5x90 or <br> 225=3x75</TD>
+<TD>300</TD>
+<TD>Pentium II 300 or <br> AMD K6-2 300</TD>
+</TR>
+<TR>
+<TD>6x86MX-PR266+</TD>
+<TD>208=2.5x83</TD>
+<TD>266</TD>
+<TD>Pentium II 266 or <br> Celeron 266 or <BR> AMD K6 266</TD>
+</TR>
+<TR>
+<TD>6x86MX-PR233+</TD>
+<TD>200=3x66 or <br> 188=2.5x75 or <br> 166=2x83</TD>
+<TD>233</TD>
+<TD>Pentium II 233 or<BR>AMD K6 233</TD>
+</TR>
+<TR>
+<TD>6x86MX-PR200+</TD>
+<TD>180=3x60 or <br> 166=2.5x66 or <br> 165=3x55 or <br> 150=2x75</TD>
+<TD>200</TD>
+<TD>Pentium MMX 200 or<BR>AMD K6 200</TD>
+</TR>
+<TR>
+<TD>6x86MX-PR166+</TD>
+<TD>150=2.5x60 or <br> 150=3x50 or <br> 138=2.5x55 or <br> 133=2x66</TD>
+<TD>166</TD>
+<TD>Pentium MMX 166 or<BR>AMD K6 166</TD>
+</TR>
+<TR>
+<TD>6x86MX-PR150+</TD>
+<TD>125=2.5x50 or <br> 120=2x60</TD>
+<TD>150</TD>
+<TD>Pentium MMX 150</TD>
+</TR>
+<TR>
+<TD>6x86MX-PR133+</TD>
+<TD>110=2x55 or <br> 100=2.5x50</TD>
+<TD>133</TD>
+<TD>Pentium 133</TD>
+</TR>
+</TABLE>
+<P>
+
+Also, you'll need to update to Sandra version 1.20 or later. Do note that using a bus speed or multiplier different from the stated will yield a different PR rating. Some combinations may result in a higher PR rating even if the internal core speed is lower.
+<P>
+
+<B>Q: Why was the PR-ating developed?<BR>
+A:</B> Clock frequency (MHz), while important, is no longer an accurate or consistent measure of CPU performance. Architectural differences between processor designs add another variable to the equation. With the PR-ating in place, a PC buyer can easily evaluate all personal computer processors for a given performance category - without scrutinizing the architectural merits of the different processors.
+<P>
+
+<B>Q: How does the PR-ating work?<BR>
+A:</B> The PR-ating process uses a standardized system configuration and application-based benchmark tests to establish a performance, or 'PR', rating relative to a Pentium processor of a given frequency (MHz). This levels the playing field and allows the measurement of relative processor performance under real-world conditions, regardless of the processor's clock speed (MHz) or architecture.
+<P>
+
+<B>Q: What benchmark test is used in the PR-ating?<BR>
+A:</B> Ziff-Davis WinStone is used because it is a real-world, application-based benchmark that contains the most popular software applications (based on market share) that run on a Pentium processor. WinStone also is the most widely used benchmark, and is freely distributed and available.
+<P>
+
+<B>Q: My Cyrix 6x86's speed is not detected correctly.<BR>
+A:</B> This is not a bug. The actual speed of the CPU is different
+from the Performance Rating (PR). Here are the <b><i>Official</b></i> ratings:
+<P>
+<TABLE BORDER="1">
+<TR>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Processor</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Actual Speed (MHz)</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>PR-Rating</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Competitor</FONT></B></TD>
+</TR>
+<TR>
+<TD>6x86-PR200+</TD>
+<TD>150=2x75</TD>
+<TD>200</TD>
+<TD>Pentium 200</TD>
+</TR>
+<TR>
+<TD>6x86-PR166+</TD>
+<TD>133=2x66</TD>
+<TD>166</TD>
+<TD>Pentium 166</TD>
+</TR>
+<TR>
+<TD>6x86-PR150+</TD>
+<TD>120=2x60</TD>
+<TD>150</TD>
+<TD>Pentium 150</TD>
+</TR>
+<TR>
+<TD>6x86-PR133+</TD>
+<TD>110=2x55</TD>
+<TD>133</TD>
+<TD>Pentium 133</TD>
+</TR>
+<TR>
+<TD>6x86-PR120+</TD>
+<TD>100=2x50</TD>
+<TD>120</TD>
+<TD>Pentium 120</TD>
+</TR>
+<TR>
+<TD>6x86-PR90+</TD>
+<TD>80=2x40</TD>
+<TD>90</TD>
+<TD>Pentium 90</TD>
+</TR>
+</TABLE>
+<P>
+
+Also, you'll need to update to Sandra version 1.14 or later. The 6x86 supports only the <B>2x</B> multiplier so for the PR200 you need to use a 75MHz bus speed which not all boards and chipsets support.
+<P>
+
+<B>Q: Why is there a plus mark in each 6x86 processor name?<BR>
+A:</B> For the 6x86 processor, a P+ designation is used to indicate better performance. WinStone 6x86-Pxxx+ &gt; WinStone Pentium-xxx <B>-&gt;</B> xxx = P-rating or Pentium megahertz. For example, a 6x86 processor with a P-rating of &quot;P166+&quot; (regardless of processor name and clock speed) indicates performance faster than a 166 MHz Pentium processor. The plus mark indicates performance that consistently exceeds the same Pentium processor megahertz level.
+<P>
+
+<B>Q: My AMD K5's speed is not detected correctly.<BR>
+A:</B> This is not a bug. The actual speed of the CPU is different from the Performance Rating (PR). Therefore:<BR>
+<P>
+<TABLE BORDER="1">
+<TR>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Processor</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Actual Speed (MHz)</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>PR-Rating</FONT></B></TD>
+<TD BGCOLOR="#0000ff"><B><FONT COLOR=#FFFFFF>Competitor</FONT></B></TD>
+</TR>
+<TR>
+<TD>K5-P200</TD>
+<TD>133=2x66</TD>
+<TD>200</TD>
+<TD>Pentium 200</TD>
+</TR>
+<TR>
+<TD>K5-P166</TD>
+<TD>117=1.75x66</TD>
+<TD>166</TD>
+<TD>Pentium 166</TD>
+</TR>
+<TR>
+<TD>K5-P150</TD>
+<TD>105=1.75x60</TD>
+<TD>150</TD>
+<TD>Pentium 150</TD>
+</TR>
+<TR>
+<TD>K5-P133</TD>
+<TD>100=1.5x66</TD>
+<TD>133</TD>
+<TD>Pentium 133</TD>
+</TR>
+<TR>
+<TD>K5-P120</TD>
+<TD>90=1.5x60</TD>
+<TD>120</TD>
+<TD>Pentium 120</TD>
+</TR>
+<TR>
+<TD>K5-P100</TD>
+<TD>100=1.5x66</TD>
+<TD>100</TD>
+<TD>Pentium 100</TD>
+</TR>
+<TR>
+<TD>K5-P90</TD>
+<TD>90=1.5x60</TD>
+<TD>90</TD>
+<TD>Pentium 90</TD>
+</TR>
+<TR>
+<TD>K5-P75</TD>
+<TD>75=1.5x50</TD>
+<TD>75</TD>
+<TD>Pentium 75</TD>
+</TR>
+</TABLE>
+<P>
+Also, you'll need to update to Sandra version 1.16 or later.
+<P>
+
+<B>Q: My 6x86, 6x86MX is manufactured by IBM but shows up as a Cyrix chip.<BR>
+A:</B> The 6x86 family was designed by Cyrix and manufactured by Cyrix, IBM and SGS Thompson. It is still the same chip no matter who made it.
+<P>
+
+<B>Q: My Intel/AMD/etc. CPU is detected as a Generic CPU.<BR>
+A:</B> It is not possible to reliably detect the manufacturer of old (earlier than 1994) processors. All those CPUs are classified as &quot;generic&quot;. This generally applies to 486 and 386 chips.
+<P>
+
+<B>Q: My IBM Blue Lighting DX3 CPU is detected as a Cyrix 486DX4 CPU.<BR>
+A:</B> The IBM Blue Lighting is a Cyrix 486DX4 CPU made by IBM.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

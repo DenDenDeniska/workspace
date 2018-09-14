@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - Installation</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - Installation</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft
+Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: Sandra is linked to missing export in MFC42. Program crashes<BR>
+Q: Sandra does not start at all<BR>
+A: </B>This means the MFC42 (Microsoft Class) libraries are not up to date. A Properties on the MFC42.DLL file in \Windows\System (use <b>Start - Find</b> if you cannot find it) should return a version of 6.00.8168.0 or later (preferably 6.00.8267.0). Try <b>one</b> of the following:
+
+<OL>
+<LI>For more information read <A HREF="http://support.microsoft.com/support/kb/articles/q197/2/98.asp">Microsoft KB Article Q197298</A>.
+<LI>Windows Patch
+ <OL TYPE="a">
+ <LI><A HREF="http://www.microsoft.com/windows/downloads/contents/common/mfc.htm">Main Download Page @ Microsoft</A>
+ <LI>Windows 98. Use <b>Start - Windows Update</b> and apply the <b>Microsoft Libraries Update</b>
+ <LI>Windows 95. Download <b>Windows Library Update</b> patch from <A HREF="http://www.microsoft.com/windows95/downloads/Default.asp">Updates for Windows 95</a>
+ </OL>
+<LI>Download and install <A HREF="../../san_dem/html/dload.htm">Sandra Standard 99</a> (in a different folder) and then uninstall it. The installer is more advanced and should be able to install the updated libraries.
+<LI>In anger, you can try installing <A HREF="http://www.microsoft.com/windows/ie/default.htm">Microsoft Internet Explorer 5</A> or later.
+<LI>We can e-mail them to you. This is riskier since you just copy them rather than going through a proper update. Also the file is rather large.
+</OL>
+<P>
+
+<B>NB 1:</B> We have received reports that the patches are not updating the system libraries correctly. In this case delete it from your drive and try again. Try a different option if one option fails.
+<P>
+
+<B>NB 2:</B> If you're successfully updated the libraries (check whether the version matches), you may have to update other system libraries as well - see the issues below.
+<P>
+
+<B>Q: SANDRA caused an invalid page fault in module MFC42.DLL. Program crashes<BR>
+Q: Sandra does not start at all<BR>
+A: </B>This means the ComCtl32 (common controls) libraries are not up to date. A Properties on the ComCtl32.DLL file in \Windows\System (use Find if you cannot find it) should return a version of 5.80 or later (product version 5.00.2014.216). Try <b>one</b> of the following:
+
+<OL>
+<LI>Windows Patch
+ <OL TYPE="a">
+ <LI><A HREF="http://www.microsoft.com/windows/downloads/contents/common/mfc.htm">Main Download Page @ Microsoft</A>
+ <LI>Windows 98. Use <b>Start - Windows Update</b> and apply the <b>Microsoft Libraries Update</b>
+ <LI>Windows 95. Download <b>Common Controls Update</b> from <A HREF="http://www.microsoft.com/msdownload/ieplatform/ie/comctrlx86.asp">Updates for Windows 95</a> or <A HREF="http://msdn.microsoft.com/visualc/downloads/default.asp">Visual C++ Downloads</A>
+ </OL>
+<LI>In anger, you can try installing <A HREF="http://www.microsoft.com/windows/ie/default.htm">Microsoft Internet Explorer 5</A> or later.
+<LI>We can e-mail them to you. This is riskier since you just copy them rather than going through a proper update. Also the file is rather large.
+</OL>
+<P>
+
+<B>NB 1:</B> We have received reports that the patches are not updating the system libraries correctly. In this case delete it from your drive and try again. Try a different option if one option fails.
+<P>
+
+<B>NB 2:</B> We've also learned that some patches do not contain the latest version of the system libraries as we have thought - depending on download server. Try a different option if one option fails.
+<P>
+
+<B>Q: Some programs from the Tools menu are missing!<BR>
+A:</B> These programs are <B>not</B> included in the package. They either come with Windows or you need to download them. To find out - click <B>F1</B> after you've selected the menu option or start by clicking the <B>Help</B> button on the toolbar and then select the menu option.<BR>
+<P>
+
+<B>Q: Sandra Professional Patch says <i>Version & Type does not match any known version</i><BR>
+A: </B>Uninstall <b>All</b> copies of Sandra. Install a fresh copy of the Professional version. Try to patch it again.
+<P>
+
+<B>Q: When I try to patch nothing is downloaded and the program exits<BR>
+Q: When I try to patch a small (1K) file is downloaded and I get "program is invalid".<BR>
+A: </B>Look into the temporary folder for a file called <b>Update.exe</b>. If the file is small, open it with Notepad (hold <i>Shift</i> key and right-click, choose <i>Open With</i> and select Notepad). The file may contain a web error which was not caught by Sandra. The error message should identify the actual error.
+<P>
+
+<B>Q: Sandra has a problem with the Internet! (WININET)<BR>
+A: </B>Uninstall Sandra. If you have MS-IE 4.0 or later installed, you may need to reinstall IE. If not, delete the WININET.DLL file in the <B>\Windows\System</B> folder. Then reinstall Sandra. Sandra will install a fresh copy of this library.<BR>
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

@@ -1,0 +1,64 @@
+<!doctype html> 
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Topic 20</TITLE>
+</HEAD>
+<BODY BGCOLOR="#CCCCCC">
+<SCRIPT language="JavaScript">
+<!--
+if (document.location==parent.document.location)
+document.write("<CENTER><H3>This page is part of the Introduction to MMX&#153; Technology tutorial. To start the tutorial, please open the MMXSTART.HTM page in the same directory!</H3></CENTER>")
+//-->
+</SCRIPT>
+<A NAME="s"></A>
+С помощью MMX-команд можно быстро вычислять 
+<A TARGET="right" HREF="glossary.htm#dotprod">скалярное произведение</A>
+векторов. Пусть векторы состоят из 16-разрядных слов 
+и находятся в памяти по адресам <font color="#000099"><TT>a_vector</TT></font> и <font color="#000099"><TT>b_vector</TT></font>.
+Программа будет выполнять следующие шаги:
+<TABLE border=0 cellspacing=4 cellpadding=0>
+<TD valign=top>1.</TD>
+<TD>Скопировать 4 слова первого вектора в MMX-регистр
+командой <A href="glossary.htm#movq" target="right">movq</A>. 
+<TR><TD valign=top>2.</TD>
+<TD>Скопировать 4 слова второго вектора в MMX-регистр.
+<TR><TD valign=top>3.</TD>
+<TD>Попарно перемножить слова и сложить первое произведение со
+вторым, а третье с четвертым, пользуясь
+командой <A href="glossary.htm#pmaddwd" target="right">pmaddwd</A>. 
+<TR><TD valign=top>4.</TD>
+<TD>Добавить результаты шага 3 к ранее накопленным суммам
+командой <A href="glossary.htm#paddd" target="right">paddd</A> 
+</TD></TR></TABLE>
+
+Эти шаги следует повторить для всех слов исходных векторов 
+(см. русунок).
+
+<p>
+<A NAME="code"></A>
+<CENTER>
+<IMG SRC=t20code.gif width=232 height=286 ALT="Code Example">
+</CENTER>
+
+<small>
+<B>Команды 1-4</B> реализуют шаги 1-4 (см. рис.)
+<BR>
+<B>Команды 5-8</B> организуют цикл по всем элементам векторов.
+<BR>
+<B>Команды 9-11</B> складывают частичные суммы, накопленные в цикле в
+старших и младших разрядах регистра MM7.
+<BR>
+<B>Команда 12</B> пересылает результат в память.
+</small>
+
+<p>
+<A HREF="#s"><IMG SRC="button/back.gif" alt="back" width=44 height=47 border=0 align="middle"></A>
+<A HREF="#s"><small>Возврат к началу темы</small></A>
+
+<p><img src="button/space.gif" height=600 width=1>
+<p>
+
+</BODY>
+</HTML>
+

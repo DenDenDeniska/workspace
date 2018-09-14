@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - Memory Benchmark</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - Memory Benchmark</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft
+Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: What is STREAM?<BR>
+A:</B> STREAM is a popular memory bandwidth benchmark that has been used on personal computers to super computers. It measures sustained memory bandwidth not burst or peak. Therefore, the results may be lower than those of other benchmarks. Sandra is based on this benchmark.
+<P>
+
+<B>Q: How is Sandra's Memory Benchmark different from STREAM?<BR>
+A:</B> STREAM 2.0 uses static data (about 12M) - Sandra uses dynamic data (around 40-60% of physical system RAM). This means that on computers with fast memory Sandra may yield lower results than STREAM. It's not feasible to make Sandra use static RAM - since Sandra is much more than a benchmark, thus it would needlessly use memory.
+<P>
+
+A major difference is that Sandra's algorithm is multi-threaded on SMP systems. This works by splitting the arrays and letting each thread work on its own bit. Sandra creates a thread for each CPU in the system and assignes each thread to an individual CPU.
+<P>
+
+Another difference is the aggressive used of sheduling/overlapping of instructions in order to maximise memory throughput even on "slower" processors. The loops should always be memory bound rather than CPU bound on all modern processors.
+<P>
+
+The other major difference is the use of alignment. Sandra dynamically changes the alignment of streams until it finds the best combination, then it repeatedly tests it to estimate the maximum throughput of the system. You can change the alignment in STREAM and recompile - but generally it is set to 0 (i.e. no).
+<P>
+
+<B>Q: Is Sandra compatible with STREAM?<BR>
+A:</B> No. See above for the main differences. The results should reflect a comparable difference between different computers but are not comparable themselves.
+<P>
+
+<B>Q: Why does the rating change between runs?<BR>
+A:</B> Make sure you have enough RAM (16MB or more) and only Sandra is running. If you see the hard disk light up then your computer is swapping. Accurate results can only be obtained if the computer is not swapping.
+<P>
+
+<B>Q: If the benchmark is multi-threaded, why don't I get higher indexes on a SMP system?<BR>
+A:</B> The benchmark is OK. You can verify by looking at the load, number of  threads and memory utilisation in Task Manager of Windows NT/2000.
+<P>
+
+The issue is the bus that connects the CPUs. If it is shared and not point-to-point (e.g. Intel's GTL+ as used in PPro/PII/PIII) the CPUs are sharing the same bandwidth so you won't see much increase due to the huge amount of data transferred by the benchmark. Since the benchmark is memory limited (in order to be correct), one CPU or more won't make much difference since the memory bus is the bottleneck. When the bus is not much utilised you get close to N increase in performance (where N is no of CPUs), otherwise you get no/small performance gain.
+<P>
+
+Only SMP systems like AMD Athlon or Intel Pentium 4 systems using different topologies and fast memory (e.g. RDRAM, DDR-SDRAM) will yield significantly higher scores with more than one CPU.
+<P>
+
+<B>Q: In my SMP system all memory benchmarks (ALU, FPU, MMX, SSE2 etc.) return the same score! Why is that?<BR>
+A:</B> See above. This shows that the benchmark is working, i.e. the limit of memory throughput is reached - when no matter what you use to load/store it does not make any difference.
+<P>
+
+<B>Q: My system is supposed to have a bandwidth of X MB/s (e.g. 800MB/s for PC100 SDRAM). Why does Sandra show less than 1/2 of it?<BR>
+A:</B> The number quoted by the manufacturer is the best case sequential read throughput. Sandra reads & writes to the memory, using different areas in SMP mode. This puts a larger stress on the memory system (including cache controllers) resulting in a lower index, but more realistic. Most programs read, compute and write back data rather than just read data.
+<P>
+
+<B>Q: Why are the MMX & SSE2 versions disabled by default?<BR>
+A:</B> These versions have been created by us to measure the throughput when using the new Multi-Media instructions, working on the same arrays and computing the same results. However, they are not considered <i>canon</i> thus do not use them when comparing STREAM results.
+<P>
+
+<B>Q: Why isn't there a 3DNow! (Enhanced) or SSE version?<BR>
+A:</B> STREAM uses double values (64-bit) which are not supported by either. There is no point to use floats (32-bit) just to create such a version, it would not have a purpose.
+<P>
+
+<B>Q: Why is the Sandra memory index so low compared to other benchmarks?<BR>
+A: </B>Most other benchmarks just read or write to memory without performing any data manipulation. In real-life, no program works this way - why read something if you don't actually use it? Sandra creates 3 large arrays and performs various simple arithmetical computations on them - thus reading and writing memory. We feel this is a more objective test which measures the <i>real throughput</i> of the system. By using large blocks of memory (8MB+), the system cache(s) are swamped, thus the actual memory throughput is measured. Of course, the cache does have an effect - unless it is turned off.
+<P>
+If you compare Sandra's results with other benchmarks' (e.g. WinTune 98) <i>large blocks copy speed</i>, you'll find the results are comparative.
+<P>
+
+<B>Q: My AMD Athlon gets a very low memory index.<BR>
+A: </B>Upgrade to Sandra 2000 or later.
+<P>
+
+<B>Q: My AMD K6/K6-2 or Cyrix 6x86/MX/MII CPU gets a very low memory index.<BR>
+A: </B>These CPUs have large and fast L1 (internal) caches but the L2 caches are on the mainboard and run at FSB speed, unlike PII/Celeron where the L2 cache runs at 1/2 and full CPU speed. In most cases the caches also run in Write-Through mode, which slows down writes to memory appreciably when there are many such requests.
+
+<P>
+These processors seem to be less effective than Intel's design at the same speed when accessing memory. A bottleneck limits the memory throughput to a certain level, making higher speed processors less effective. While our initial tests using floating point instructions seemed to point the finger to the non-pipelined FPU, our current tests using integer instructions return the similar results.
+<P>
+
+<B>Q: Why doesn't the benchmark include my super-duper XXXXMHz CPU?<BR>
+A: </B>While we do buy and test each and every CPU model on the market, we cannot afford to buy all the very latest speed grades of each CPU. Even if we did, we cannot update the benchmark when a new speed grade is released - we'd need to do it every week.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

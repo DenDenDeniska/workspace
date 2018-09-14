@@ -1,0 +1,653 @@
+; SiSoft Sandra - PLL (Clock Generator) Information File
+;
+; Compiled for SiSoft Sandra from various sources by
+; Adrian@sisoftware.demon.co.uk
+;
+; Credits: Everyone who sent a report after lockup. MANY THANKS!
+;	       H-Oda's SoftFSB (www.h-oda.com)
+;	       Wim's BIOS list (www.ping.be/bios)
+;	       Ralph Brown's Interrupt List
+;
+; If you want to use data from this file, for God's sake, let's help each other to
+; compile a complete version. Is that fair enough?
+;
+; Version=100
+
+[Board]
+
+; ** Abit **
+;
+i440BX-W83977(BH6)=IC-Works W124
+i440BX-W83977 (BH6)=IC-Works W124
+i440BX-W83977 (BH6 V1.1)=IC-Works W196
+i440BX-W83977 (BH6 V1.2)=IC-Works W196
+i440BX-W83977 (BE6)=IC-Works W144
+i440BX-W977(BE6-II,BF6)=Realtek RTM520-39D
+i440BX-W977(BE6-II/BF6)=Realtek RTM520-39D
+i440BX-W83977 (BX6)=IC-Works W48S101-04
+i440BX-W977 (BX6R2)=IC-Works W164
+i440BX-W977 (BX6 R2.0)=IC-Works W164
+i440BX-W977 (BM6)=IC-Works W144
+i440BX-W83977 (BP6)=ICS 9248-90
+i440ZX-W977 (ZM6)=IC-Works W144
+BX-100=Realtek RTM520-39D
+i440BX-W977(BX-133)=Realtek RTM520-39D
+i440BX-W977(BX133-RAID)=Realtek RTM520-39D
+
+VA6=IC-Works W144
+VH6=IC-Works W144
+VT64X=IC-Works W144
+694A-686A=IC-Works W144
+694X-686A(VT6X4,VA6)=IC-Works W144
+VP-20=
+
+SE6=ICS 9250-25
+;SE6=Realtek RTM560-25
+SL6=
+SA6R=Realtek RTM560-25
+
+8371-686A(KA7,KA7-100)=Phaselink PLL205-01
+KT7=
+
+
+; ** Acer **
+;
+V75M=
+EXTENSA 700/710=Mobile PLL-IC-WO
+
+
+; ** ACorp **
+;
+6BX/81=IC-Works W144
+
+
+; ** A-Max **
+;
+BX-400B=IC-Works W48S111-14
+
+
+; ** AOpen **
+;
+AX6B=IC-Works W48S101-04
+AX6BC=IC-Works W164
+AX6BC PRO=IC-Works W164
+
+AX3S PRO=IC-Works W2298
+DX34 PLUS=
+
+MK33=
+AK33=
+
+
+; ** Asus **
+;
+; P5
+TX97-E=ICS 9169
+T2P4=ICS 9169
+TXP4=ICS 9169
+MB-1234567890=Generic PLL-IC
+
+; P6 FX
+P/I-P65UP8=
+P/I-P65UP5=
+C-PKND=
+KN97=
+KN97-X=
+
+; P6 LX/EX
+P2L-B=Generic PLL-IC
+P2L-M=Generic PLL-IC
+P2L-N=Generic PLL-IC
+P2L-VM=Generic PLL-IC
+P2L97=Generic PLL-IC
+P2L97A=Generic PLL-IC
+P2L97-S=Generic PLL-IC
+P2L97-DS=Generic PLL-IC
+
+MEL=
+MEL-B=
+MEL-C=
+MEL-M=
+
+P2E-B=Generic PLL-IC
+P2E-M=Generic PLL-IC
+P2E-N=Generic PLL-IC
+P2E-VM=Generic PLL-IC
+
+; P6 BX/ZX/DX/GX
+P2-99=Generic PLL-IC
+P2-99B=Generic PLL-IC
+P2Z=Generic PLL-IC
+P2Z-B=Generic PLL-IC
+P2Z-VM=Generic PLL-IC
+
+P2B=ICS 9148-26
+P2B 1.1=Winbond W83194R-39A
+P2B-B=Winbond W83194R-39A
+P2B-D=ICS 9250-08
+P2B-DS=ICS 9250-08
+P2B-D2=ICS 9250-08
+P2B-L=ICS 9250-08
+P2B-LS=ICS 9148-26
+P2B-F=IC-Works W145
+P2B-F 1.1=ICS 9250-08
+P2B-S=ICS 9148-26
+P2B-N=Generic PLL-IC
+P2B-V=ICS 9248-39
+P2B-VM=ICS 9248-39
+P2BVE=Generic PLL-IC
+P2BVT=Generic PLL-IC
+
+MEB=
+MEB-M=
+MEB-VM=Generic PLL-IC
+
+MEZ=
+MEZ-M=
+MEZ-VM=
+
+HAWK=Generic PLL-IC
+DB98XV=Generic PLL-IC
+
+P3B-F=ICS 9250-08
+<P3B-F>=ICS 9250-08
+P3B-1394=Generic PLL-IC
+CUBX=Generic PLL-IC
+
+XG-DLS=ICS 9250-08
+
+; P6 VIA
+P2V=Generic PLL-IC
+P2V-B=Generic PLL-IC
+P3V4X=Generic PLL-IC
+;P3V4X=ICS 9250-18
+;P3V4X=Winbond W83195R-08
+P3V133=Generic PLL-IC
+Kestrel=Generic PLL-IC
+CUV4X=ICS 9248-98
+CUV4X-M=ICS 9248-98
+
+; P6 SiS
+ME-99=
+ME-99B=
+ME-99VM=
+MES=
+MES-B=
+MES-N=
+MES-VM=
+
+; P6 810
+P3W=Generic PLL-IC
+P3W-E=Generic PLL-IC
+CUW=
+CUW-B=
+CUW-FX=
+CUW-RM=
+CUWE=
+CUWE-FX=
+CUWE-RM=
+MEW=
+MEW-AM=
+MEW-AML=
+MEW-B=
+MEW-L=
+MEW-RM=
+
+; P6 820
+P3C=Generic PLL-IC
+P3C-D=Generic PLL-IC
+P3C-E=Generic PLL-IC
+P3C-L=Generic PLL-IC
+P3C-S=Generic PLL-IC
+P3C-LS=Generic PLL-IC
+P3C2000=Generic PLL-IC
+CUC2000=
+CUC2=
+
+; P6 815
+CUSL2=ICS 94201
+CUSL2-M=ICS 94201
+
+; P6 SW
+CUR-DLS=
+
+; P5 SS7
+SP97_V=Generic PLL-IC
+P5A=ICS 9148-53
+P5S-VM=Generic PLL-IC
+
+; Athlon
+K7M=ICS 9248-110
+<K7M>=ICS 9248-110
+K7M-RM=
+
+K7V=ICS 9248-114
+<K7V>=ICS 9248-114
+K7V-T=ICS 9248-114
+K7V-RM=ICS 9248-114
+
+A7V=ICS 94215
+<A7V>=ICS 94215
+
+
+; ** A-Trend **
+;
+ATC-6260=IC-Works W48S101-04
+ATC-6240FW=IC-Works W48S101-04
+VP3-586B-SMC669=
+
+FW-6280BXDR=IC-Works W196
+FW-6400GX=ICS 9150-08
+FW-6400GXR=ICS 9250-08
+
+693A-596B-977=
+
+
+; ** BCM **
+;
+qx-440bx=IC-Works W48S111-14
+
+; ** BioStar **
+;
+M5ALA=Generic PLL-IC
+M5SAA=Generic PLL-IC
+
+M6TBA=IC-Works W124
+M6TLC=IC-Works W124
+M6VBE=
+
+
+; ** Chaintech **
+;
+440BX=IC-Works W48S101-04
+6BTM=IC-Works W48S101-04
+6ATA2=
+60JW=IC-Works W2298
+
+
+; ** Compaq **
+;
+05C4h=Generic PLL-IC
+0598h=Generic PLL-IC
+
+
+; ** DCS **
+;
+57AX=ICS 9148-36
+P3WA=ICS 9248-73
+
+
+; ** Diamond Flower **
+;
+K6BV3+=ICS 9148-58
+CS35-EC=IC-Works W2298
+
+
+; ** EliteGroup **
+;
+GXm-Cx5520=
+(P6LX-A)=
+P5SD-B=ICS 9148-17
+i440BX-W83977=IC-Works W48S111-14
+i440BX-W977TF=Generic PLL-IC
+693-596-W977EF=Generic PLL-IC
+P61SM=ICS 9250-25
+
+; ** Epox **
+;
+EP-KB11=ICS 9148-26
+EP-MVP3-G-M=ICS 9148-36
+EP-MVP3-G=ICS 9148-58
+EP-MVP3C=Winbond W83194R-58
+EP-MVP3C-M=PLL 52C66-19
+EP-MVP3G=Winbond W83194R-58
+
+EP-61BXA-M=IC-Works W48S111-14x
+EP-61BXC-A=IC-Works W144
+EP-KP6-BS=IC-Works W48S101-04
+
+EP-3S1A=IC-Works W2298
+
+MVP3-596-W877=Generic PLL-IC
+
+SiS-530=Generic PLL-IC
+
+
+; ** FIC **
+;
+VA-503A=IC-Works W124
+VA-503+=IC-Works W127
+VB601=
+SD11=ICS 9248-64
+VL-601=Winbond W83194R-39A
+PA-2013=IC-Works W127
+CW33=
+
+
+; ** Gateway **
+;
+Tabor3 WS440BX=
+
+; ** GigaByte **
+;
+GA-5AX F3=
+
+GA-6BXC=ICS 9148-26
+GA-6BXD=ICS 9148-26
+i440BX-8671=
+i440BX-W977=
+BX2000=ICS 9248-55
+BX2000+=ICS 9248-63
+
+GA-6VMM7=
+GA-6SMZ7=
+GA-6TMM7=
+GA-60XM7E=ICS 9250-25
+6VX7-4X=Generic PLL-IC
+
+DFP2-F=
+DFP2-T=
+
+AMD-75X-W977=ICS 9148-64
+GA-7ZM=
+
+7IXE=Generic PLL-IC
+7ZX=ICS 9248-141
+7ZX-1=IC-Works W230
+
+; ** IBM **
+;
+V66XA=
+66M2=
+
+
+; ** Intel **
+;
+; P5 HX/VX/TX
+RU430HX=
+AN430TX=
+MA430VX=
+NV430VX=
+
+; P6 LX/EX/FX
+DK440LX=IC-Works W48S68-01
+AL440LX=IC-Works W48S111-14
+PD440FX=
+VS440FX=
+MU440EX=IC-Works W42S51-01
+
+; P6 BX/ZX
+AB440ZX=Generic PLL-IC-WO
+AR440BX=Generic PLL-IC-WO
+SR440BX=ICS 9248-20
+SE440BX=Generic PLL-IC-WO
+SE440BX-2=Generic PLL-IC-WO
+SE440BX-3=Generic PLL-IC-WO
+RC440BX=ICS 9248-20
+WS440BX=Generic PLL-IC-WO
+MP440BX=Generic PLL-IC-WO
+
+; P6 810x
+CA810=
+
+; P6 820/840
+CC820=
+VC820=
+
+; P4 850
+D850GB=ICS 9250-22
+
+
+; ** IWill **
+;
+BD100=IC-Works W48S101-04
+BD100Plus=ICS 9248-39
+
+KV200-R=
+W02-R=ICS 94203
+
+
+; ** LG **
+;
+6ABX2V=ICS 9248-26
+
+
+; ** HP **
+;
+Chimay=
+
+HP Kayak XU/XW System Board=
+HP Brio BA400 System Board=
+
+
+; ** Matsonic ***
+;
+7101CM=Winbond W83194R-39
+7132A=Winbond W83194R-39A
+7380SG=Winbond W83194R-59
+
+M585LMR+All=Generic PLL-IC
+
+
+; ** MicroStar (MSI) **
+;
+; P5
+MS-5148=ICS 9148-58
+MS-5156=
+MS-5169 (ALI5)=ICS 9148-36
+MS-5184=ICS 9148-68
+
+; P6
+MS-6116 (i440BX)=IC-Works W48S101-04
+MS-6117 (i440LX)=IMI SC643
+MS-6119 (i440BX)=IC-Works W48S111-14
+
+MS-6120 (i440BX)=
+MS-6135 (i440GX)=
+MS-6147 (i440BX)=
+MS-6151=IC-Works W48S111-14
+MS-6153BX (693A)=IC-Works W164
+MS-6153VA (693A)=IC-Works W164
+MS-6156 (i440BX)=IC-Works W144
+MS-6159 (i440LX)=
+MS-6178=
+MS-6163 (i440BX)=IC-Works W196
+MS-6180 (i810)=
+MS-6182 (i810)=
+MS-6183 (i810)=
+MS-6187 (i820)=
+MS-6188 (i810)=
+MS-6192 (i820)=
+MS-6199 (694X)=
+MS-6199VA (694X)=
+MS-6204=IC-Works W48S111-14
+MS-6301 (i820)=
+MS-6309=
+MS-6337=ICS 94201
+
+; K7 AMD
+MS-6167 (AMD751)=ICS 9248-64
+MS-6191 (AMD751)=ICS 9248-110
+
+; K7 VIA
+MS-6195=ICS 9248-110
+MS-6330=
+MS-6340=
+
+
+; ** NEC **
+;
+G7BBG=IMI SG543
+
+; ** PC CHips **
+;
+M756MRT=Generic PLL-IC
+
+
+; ** PC Partner **
+;
+BXB847D=Winbond W83194R-39
+
+
+; ** Promise **
+;
+FT440BX=IC-Works W48S111-14
+
+
+; ** QDI **
+;
+Brilliant-1=
+2E=IC-Works W2298
+
+
+; ** Siemens **
+;
+D981=IC-Works W48S101-04
+V65MA=
+D1184=IMI C9829
+
+
+; ** Shuttle **
+;
+VIA APOLLO MVP3 (HOT-591P)=
+(HOT-661)Intel i440BX =ICS 9150-08
+ME21=ICS 9250-25
+
+
+; ** Soltek **
+;
+SL68A=IC-Works W48S101-04
+
+
+; ** Sony **
+;
+PCV-S620=IC-Works W48S101-04
+PCV-S710=IC-Works W48S101-04
+PCV-T510R=
+
+
+; ** Soyo **
+;
+SY-5VA2/A5=
+
+6ILA=
+6BA=IC-Works W48S101-04
+6BA+=IC-Works W124
+6BA+III=IC-Works W196
+6BB=IC-Works W48S111-14
+
+i440BX-ITE8671=IC-Works W196
+
+
+; ** SuperMicro **
+;
+Intel 440BX/440GX=IC-Works W48S101-04
+
+; ** SuperPower **
+;
+SP-A586=ICS 9148-36
+SP-PIIBXA=ICS 9148-26
+PIIISCD=IC-Works W167
+
+
+; ** Tekram **
+;
+; P6 LX/BX
+P6L40-A4X=
+P6B40D-A5=IC-Works W48S101-04
+P6B40-A4X-i440BX=IC-Works W48S101-04
+
+P6BX-A=Winbond W83194R-39A
+P6PRO-A5=ICS 9148-58
+
+S3815-ANE=ICS 9250-25
+
+
+: P5
+S3AP-A=IC-Works W144
+P5T30-WS/A4=
+S32X-A=Winbond W83194R-39A
+TRM-P5M4-M=
+
+
+; ** TMC **
+;
+TI6NB+=Winbond W83196S-14
+TI7NBA=Winbond W83194R-39A
+TI6NB-T5-0223=
+TI5VGA=Winbond W83194R-58A
+
+; *** Toshiba **
+;
+Portable PC=Mobile PLL-IC-WO
+
+; *** Transcend **
+;
+TS-ASL3=ICS 94201
+
+
+; ** Tyan **
+;
+THUNDER 100=IC-Works W48S101-04
+TIGER 100=IC-Works W48S101-04
+TSUNAMI TA=IC-Works W48S111-14
+
+
+
+;
+; *** PLL IC Info ***
+;
+[IC-Works W124]
+WriteOnly=1
+
+[IC-Works W127]
+WriteOnly=1
+
+[IC-Works W144]
+WriteOnly=1
+
+[IC-Works W145]
+WriteOnly=1
+
+[IC-Works W164]
+WriteOnly=1
+
+[IC-Works W167]
+WriteOnly=1
+
+[IC-Works W196]
+WriteOnly=1
+
+[IC-Works W42S51-01]
+WriteOnly=1
+
+[IC-Works W48S68-01]
+WriteOnly=1
+
+[IC-Works W48S101-04]
+WriteOnly=1
+
+[IC-Works W48S111-14]
+WriteOnly=1
+
+[IC-Works W2298]
+WriteOnly=1
+
+[IMI SC643]
+WriteOnly=1
+
+[IMI SG543]
+WriteOnly=1
+
+[ICS 9250-29]
+WriteOnly=1
+
+[Generic PLL-IC]
+
+[Generic PLL-IC-WO]
+WriteOnly=1
+
+[Mobile PLL-IC]
+
+[Mobile PLL-IC-WO]
+WriteOnly=1

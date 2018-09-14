@@ -1,0 +1,123 @@
+; SiSoft Sandra - Multimedia Vendors
+;
+; Compiled for SiSoft Sandra from various sources by
+; Adrian@sisoftware.co.uk
+;
+; Credits:	Windows sources
+;
+; If you want to use data from this file, for God's sake, let's help each other to
+; compile a complete version. Is that fair enough?
+;
+; Version=100
+
+[Mfg]
+1=Microsoft
+2=Creative Labs
+3=Media Vision
+4=Fujitsu
+5=Compaq
+
+19=Digidesign
+
+20=Artisoft
+21=Turtle Beach
+22=IBM
+23=Vocaltec
+24=Roland
+25=DSP Solutions
+26=NEC
+27=ATI
+28=Wang Labs
+29=Tandy
+
+30=Voyetra
+31=Antex Electronics
+32=ICL
+33=Intel
+34=Advanced Gravis
+35=Video Associates Labs
+36=InterActive
+37=Yamaha
+38=Everex Systems
+39=Echo Speech
+
+40=Sierra Semiconductor
+41=Computer Aided Technologies
+42=APPS Software International
+43=DSP Group
+44=microEngineering Labs
+45=Computer Friends
+46=ESS
+47=Audio
+48=Motorola
+49=Canopus
+
+50=Seiko Epson
+51=Truevision
+52=Aztech Labs
+53=Videologic
+54=SCALACS
+55=Toshihiko Okuhura, Korg
+56=Audio Processing Technology
+57=Integrated Circuit Systems
+58=Iterated Systems
+59=Metheus
+
+60=Logitech
+61=Winnov
+62=NCR
+63=EXAN
+64=AST Research
+65=Willow Pond
+66=Sonic Foundry
+67=Vitec Multimedia
+68=MOSCOM
+69=Silicon Soft
+
+70=TerraTec
+73=Supermac
+74=Audio Processing Technology
+76=Speech Compression
+78=Dolby Labs
+79=OKI
+
+80=AuraVision
+81=Olivetti
+82=I/O Magic
+83=Matsushita Electric
+84=Control Resources
+85=Xebec Multimedia Solutions
+86=New Media
+87=Natural MicroSystems
+88=Lyrrus
+89=Compusic
+
+90=OPTi
+92=Compaq
+93=Dialogic
+
+; Custom IDs
+
+111=Rockwell
+
+121=Brooktree
+125=Soundscape
+127=NVidia
+
+132=Crystal
+137=Creative Labs
+139=Microsoft
+
+144=Opti/MediaMagic
+146=InterWave
+148=Dream
+
+163=Diamond
+164=TBS
+181=Aureal
+
+250=VIA
+
+1118=Microsoft
+4211=Yamaha
+21320=Yamaha

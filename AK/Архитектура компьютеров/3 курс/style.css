@@ -1,0 +1,52 @@
+@font-face {
+	src: url("font/segoeui.ttf");
+}
+
+* {
+	font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+
+	color: #333;
+}
+
+p {
+  text-align: justify;
+}
+
+h1, h2, h3, h4 {
+  text-shadow: 3px -3px 1px #ddd;
+}
+.center {
+  text-align: center;
+}
+
+.common {
+  text-align: left;
+}
+
+table {
+display: inline-block;
+border: 1px;
+}
+
+tr:nth-child(even) {
+  background: #ddd;
+}
+
+th {
+  background: #222;
+  color: #FFF;
+  text-align: center;
+}
+
+th, td {
+  padding: 5px;
+}
+
+a {
+	color: #66f;
+}
+
+listing {
+	font-family: monospace;
+	font-size: large;
+}

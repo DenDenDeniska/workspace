@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - Miscellaneous Detection</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - Miscellaneous Detection</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft
+Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: Sandra tells me the PC is not PC-98 compliant. What does this mean?<BR>
+A: </B>This is a NEC standard which defines the specification of a Japanese '98+ PC. This flag is returned by the BIOS and does not mean that the complete PC is PC-98 compliant but rather that the BIOS provides support for the PC-98 specification. This is relevant to Japanese PCs only, not any other types. Update to Sandra version 4.20 or later.
+<P>
+
+<B>Q: Sandra tells me to increase Drive/CD-ROM cache size, but it's already at maximum!<BR>
+A: </B>Sandra is <i>platform independent</i> - meaning that it does NOT know what the maximum setting of your OS is. This is for compatibility with Windows 95/98/NT. The value is calculated based on the system's physical memory. If you already set it to maximum, ignore this tip.
+<P>
+
+<B>Q: My ATAPI drive (CD-ROM, ATAPI ZIP, etc.) is detected as a SCSI drive or my SCSI drive is detected as an IDE/EIDE device!<BR>
+A:</B> Iomega's ATAPI ZIP manual says at page 4 (Windows NT installation): &quot;<I>Note: Windows NT installs drives or
+adapters that use the IDE interface as SCSI adapters</I>&quot;. However, they seem to be a bit economical with the truth. It should say<I><B>: &quot;Note: Windows installs drivers or adapters that use the ATAPI interface as SCSI adapters</B></I>&quot;. This makes sense since ATAPI is quite similar in many ways to SCSI, but this
+adds to the confusion. There is no (easy) way to determine whether a device is really ATAPI or SCSI in Windows at high-level.
+<P>
+
+<B>Q: There is no DMA option in the drives configuration dialog on my system!<BR>
+A:</B> You need Windows 95 OSR2 / 98 this to work. Or you can try to obtain bus-mastering drivers for your chipset from the mainboard manufacturer. If you're using non-Microsoft bus-mastering drivers, the checkboxes will <b>not</b> appear. You can find out whether they work by benchmarking the drive. If the burst transfer rate exceeds ~17MB/s you're using DMA mode.
+<P>
+
+<B>Q: The DMA checkbox is the drives configuration dialog does not stay checked!<BR>
+A:</B> This means that the drive in question (e.g. CD-ROM, ZIP) does not support DMA transfers, only PIO. You have to leave it this way.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

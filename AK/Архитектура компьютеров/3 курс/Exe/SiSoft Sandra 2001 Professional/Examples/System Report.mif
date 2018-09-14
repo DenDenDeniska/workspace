@@ -1,0 +1,3118 @@
+Start Component
+  Name = "SiSoft Sandra"
+  Description = "SiSoft Sandra"
+
+  Start Group
+    Name = "General"
+    ID = 1
+    Class = "SiSoftware|SiSoft Sandra|001"
+    Description = "General"
+
+          Start Attribute
+            Name = "Program Name"
+            ID = 1
+            Description = "Program Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "SiSoft Sandra Professional"
+          End Attribute
+
+          Start Attribute
+            Name = "Program Version"
+            ID = 2
+            Description = "Program Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "99.7.5.16"
+          End Attribute
+
+          Start Attribute
+            Name = "Registered User"
+            ID = 3
+            Description = "Registered User"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Internal Use"
+          End Attribute
+
+          Start Attribute
+            Name = "Registered Company"
+            ID = 4
+            Description = "Registered Company"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "SiSoftware"
+          End Attribute
+
+          Start Attribute
+            Name = "Report Done By"
+            ID = 5
+            Description = "Report Done By"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "AdrianS"
+          End Attribute
+
+          Start Attribute
+            Name = "System ID"
+            ID = 6
+            Description = "System ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1178"
+          End Attribute
+
+          Start Attribute
+            Name = "Run ID"
+            ID = 7
+            Description = "Run ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4155"
+          End Attribute
+
+          Start Attribute
+            Name = "Report Done On"
+            ID = 8
+            Description = "Report Done On"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "12 July 1999"
+          End Attribute
+
+          Start Attribute
+            Name = "Report Done At"
+            ID = 9
+            Description = "Report Done At"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "21:41:09"
+          End Attribute
+
+  End Group
+
+  Start Group
+    Name = "Comments"
+    ID = 2
+    Class = "SiSoftware|SiSoft Sandra|001"
+    Description = "Comments"
+
+          Start Attribute
+            Name = "This is a sample CIM (SMS/DMI) format report."
+            ID = 1
+            Description = "This is a sample CIM (SMS/DMI) format report."
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = ""
+          End Attribute
+
+  End Group
+
+  Start Group
+    Name = "Mainboard Information"
+    ID = 4
+    Class = "SiSoftware|SiSoft Sandra|001"
+    Description = "Mainboard Information"
+
+        Start Group
+          Name = "General System Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General System Information"
+
+          Start Attribute
+            Name = "Class"
+            ID = 1
+            Description = "Class"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "IBM PC/AT"
+          End Attribute
+
+          Start Attribute
+            Name = "System Bus(es)"
+            ID = 2
+            Description = "System Bus(es)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "ISA(16-bit), PCI(32-bit), USB, AGP(32-bit)"
+          End Attribute
+
+          Start Attribute
+            Name = "Fast Windows System"
+            ID = 3
+            Description = "Fast Windows System"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Entire System"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Entire System"
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 1
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "System Manufacturer"
+          End Attribute
+
+          Start Attribute
+            Name = "Name"
+            ID = 2
+            Description = "Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "System Name"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "System Version"
+          End Attribute
+
+          Start Attribute
+            Name = "Serial Number"
+            ID = 4
+            Description = "Serial Number"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "SYS-1234567890"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "System Chassis"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "System Chassis"
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 1
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Chassis Manufacture"
+          End Attribute
+
+          Start Attribute
+            Name = "Can be locked"
+            ID = 2
+            Description = "Can be locked"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Chassis Version"
+          End Attribute
+
+          Start Attribute
+            Name = "Serial Number"
+            ID = 4
+            Description = "Serial Number"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Chassis Serial Number"
+          End Attribute
+
+          Start Attribute
+            Name = "Asset Tag Number"
+            ID = 5
+            Description = "Asset Tag Number"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Asset-1234567890"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "System Mainboard"
+          ID = 4
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "System Mainboard"
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 1
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "ASUSTeK Computer INC."
+          End Attribute
+
+          Start Attribute
+            Name = "Type"
+            ID = 2
+            Description = "Type"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Single Processor"
+          End Attribute
+
+          Start Attribute
+            Name = "Model"
+            ID = 3
+            Description = "Model"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "P2B"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 4
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "REV 1.xx"
+          End Attribute
+
+          Start Attribute
+            Name = "Serial Number"
+            ID = 5
+            Description = "Serial Number"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "MB-1234567890"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Extended Mainboard Data"
+          ID = 5
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Extended Mainboard Data"
+
+          Start Attribute
+            Name = "Model"
+            ID = 1
+            Description = "Model"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "ASUS P2B ACPI BIOS Revision 1009"
+          End Attribute
+
+          Start Attribute
+            Name = "Serial Number"
+            ID = 2
+            Description = "Serial Number"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "05/10/99-i440BX-"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Memory Controller"
+          ID = 6
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Memory Controller"
+
+          Start Attribute
+            Name = "Error Detection Method"
+            ID = 1
+            Description = "Error Detection Method"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64-bit ECC"
+          End Attribute
+
+          Start Attribute
+            Name = "Error Correction Capability"
+            ID = 2
+            Description = "Error Correction Capability"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Supported Memory Interleave"
+            ID = 3
+            Description = "Supported Memory Interleave"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1 way"
+          End Attribute
+
+          Start Attribute
+            Name = "Current Memory Interleave"
+            ID = 4
+            Description = "Current Memory Interleave"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1 way"
+          End Attribute
+
+          Start Attribute
+            Name = "Number of Memory Slots"
+            ID = 5
+            Description = "Number of Memory Slots"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "6"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Installable Memory"
+            ID = 6
+            Description = "Maximum Installable Memory"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1536MB"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Module Size"
+            ID = 7
+            Description = "Maximum Module Size"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "256MB"
+          End Attribute
+
+          Start Attribute
+            Name = "Supported FPM/EDO Speeds"
+            ID = 8
+            Description = "Supported FPM/EDO Speeds"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "70ns, 60ns, 50ns"
+          End Attribute
+
+          Start Attribute
+            Name = "Supported Memory Types"
+            ID = 9
+            Description = "Supported Memory Types"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "EDO, Parity, DIMM"
+          End Attribute
+
+          Start Attribute
+            Name = "Supported Memory Voltages"
+            ID = 10
+            Description = "Supported Memory Voltages"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "3.3V"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Physical/BIOS Memory Banks"
+          ID = 7
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Physical/BIOS Memory Banks"
+
+          Start Attribute
+            Name = "DIMM1-1  "
+            ID = 1
+            Description = "DIMM1-1  "
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Empty"
+          End Attribute
+
+          Start Attribute
+            Name = "DIMM1-2  "
+            ID = 2
+            Description = "DIMM1-2  "
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Empty"
+          End Attribute
+
+          Start Attribute
+            Name = "DIMM2-1   (RASLine-2 RASLine-3)"
+            ID = 3
+            Description = "DIMM2-1   (RASLine-2 RASLine-3)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64MB DIMM double-bank"
+          End Attribute
+
+          Start Attribute
+            Name = "DIMM2-2   (RASLine-2 RASLine-3)"
+            ID = 4
+            Description = "DIMM2-2   (RASLine-2 RASLine-3)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64MB DIMM double-bank"
+          End Attribute
+
+          Start Attribute
+            Name = "DIMM3-1   (RASLine-4 RASLine-5)"
+            ID = 5
+            Description = "DIMM3-1   (RASLine-4 RASLine-5)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64MB DIMM double-bank"
+          End Attribute
+
+          Start Attribute
+            Name = "DIMM3-2   (RASLine-4 RASLine-5)"
+            ID = 6
+            Description = "DIMM3-2   (RASLine-4 RASLine-5)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64MB DIMM double-bank"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "System Chipset"
+          ID = 8
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "System Chipset"
+
+          Start Attribute
+            Name = "System Chipset"
+            ID = 1
+            Description = "System Chipset"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Intel 82443BX/ZX Chipset, CPU to PCI Bridge"
+          End Attribute
+
+          Start Attribute
+            Name = "Front Side Bus Speed"
+            ID = 2
+            Description = "Front Side Bus Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "103MHz"
+          End Attribute
+
+          Start Attribute
+            Name = "CPU Speed Multiplier"
+            ID = 3
+            Description = "CPU Speed Multiplier"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "5x"
+          End Attribute
+
+          Start Attribute
+            Name = "SMBus Support"
+            ID = 4
+            Description = "SMBus Support"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Logical/Chipset Memory Banks"
+          ID = 9
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Logical/Chipset Memory Banks"
+
+          Start Attribute
+            Name = "Bank 2 Setting"
+            ID = 1
+            Description = "Bank 2 Setting"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64MB ECC SDRAM 7-1-1-1R 5-1-1-1W"
+          End Attribute
+
+          Start Attribute
+            Name = "Banks 2 + 3 Memory Module"
+            ID = 2
+            Description = "Banks 2 + 3 Memory Module"
+            Access = Read-Only
+            Storage = Common
+            Type = String(80)
+            Value = "Micron 18LSDT1672AG-133B4 120118D2 128MB 18x(8Mx8) ECC SDRAM CAS3 PC133U-333-542"
+          End Attribute
+
+          Start Attribute
+            Name = "Bank 3 Setting"
+            ID = 3
+            Description = "Bank 3 Setting"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64MB ECC SDRAM 7-1-1-1R 5-1-1-1W"
+          End Attribute
+
+          Start Attribute
+            Name = "Bank 4 Setting"
+            ID = 4
+            Description = "Bank 4 Setting"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64MB ECC SDRAM 7-1-1-1R 5-1-1-1W"
+          End Attribute
+
+          Start Attribute
+            Name = "Banks 4 + 5 Memory Module"
+            ID = 5
+            Description = "Banks 4 + 5 Memory Module"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "128MB 18x(8Mx8) ECC SDRAM CAS2 PC100-222-620"
+          End Attribute
+
+          Start Attribute
+            Name = "Bank 5 Setting"
+            ID = 6
+            Description = "Bank 5 Setting"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64MB ECC SDRAM 7-1-1-1R 5-1-1-1W"
+          End Attribute
+
+          Start Attribute
+            Name = "Memory Bus Speed"
+            ID = 7
+            Description = "Memory Bus Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "103MHz"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "System Monitor Device"
+          ID = 10
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "System Monitor Device"
+
+          Start Attribute
+            Name = "Name"
+            ID = 1
+            Description = "Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Winbond W83781D"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 2
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1.01"
+          End Attribute
+
+          Start Attribute
+            Name = "I2C/SMBus Support"
+            ID = 3
+            Description = "I2C/SMBus Support"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Temperature Sensor(s)"
+          ID = 11
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Temperature Sensor(s)"
+
+          Start Attribute
+            Name = "Board Temperature"
+            ID = 1
+            Description = "Board Temperature"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "32.0°C / 89.6°F"
+          End Attribute
+
+          Start Attribute
+            Name = "CPU Temperature"
+            ID = 2
+            Description = "CPU Temperature"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "41.5°C / 106.7°F"
+          End Attribute
+
+          Start Attribute
+            Name = "Power / Aux Temperature"
+            ID = 3
+            Description = "Power / Aux Temperature"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "50.0°C / 122.0°F"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Cooling Device(s)"
+          ID = 12
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Cooling Device(s)"
+
+          Start Attribute
+            Name = "Chassis Fan Speed"
+            ID = 1
+            Description = "Chassis Fan Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "3479rpm"
+          End Attribute
+
+          Start Attribute
+            Name = "CPU Fan Speed"
+            ID = 2
+            Description = "CPU Fan Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "3709rpm"
+          End Attribute
+
+          Start Attribute
+            Name = "Power / Aux Fan Speed"
+            ID = 3
+            Description = "Power / Aux Fan Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "3154rpm"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Voltage Sensor(s)"
+          ID = 13
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Voltage Sensor(s)"
+
+          Start Attribute
+            Name = "CPU Core Voltage"
+            ID = 1
+            Description = "CPU Core Voltage"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1.98V"
+          End Attribute
+
+          Start Attribute
+            Name = "Aux Voltage"
+            ID = 2
+            Description = "Aux Voltage"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1.98V"
+          End Attribute
+
+          Start Attribute
+            Name = "+3.3V Voltage"
+            ID = 3
+            Description = "+3.3V Voltage"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "3.49V"
+          End Attribute
+
+          Start Attribute
+            Name = "+5V Voltage"
+            ID = 4
+            Description = "+5V Voltage"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "5.00V"
+          End Attribute
+
+          Start Attribute
+            Name = "+12V Voltage"
+            ID = 5
+            Description = "+12V Voltage"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "12.10V"
+          End Attribute
+
+          Start Attribute
+            Name = "-12V Voltage"
+            ID = 6
+            Description = "-12V Voltage"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "-12.35V"
+          End Attribute
+
+          Start Attribute
+            Name = "-5V Voltage"
+            ID = 7
+            Description = "-5V Voltage"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "-5.08V"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "AGP Bus"
+          ID = 14
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "AGP Bus"
+
+          Start Attribute
+            Name = "Version"
+            ID = 1
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Bus Speed"
+            ID = 2
+            Description = "Bus Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "69MHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Data Transfer Rate"
+            ID = 3
+            Description = "Data Transfer Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "2x  (138MHz)"
+          End Attribute
+
+          Start Attribute
+            Name = "Side Band Enabled"
+            ID = 4
+            Description = "Side Band Enabled"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "PCI Bus"
+          ID = 15
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "PCI Bus"
+
+          Start Attribute
+            Name = "Version"
+            ID = 1
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "2.10"
+          End Attribute
+
+          Start Attribute
+            Name = "Bus Speed"
+            ID = 2
+            Description = "Bus Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "34MHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Speed Multiplier"
+            ID = 3
+            Description = "Speed Multiplier"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1/3x"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "ISA Bus"
+          ID = 16
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "ISA Bus"
+
+          Start Attribute
+            Name = "PIIX Chip"
+            ID = 1
+            Description = "PIIX Chip"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Intel 82371AB/EB PIIX4 PCI to ISA Bridge"
+          End Attribute
+
+          Start Attribute
+            Name = "Speed Multiplier"
+            ID = 2
+            Description = "Speed Multiplier"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1/4x"
+          End Attribute
+
+          Start Attribute
+            Name = "Bus Speed"
+            ID = 3
+            Description = "Bus Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "9MHz"
+          End Attribute
+
+          Start Attribute
+            Name = "DMA Speed"
+            ID = 4
+            Description = "DMA Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "5MHz"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "USB Bus"
+          ID = 17
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "USB Bus"
+
+          Start Attribute
+            Name = "USB Chip"
+            ID = 1
+            Description = "USB Chip"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Intel 82371AB/EB PIIX4 USB Controller"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 2
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Bus Speed"
+            ID = 3
+            Description = "Bus Speed"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "48MHz"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Expansion Slots"
+          ID = 18
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Expansion Slots"
+
+          Start Attribute
+            Name = "PCI Slot1 (Ch)"
+            ID = 1
+            Description = "PCI Slot1 (Ch)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "PCI 32-bit 5V FullLength Available"
+          End Attribute
+
+          Start Attribute
+            Name = "PCI Slot2 (Bh)"
+            ID = 2
+            Description = "PCI Slot2 (Bh)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "PCI 32-bit 5V FullLength Available"
+          End Attribute
+
+          Start Attribute
+            Name = "PCI Slot3 (Ah)"
+            ID = 3
+            Description = "PCI Slot3 (Ah)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(77)
+            Value = "PCI 32-bit 5V FullLength InUse (Intel 82557/8 10/100MBps EthernetPro Adapter)"
+          End Attribute
+
+          Start Attribute
+            Name = "PCI Slot4 (9h)"
+            ID = 4
+            Description = "PCI Slot4 (9h)"
+            Access = Read-Only
+            Storage = Common
+            Type = String(65)
+            Value = "PCI 32-bit 5V FullLength InUse (Creative Labs SoundBlaster Live!)"
+          End Attribute
+
+          Start Attribute
+            Name = "ISA Slot1"
+            ID = 5
+            Description = "ISA Slot1"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "ISA 16-bit 5V Shared FullLength"
+          End Attribute
+
+          Start Attribute
+            Name = "ISA Slot2"
+            ID = 6
+            Description = "ISA Slot2"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "ISA 16-bit 5V FullLength"
+          End Attribute
+
+          Start Attribute
+            Name = "ISA Slot3"
+            ID = 7
+            Description = "ISA Slot3"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "ISA 16-bit 5V FullLength"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Port Connectors"
+          ID = 19
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Port Connectors"
+
+          Start Attribute
+            Name = "COM1 - COM A"
+            ID = 1
+            Description = "COM1 - COM A"
+            Access = Read-Only
+            Storage = Common
+            Type = String(65)
+            Value = "Serial Port 16550A Compatible - 9 Pin Dual Inline / DB-9 pin male"
+          End Attribute
+
+          Start Attribute
+            Name = "COM2 - COM B"
+            ID = 2
+            Description = "COM2 - COM B"
+            Access = Read-Only
+            Storage = Common
+            Type = String(65)
+            Value = "Serial Port 16550A Compatible - 9 Pin Dual Inline / DB25 pin male"
+          End Attribute
+
+          Start Attribute
+            Name = "PRINTER - LPT"
+            ID = 3
+            Description = "PRINTER - LPT"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Parallel Port ECP/EPP - 25 Pin Dual Inline / DB25 pin female"
+          End Attribute
+
+          Start Attribute
+            Name = "KEY - KEYBOARD"
+            ID = 4
+            Description = "KEY - KEYBOARD"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Keyboard Port - None / Micro-DIN"
+          End Attribute
+
+          Start Attribute
+            Name = "PS2MOUSE - PS/2 Mouse"
+            ID = 5
+            Description = "PS2MOUSE - PS/2 Mouse"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Mouse Port - Proprietary / Micro-DIN"
+          End Attribute
+
+          Start Attribute
+            Name = "PRIMARY IDE - IDE-1"
+            ID = 6
+            Description = "PRIMARY IDE - IDE-1"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "(E)IDE"
+          End Attribute
+
+          Start Attribute
+            Name = "SECONDARY IDE - IDE-2"
+            ID = 7
+            Description = "SECONDARY IDE - IDE-2"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "(E)IDE"
+          End Attribute
+
+          Start Attribute
+            Name = "FLOPPY - FLOPPY"
+            ID = 8
+            Description = "FLOPPY - FLOPPY"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Floppy"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Performance Tips"
+          ID = 20
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Performance Tips"
+
+          Start Attribute
+            Name = "Tip T2511"
+            ID = 1
+            Description = "Tip T2511"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Some memory slots are free so the memory can be easily upgraded."
+          End Attribute
+
+        End Group
+
+  End Group
+
+  Start Group
+    Name = "Sound Card Information"
+    ID = 6
+    Class = "SiSoftware|SiSoft Sandra|001"
+    Description = "Sound Card Information"
+
+    Start Group
+      Name = "Wave Input Devices (Recording)"
+      ID = 1
+      Class = "SiSoftware|SiSoft Sandra|001"
+      Description = "Wave Input Devices (Recording)"
+
+      Start Group
+        Name = "SB Live! Wave In [D000]"
+        ID = 1
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "SB Live! Wave In [D000]"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "SB Live! Wave In [D000]"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Creative Labs"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4 / 2"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Wave Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Wave Information"
+
+          Start Attribute
+            Name = "Maximum Sampling Bits"
+            ID = 1
+            Description = "Maximum Sampling Bits"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Sampling Rate"
+            ID = 2
+            Description = "Maximum Sampling Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "44.1kHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels"
+            ID = 3
+            Description = "Channels"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Stereo"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "Game Compatible Device"
+        ID = 2
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "Game Compatible Device"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Game Compatible Device"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "90 / 1"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Wave Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Wave Information"
+
+          Start Attribute
+            Name = "Maximum Sampling Bits"
+            ID = 1
+            Description = "Maximum Sampling Bits"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "8-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Sampling Rate"
+            ID = 2
+            Description = "Maximum Sampling Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "11.025kHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels"
+            ID = 3
+            Description = "Channels"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Mono"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "Voice Modem Wave #00 Line"
+        ID = 3
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "Voice Modem Wave #00 Line"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Voice Modem Wave #00 Line"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "80 / 1"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Wave Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Wave Information"
+
+          Start Attribute
+            Name = "Maximum Sampling Bits"
+            ID = 1
+            Description = "Maximum Sampling Bits"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "8-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Sampling Rate"
+            ID = 2
+            Description = "Maximum Sampling Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "11.025kHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels"
+            ID = 3
+            Description = "Channels"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Mono"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "Microsoft Sound Mapper"
+        ID = 4
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "Microsoft Sound Mapper"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft Sound Mapper"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.03"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "2 / 1"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Wave Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Wave Information"
+
+          Start Attribute
+            Name = "Maximum Sampling Bits"
+            ID = 1
+            Description = "Maximum Sampling Bits"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Sampling Rate"
+            ID = 2
+            Description = "Maximum Sampling Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "44.1kHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels"
+            ID = 3
+            Description = "Channels"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Stereo"
+          End Attribute
+
+        End Group
+
+      End Group
+
+    End Group
+
+    Start Group
+      Name = "Wave Output Devices (Playback)"
+      ID = 2
+      Class = "SiSoftware|SiSoft Sandra|001"
+      Description = "Wave Output Devices (Playback)"
+
+      Start Group
+        Name = "SB Live! Wave Out [D000]"
+        ID = 1
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "SB Live! Wave Out [D000]"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "SB Live! Wave Out [D000]"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Creative Labs"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "104 / 2"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Wave Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Wave Information"
+
+          Start Attribute
+            Name = "Maximum Sampling Bits"
+            ID = 1
+            Description = "Maximum Sampling Bits"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Sampling Rate"
+            ID = 2
+            Description = "Maximum Sampling Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "44.1kHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels"
+            ID = 3
+            Description = "Channels"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Stereo"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Pitch Control"
+            ID = 1
+            Description = "Pitch Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Playback Rate Control"
+            ID = 2
+            Description = "Playback Rate Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Synchronous Operation"
+            ID = 3
+            Description = "Synchronous Operation"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Sample Accurate Position Information"
+            ID = 4
+            Description = "Sample Accurate Position Information"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+          Start Attribute
+            Name = "DirectSound Certified"
+            ID = 5
+            Description = "DirectSound Certified"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 6
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+          Start Attribute
+            Name = "Balance Control"
+            ID = 7
+            Description = "Balance Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "Game Compatible Device"
+        ID = 2
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "Game Compatible Device"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Game Compatible Device"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "89 / 1"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Wave Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Wave Information"
+
+          Start Attribute
+            Name = "Maximum Sampling Bits"
+            ID = 1
+            Description = "Maximum Sampling Bits"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "8-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Sampling Rate"
+            ID = 2
+            Description = "Maximum Sampling Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "11.025kHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels"
+            ID = 3
+            Description = "Channels"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Mono"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Pitch Control"
+            ID = 1
+            Description = "Pitch Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Playback Rate Control"
+            ID = 2
+            Description = "Playback Rate Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Synchronous Operation"
+            ID = 3
+            Description = "Synchronous Operation"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Sample Accurate Position Information"
+            ID = 4
+            Description = "Sample Accurate Position Information"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "DirectSound Certified"
+            ID = 5
+            Description = "DirectSound Certified"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 6
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "Voice Modem Wave #00 Line"
+        ID = 3
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "Voice Modem Wave #00 Line"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Voice Modem Wave #00 Line"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "81 / 1"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Wave Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Wave Information"
+
+          Start Attribute
+            Name = "Maximum Sampling Bits"
+            ID = 1
+            Description = "Maximum Sampling Bits"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "8-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Sampling Rate"
+            ID = 2
+            Description = "Maximum Sampling Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "11.025kHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels"
+            ID = 3
+            Description = "Channels"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Mono"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Pitch Control"
+            ID = 1
+            Description = "Pitch Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Playback Rate Control"
+            ID = 2
+            Description = "Playback Rate Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Synchronous Operation"
+            ID = 3
+            Description = "Synchronous Operation"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Sample Accurate Position Information"
+            ID = 4
+            Description = "Sample Accurate Position Information"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "DirectSound Certified"
+            ID = 5
+            Description = "DirectSound Certified"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 6
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "Microsoft Sound Mapper"
+        ID = 4
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "Microsoft Sound Mapper"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft Sound Mapper"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.03"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "2 / 1"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Wave Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Wave Information"
+
+          Start Attribute
+            Name = "Maximum Sampling Bits"
+            ID = 1
+            Description = "Maximum Sampling Bits"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16-bit"
+          End Attribute
+
+          Start Attribute
+            Name = "Maximum Sampling Rate"
+            ID = 2
+            Description = "Maximum Sampling Rate"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "44.1kHz"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels"
+            ID = 3
+            Description = "Channels"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Stereo"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Pitch Control"
+            ID = 1
+            Description = "Pitch Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Playback Rate Control"
+            ID = 2
+            Description = "Playback Rate Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Synchronous Operation"
+            ID = 3
+            Description = "Synchronous Operation"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Sample Accurate Position Information"
+            ID = 4
+            Description = "Sample Accurate Position Information"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+          Start Attribute
+            Name = "DirectSound Certified"
+            ID = 5
+            Description = "DirectSound Certified"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 6
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+          Start Attribute
+            Name = "Balance Control"
+            ID = 7
+            Description = "Balance Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+      End Group
+
+    End Group
+
+    Start Group
+      Name = "MIDI Input Devices (Control)"
+      ID = 3
+      Class = "SiSoftware|SiSoft Sandra|001"
+      Description = "MIDI Input Devices (Control)"
+
+      Start Group
+        Name = "SB Live! MIDI In [D000]"
+        ID = 1
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "SB Live! MIDI In [D000]"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "SB Live! MIDI In [D000]"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Creative Labs"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "202 / 2"
+          End Attribute
+
+        End Group
+
+      End Group
+
+    End Group
+
+    Start Group
+      Name = "MIDI Output Devices (Playback)"
+      ID = 4
+      Class = "SiSoftware|SiSoft Sandra|001"
+      Description = "MIDI Output Devices (Playback)"
+
+      Start Group
+        Name = "Creative S/W Synth"
+        ID = 1
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "Creative S/W Synth"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Creative S/W Synth"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Creative Labs"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "310 / 2"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Synthesizer Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Synthesizer Information"
+
+          Start Attribute
+            Name = "MIDI Device Type"
+            ID = 1
+            Description = "MIDI Device Type"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Special Synthesizer"
+          End Attribute
+
+          Start Attribute
+            Name = "Synthesizer Voices"
+            ID = 2
+            Description = "Synthesizer Voices"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1024"
+          End Attribute
+
+          Start Attribute
+            Name = "Synthesizer Notes"
+            ID = 3
+            Description = "Synthesizer Notes"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1024"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported"
+            ID = 4
+            Description = "Channels Supported"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported Mask"
+            ID = 5
+            Description = "Channels Supported Mask"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "FFFFh"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Patch Caching"
+            ID = 1
+            Description = "Patch Caching"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Stream Support"
+            ID = 2
+            Description = "Stream Support"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 3
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Performance Tips"
+          ID = 4
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Performance Tips"
+
+          Start Attribute
+            Name = "Warning W710"
+            ID = 1
+            Description = "Warning W710"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Driver may be obsolete. Check that it is the latest version."
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "A: SB Live! MIDI Synth"
+        ID = 2
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "A: SB Live! MIDI Synth"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "A: SB Live! MIDI Synth"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Creative Labs"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "306 / 2"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Synthesizer Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Synthesizer Information"
+
+          Start Attribute
+            Name = "MIDI Device Type"
+            ID = 1
+            Description = "MIDI Device Type"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Special Synthesizer"
+          End Attribute
+
+          Start Attribute
+            Name = "Synthesizer Voices"
+            ID = 2
+            Description = "Synthesizer Voices"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64"
+          End Attribute
+
+          Start Attribute
+            Name = "Synthesizer Notes"
+            ID = 3
+            Description = "Synthesizer Notes"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported"
+            ID = 4
+            Description = "Channels Supported"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported Mask"
+            ID = 5
+            Description = "Channels Supported Mask"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "FFFFh"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Patch Caching"
+            ID = 1
+            Description = "Patch Caching"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Stream Support"
+            ID = 2
+            Description = "Stream Support"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 3
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+          Start Attribute
+            Name = "Balance Control"
+            ID = 4
+            Description = "Balance Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "B: SB Live! MIDI Synth"
+        ID = 3
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "B: SB Live! MIDI Synth"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "B: SB Live! MIDI Synth"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Creative Labs"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "306 / 2"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Synthesizer Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Synthesizer Information"
+
+          Start Attribute
+            Name = "MIDI Device Type"
+            ID = 1
+            Description = "MIDI Device Type"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Special Synthesizer"
+          End Attribute
+
+          Start Attribute
+            Name = "Synthesizer Voices"
+            ID = 2
+            Description = "Synthesizer Voices"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64"
+          End Attribute
+
+          Start Attribute
+            Name = "Synthesizer Notes"
+            ID = 3
+            Description = "Synthesizer Notes"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "64"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported"
+            ID = 4
+            Description = "Channels Supported"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported Mask"
+            ID = 5
+            Description = "Channels Supported Mask"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "FFFFh"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Patch Caching"
+            ID = 1
+            Description = "Patch Caching"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Stream Support"
+            ID = 2
+            Description = "Stream Support"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 3
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+          Start Attribute
+            Name = "Balance Control"
+            ID = 4
+            Description = "Balance Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "SB Live! MIDI Out [D000]"
+        ID = 4
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "SB Live! MIDI Out [D000]"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "SB Live! MIDI Out [D000]"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Creative Labs"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "201 / 2"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Synthesizer Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Synthesizer Information"
+
+          Start Attribute
+            Name = "MIDI Device Type"
+            ID = 1
+            Description = "MIDI Device Type"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "MIDI Port"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported"
+            ID = 2
+            Description = "Channels Supported"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported Mask"
+            ID = 3
+            Description = "Channels Supported Mask"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "FFFFh"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Patch Caching"
+            ID = 1
+            Description = "Patch Caching"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Stream Support"
+            ID = 2
+            Description = "Stream Support"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 3
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+        End Group
+
+      End Group
+
+      Start Group
+        Name = "MIDI Mapper"
+        ID = 5
+        Class = "SiSoftware|SiSoft Sandra|001"
+        Description = "MIDI Mapper"
+
+        Start Group
+          Name = "General Device Information"
+          ID = 1
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "General Device Information"
+
+          Start Attribute
+            Name = "Device Name"
+            ID = 1
+            Description = "Device Name"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "MIDI Mapper"
+          End Attribute
+
+          Start Attribute
+            Name = "Manufacturer"
+            ID = 2
+            Description = "Manufacturer"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Microsoft"
+          End Attribute
+
+          Start Attribute
+            Name = "Version"
+            ID = 3
+            Description = "Version"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "4.00"
+          End Attribute
+
+          Start Attribute
+            Name = "Product ID"
+            ID = 4
+            Description = "Product ID"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "1 / 1"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Specific Synthesizer Information"
+          ID = 2
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Specific Synthesizer Information"
+
+          Start Attribute
+            Name = "MIDI Device Type"
+            ID = 1
+            Description = "MIDI Device Type"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "MIDI Mapper"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported"
+            ID = 2
+            Description = "Channels Supported"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "16"
+          End Attribute
+
+          Start Attribute
+            Name = "Channels Supported Mask"
+            ID = 3
+            Description = "Channels Supported Mask"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "FFFFh"
+          End Attribute
+
+        End Group
+
+        Start Group
+          Name = "Device Capabilities"
+          ID = 3
+          Class = "SiSoftware|SiSoft Sandra|001"
+          Description = "Device Capabilities"
+
+          Start Attribute
+            Name = "Patch Caching"
+            ID = 1
+            Description = "Patch Caching"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "No"
+          End Attribute
+
+          Start Attribute
+            Name = "Stream Support"
+            ID = 2
+            Description = "Stream Support"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+          Start Attribute
+            Name = "Volume Control"
+            ID = 3
+            Description = "Volume Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+          Start Attribute
+            Name = "Balance Control"
+            ID = 4
+            Description = "Balance Control"
+            Access = Read-Only
+            Storage = Common
+            Type = String(64)
+            Value = "Yes"
+          End Attribute
+
+        End Group
+
+      End Group
+
+    End Group
+
+  End Group
+
+End Component
+

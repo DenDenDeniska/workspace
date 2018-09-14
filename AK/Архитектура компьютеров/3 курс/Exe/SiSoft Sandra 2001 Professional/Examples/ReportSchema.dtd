@@ -1,0 +1,19 @@
+
+<!ELEMENT Title  (#PCDATA)>
+<!ELEMENT Value  (#PCDATA)>
+<!ELEMENT Icon   (#PCDATA)>
+<!ELEMENT Format (#PCDATA)>
+
+<!ELEMENT InfoItem (Title, Icon, Format, Value)>
+<!ELEMENT InfoGroup (Title, Icon, InfoItem+)>
+<!ELEMENT Device (Title, Icon, InfoGroup+)>
+<!ELEMENT DeviceClass (Title, Icon, Device+)>
+<!ELEMENT Module (Title, DeviceClass*, Device*, InfoGroup*, InfoItem*)>
+
+<!ELEMENT Report (Module+)>
+
+
+
+
+
+

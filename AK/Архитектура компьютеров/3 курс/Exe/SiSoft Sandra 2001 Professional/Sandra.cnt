@@ -1,0 +1,28 @@
+:Base Sandra.hlp
+1 Contents
+2 Main Contents=main_index
+1 Main Topics
+2 Foreword=foreword
+2 Introduction=intro
+2 The Sandra Program Interface=sandra_inter
+2 Module List=module_list
+2 Command-Line Options=comm_line
+2 Copyright=copyright
+2 Technical Support and Points of Contact=support
+2 How to Register=HID_HELP_ORDER
+1 Miscellaneous Topics
+1 Documents and Other Files
+2 Compatibility Issues=doc_comp
+2 Read Me!=doc_readme
+2 License Details=doc_license
+1 Questions and Answers
+2 Benchmarks
+3 The VideoCD benchmark=QA10
+3 The DataCD benchmark=QA11
+2 Sandra Issues
+3 Reset Sandra Options=QA8
+3 Reset Module List=QA9
+3 Reset Module Options and Settings=QA9
+1 Further Q&A=doc_qa
+1 Glossary
+2 Acronyms=acronym

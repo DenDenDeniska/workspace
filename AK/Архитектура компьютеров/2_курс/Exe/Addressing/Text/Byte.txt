@@ -1,0 +1,7 @@
+BYTE 
+ sizeof 8 bit
+ Min..Max Value [0h..FFh]
+Short integer - BYTE
+ Min..Max Value [0..255]
+Short integer - BYTE with sign
+ Min..Max Value [-128..127]

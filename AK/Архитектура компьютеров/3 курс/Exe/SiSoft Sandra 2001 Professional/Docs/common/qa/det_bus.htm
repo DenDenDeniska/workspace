@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - Bus(es) Detection</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - Bus(es) Detection</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<B>Q: The FSB speed/multiplier is incorrect.<BR>
+A: </B>Not all chipsets and CPUs are FSB <i>aware</i>, and in this case the BIOS is queried (e.g. through the DMI interface) for the FSB speed. DMI information is quite inaccurate for many boards since OEMs don't take the time to set it up properly. DMI also <b>may not</b> update with multiplier changes as it should. So you might get 66MHz regardless of multiplier.
+<P>
+You can double-check using the DMICFG utility (which should be on the CD that came with the board), Intel's LDCM or any other utility that supports DMI.
+<P>
+For Intel P6 family, AMD K5, K6-2 CXT, K6-III, Athlon; Cyrix 5x86, 6x86/MII/III and IDT WinChip 2/3/4 and later CPUs the FSB speed is read directly. For most Intel chipsets the FSB is read directly as well. In this cases the information should never be wrong.
+<P>
+
+<B>Q: Sandra displays 100MHz FSB for my Athlon instead of 200MHz!<BR>
+Q: Sandra does not display DDR or 2x FSB for my system!<BR>
+A: </B>The FSB of the Athlon (EV6) is double-pumped (e.g. like 2x AGP) thus the frequency is still 100MHz but data rate is equivalent to 200MHz. Sandra displays <i>2x 100MHz</i> which is correct. If the chipset is not supported, this information will be missing. Update to the latest version.
+<P>
+
+<B>Q: Sandra displays 100MHz FSB for my Pentium 4 instead of 400MHz!<BR>
+A: </B>The FSB of the Pentium 4 is quad-pumped (e.g. like 4x AGP or the quad in Quake) thus the frequency is still 100MHz but data rate is equivalent to 400MHz. Sandra displays <i>4x 100MHz</i> which is correct. If you're using a version of Sandra earlier than Sandra version 6.30 upgrade to the latest version.
+<P>
+
+<B>Q: The FSB for my Pentium III 850MHz+ or Celeron 566MHz+ is incorrect.<BR>
+A: </B>Older versions support up to 8x multiplier for P6 CPUs. Processors using larger multipliers will be incorrectly detected. Upgrade to Sandra version 6.30 or later.
+<P>
+
+<B>Q: The FSB for my Athlon 1100MHz+ is incorrect.<BR>
+A: </B>Older versions of Sandra support up to 10.5x multiplier for Athlon CPUs. Processors using larger multipliers will be incorrectly detected. Upgrade to Sandra version 6.30 or later.
+<P>
+
+<B>Q: My AGP bus is not detected.<BR>
+A: </B>Update to Sandra version 4.20 or later.
+<P>
+
+<B>Q: Sandra reports incorrect AGP bus speeds.<BR>
+A: </B>Check that FSB is correct. Certain boards run the AGP bus at different speeds from the specified ones and Sandra may be unable to detect this. If you're using a board which allows you to play with the AGP clock (e.g. 1/2 & 2/3 settings) the detection may not work - depending on clock generator chip. Update to Sandra version 5.30 or later.
+<P>
+
+<B>Q: Sandra reports the AGP bus is disabled! Is this so?<BR>
+A: </B>If you don't have a <B>TRUE</B> AGP video adapter then the AGP bus capabilities are disabled so for all intents and purposes the AGP bus is disabled. 
+<P>
+
+<B>Q: Sandra reports a different AGP aperture size than what is set in the BIOS.<BR>
+A: </B>Some AGP drivers/mini-ports (e.g. ATI) do change the AGP aperture to what the consider to be more appropriate. This is to prevent any problems due to incorrect settings especially in OEM setups. Thus Sandra is not wrong, the the setting is different!
+<P>
+
+<B>Q: Why isn't my AGP video card using 4x or 2x data rate as it should?<BR>
+A: </B>First make sure that both the AGP Bridge (chipset) and AGP video card support this rate. Some non-Intel chipsets only work reliably in mode 1x. Then make sure the AGP clock is 66MHz and no faster. Most video cards will revert to 1x if the AGP bus is overclocked. For non-Intel chipsets, update the AGP miniport drivers to the latest version. Then update the video drivers to the latest version. You may try to force 2x or 4x - check the manual. If it still does not work ask on the Usenet...
+<P>
+
+<B>Q: Sandra detects my AGP Video adapter as PCI!<BR>
+A: </B>If the adapter does not report any AGP capabilities (not even a header block) then it is really a PCI design adapted to work with AGP - probably an early one. AGP adapters support advanced data transfer modes and texturing which yours lacks. Technically it is not an AGP adapter. Just because it uses the AGP connector does not mean much. It has to be designed specifically for AGP if any improvements are to be realised.
+<P>
+
+<B>Q: Sandra reports incorrect PCI bus speeds.<BR>
+A: </B>Check that FSB is correct. Certain boards run the PCI bus asynchronously and Sandra may be unable to detect this in all cases. If you're using a board which allows you to play with the PCI clock (e.g. 1/3 & 1/4 settings) the detection may not work - depending on clock generator chip. Update to the latest version of Sandra.
+<P>
+
+<B>Q: My USB bus is not detected.<BR>
+A: </B>The USB host may be new. Upgrade to the latest version of Sandra.
+
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

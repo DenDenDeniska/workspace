@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>Send Mail to SiSoft Sandra E-Mail Form</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../style/default.css">
+</HEAD>
+
+<BODY>
+<H2>Send Mail to SiSoft Sandra</H2>
+<REM FORM ACTION="http://www.city.ac.uk/Web/cgi-bin/mailto.pl" METHOD=POST>
+<form action="/cgi-bin/mailform" method="get">
+<INPUT TYPE=HIDDEN NAME=mailRecipient VALUE="C.A.Silasi@city.ac.uk">
+<INPUT TYPE=HIDDEN NAME=mailRealName VALUE="Catalin-Adrian Silasi">
+<CENTER>
+<TABLE>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD WIDTH=30%>My EMail Address is</TD>
+<TD WIDTH=70%><INPUT NAME="mailSender" SIZE=60></TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD WIDTH=30%>This message is about</TD>
+<TD WIDTH=70%><INPUT NAME="mailSubject" SIZE=60></TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD WIDTH=30%>&nbsp;</TD>
+<TD WIDTH=70%><TEXTAREA NAME="mailMessage" ROWS=10 COLS=65></TEXTAREA></TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=MIDDLE>
+<TD COLSPAN=2><INPUT TYPE="SUBMIT" VALUE="Send Mail"><INPUT TYPE="RESET" VALUE="Clear Message"></TD>
+</TR>
+</TABLE>
+</CENTER>
+</FORM>
+<HR>
+</BODY>
+</HTML> 

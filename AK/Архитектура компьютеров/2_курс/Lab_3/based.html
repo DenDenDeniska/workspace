@@ -1,0 +1,82 @@
+﻿<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; utf-8">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.05 [en] (Win95; I) [Netscape]">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="Images/Gray.gif">
+<div align="center"><B><font color="#000000" size="+2">Базовая адресация</font></B><BR>
+  &nbsp; </div>
+<div align="center">
+  <TABLE BORDER CELLPADDING=5 width="754" height="507" >
+    <TR> 
+      <TD WIDTH="203" cellpadding="10"><IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><FONT COLOR="#0000FF"><A HREF="direct.html">Direct&nbsp;</A></FONT>&nbsp; 
+        <BR>
+        <IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><FONT COLOR="#0000FF"><A HREF="regind.html">Register 
+        indirect&nbsp;</A></FONT>&nbsp; <BR>
+        <IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><B>Base</B>&nbsp; <BR>
+        <IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><FONT COLOR="#0000FF"><A HREF="indexed.html">Index</A></FONT>&nbsp; 
+        <BR>
+        <IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><FONT COLOR="#0000FF"><A HREF="indexedsc.html">Index 
+        with scaling</A></FONT>&nbsp; <BR>
+        <IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><FONT COLOR="#0000FF"><A HREF="baseindex.html">Base 
+        index</A></FONT>&nbsp; <BR>
+        <IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><FONT COLOR="#0000FF"><A HREF="baseindexs.html">Base 
+        index with scaling</A></FONT>&nbsp; <BR>
+        <IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><FONT COLOR="#0000FF"><A HREF="baseindexo.html">Base 
+        index with offset</A></FONT>&nbsp; <BR>
+        <IMG SRC="Images/ball.gif" HEIGHT=13 WIDTH=13><FONT COLOR="#0000FF"><A HREF="baseindexso.html">Base 
+        index with offset and scaling</A>&nbsp;</FONT></TD>
+      <TD width="519"> 
+        <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 >
+          <TR> 
+            <TD COLSPAN="3"><IMG SRC="Images/top.gif" HEIGHT=3 WIDTH=439></TD>
+          </TR>
+          <TR> 
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/basel.gif" HEIGHT=13 WIDTH=276></TD>
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/baseb.gif" NAME="base" HEIGHT=13 WIDTH=136></TD>
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/baser.gif" HEIGHT=13 WIDTH=27></TD>
+          </TR>
+          <TR> 
+            <TD COLSPAN="3"><IMG SRC="Images/basebtm.gif" HEIGHT=7 WIDTH=439></TD>
+          </TR>
+          <TR> 
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/indl.gif" HEIGHT=13 WIDTH=276></TD>
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/indg.gif" NAME="index" HEIGHT=13 WIDTH=136></TD>
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/indr.gif" HEIGHT=13 WIDTH=27></TD>
+          </TR>
+          <TR> 
+            <TD COLSPAN="3"><IMG SRC="Images/indbtm.gif" HEIGHT=47 WIDTH=439></TD>
+          </TR>
+          <TR> 
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/scl.gif" HEIGHT=20 WIDTH=276></TD>
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/scg.gif" NAME="scale" HEIGHT=20 WIDTH=136></TD>
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/scr.gif" HEIGHT=20 WIDTH=27></TD>
+          </TR>
+          <TR> 
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/offl.gif" HEIGHT=13 WIDTH=276></TD>
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/offb.gif" NAME="offset" HEIGHT=13 WIDTH=136></TD>
+            <TD cellpadding="0" cellspace="0"><IMG SRC="Images/offr.gif" HEIGHT=13 WIDTH=27></TD>
+          </TR>
+          <TR> 
+            <TD COLSPAN="3"><IMG SRC="Images/offbtm.gif" HEIGHT=194 WIDTH=439></TD>
+          </TR>
+        </TABLE>
+        &nbsp;</TD>
+    </TR>
+    <TR> 
+      <TD ALIGN=CENTER COLSPAN="2">LA = segment_base_address + base + offset</TD>
+    </TR>
+    <TR> 
+      <TD COLSPAN="2" cellpadding="15" height="156"> 
+        <p>Исполнительный адрес формируется путем сложения содержимого базового 
+          регистра со смещением в команде.</p>
+        <p>Пример команды:</p>
+        <p align="center">MOV [EAX+4], EDX</p>
+        </TD>
+    </TR>
+  </TABLE>
+</div>
+<CENTER><FONT COLOR="#0000FF"><A HREF="index.html">[Information]</A></FONT></CENTER>
+
+</BODY>
+</HTML>

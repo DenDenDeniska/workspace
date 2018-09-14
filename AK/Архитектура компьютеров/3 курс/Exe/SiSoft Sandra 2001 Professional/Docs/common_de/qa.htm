@@ -1,0 +1,426 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>SiSoft Sandra Read Me! document</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../style/default.css">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<H2>SiSoft Sandra - Das Diagnose Tool, Q &amp; A Dokument</H2>
+<P>Dieses Dokument gibt Antworten auf die am h&auml;ufigsten gestellten Fragen im Zusammenhang mit <B><I>SiSoft Sandra</B></I>.</P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2>Probleme</H2>
+
+<UL>
+<LI><A HREF="#how">How to?</A> </LI>
+<LI><A HREF="#lockup">Programmabst&uuml;rze</A> </LI>
+<LI><A HREF="#install">Installation</A> </LI>
+<LI>Probleme bei der Erkennung von </LI>
+
+<UL>
+<LI><A HREF="#det_cpu">CPU</A> </LI>
+<LI><A HREF="#det_temp">Temperatur</A> </LI>
+<LI><A HREF="#det_bus">System Bus</A> </LI>
+<LI><A HREF="#det_chipset">Chipsatz</A> </LI>
+<LI><A HREF="#det_software">Software</A> </LI>
+<LI><A HREF="#det_misc">Anderem</A> </LI></UL>
+
+<LI>Benchmark Probleme </LI>
+
+<UL>
+<LI><A HREF="#bench_cpu">CPU</A> </LI>
+<LI><A HREF="#bench_disk">Festplatte/CD-ROM</A> </LI>
+<LI><A HREF="#bench_mem">Speicher</A> </LI></UL>
+
+<LI><A HREF="#register">Registrierung</A> (Standard Version Only) </LI>
+<LI><A HREF="#misc">Verschiedenes</A> </LI></UL>
+
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="how">How to?</A></H2>
+<B><P>F: Wie bekomme ich die aktuelle Version von Sandra?<BR>
+A:</B> Klicken Sie <A HREF="../sandra/html/dload.htm">hier</A> f&uuml;r mehr Informationen.</P>
+<B><P>F: Wie kann ich die Performance des Systems mit Hilfe des Tune-Up-Wizards verbessern?<BR>
+A:</B> Dr&uuml;cken Sie F1 in dem betreffenden Modul und folgen Sie den Instruktionen in der Hilfe Datei (<B>Englisch</B>).</P>
+<B><P>F: Wie kann ich mein BIOS updaten?<BR>
+A:</B> Wenn Ihnen Sandra sagt Sie sollen ihr BIOS updaten, dann sollten Sie sich daran halten, wenn Sie up-to-date bleiben wollen.</P>
+<P>Wie auch immer, wenn alles ohne Probleme funktioniert und das BIOS keine neuen brauchbaren Features enth&auml;lt, sollten Sie es nicht tun.</P>
+<I><P>"Never change a running system!!!"</I> </P>
+<TABLE BORDER CELLSPACING=1 WIDTH=590>
+<TR><TD WIDTH="33%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<P><B><FONT COLOR="#ffffff">Computer Typ</B></FONT> </TD>
+<TD WIDTH="67%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>Was Sie tun k&ouml;nnen</B></FONT> </TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="MIDDLE">
+<P>386, 486 mit PROM BIOS</TD>
+<TD WIDTH="67%" VALIGN="MIDDLE">
+<P>Nehmen Sie mit <A HREF="http://www.unicore.com/">Unicore Software</A> oder <A HREF="http://www.firmware.com/">Micro Firmware</A> Kontakt auf f&uuml;r mehr Information. Das Update ist nicht kostenlos. </TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="MIDDLE">
+<P>586, Pentium und h&ouml;her mit FLASH BIOS</TD>
+<TD WIDTH="67%" VALIGN="MIDDLE">
+<P>&Uuml;berpr&uuml;fen Sie auf der Web Site des Mainboarherstellers ob ein Biosupdate zur Verf&uuml;gung steht. Wenn Sie den Hersteller nicht kennen, versuchen Sie <A HREF="http://www.ping.be/bios/">Wim's Flash BIOS Liste</A>. Das Update ist <B>KOSTENLOS</B>. </TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="MIDDLE">
+<P>Andere Computer mit No-Name Board oder Discountcomputer. </TD>
+<TD WIDTH="67%" VALIGN="MIDDLE">
+<P>Nehmen Sie mit <A HREF="http://www.unicore.com/">Unicore Software</A> oder <A HREF="http://www.firmware.com/">Micro Firmware</A> Kontakt auf f&uuml;r mehr Informationen, oder fragen Sie den Computerhersteller. </TD>
+</TR>
+</TABLE>
+
+<P>Beachten Sie bitte, da&szlig; der Autor <B>KEINE VERANTWORTUNG</B> f&uuml;r ein reibungsloses Update &uuml;bernehmen kann. Lesen Sie die Dokumentation zu ihrem Board und die Installationsanweisungen sehr genau und machen Sie eine Sicherungskopie Ihres alten BIOS <B>bevor</B> Sie es updaten. Starten Sie das Flash-Programm von einer reinen DOS Diskette (kein Windows Dos-Prompt). Booten Sie am besten von einer Diskette (format /q /s).</P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2>Programmabst&uuml;rze</H2>
+<B><P>F: L&auml;uft Sandra auf Windows NT/Windows 2000?<BR>
+A:</B> Nicht ganz. Im Moment funktionieren nur 60% der Module auf NT/2000. Sie ben&ouml;tigen Sandra Version 2.07 oder h&ouml;her.</P>
+<B><P>F: Einige Module st&uuml;rzen auf NT ab!<BR>
+A:</B> Dieses Problem ist bekannt und wird in zuk&uuml;nftigen Versionen behoben.</P>
+
+<B><P>F: Sandra l&auml;uft auf Windows 98 gar nicht!<BR>
+A:</B> Wenn Sie Windows 98 (Beta 3) benutzen, updaten Sie Sandra auf Version 2.07 oder h&ouml;her. Achten Sie darauf das sog. Debugger wie z.B. WinIce, MS-VC++ oder andere nicht aktiv sind. Sandra l&auml;uft in dieser Umgebung nicht. </P>
+<B><P>F: Der "Performance Tune-Up Wizard" st&uuml;rzt ab!<BR>
+A:</B> Der Fehler liegt an einem anderen Module. Wenn nur <B>ein</B> Modul abst&uuml;rzt, funktioniert der Wizard nicht, da er <B>alle</B> Module untersucht. Suchen Sie zuerst das Modul, das die Probleme verursacht und beheben Sie das Problem (Siehe unten). Wenn Sie es nicht beheben k&ouml;nnen, entfernen Sie das Modul (markieren Sie es und dr&uuml;cken Entfernen). </P>
+<B><P>F: Das "Modules Information" Modul st&uuml;rzt ab.<BR>
+A:</B> Dieses Modul funktioniert nicht, wenn Sie eine Matrox Grafikkarte benutzen (z.B. Millennium, Millennium II, Mystique, Mystique II). Ich wei&szlig; nicht, warum der Matrox Treiber Sandra zum Absturz bingt, alle anderen Grafikkarten funktionieren einwandfrei. Ich habe mich mit Matrox in Verbindung gesetzt aber noch keine R&uuml;ckmeldung erhalten. Wenn Sie mehr wissen, sagen Sie mir bitte Bescheid. Es gibt f&uuml;r dieses Problem im Moment noch keine L&ouml;sung obwohl Matrox daran arbeiten sollte.</P>
+<B><P>F: Die Module "System Information", "Mainboard Information" und "CPU &amp; BIOS Information" st&uuml;rzen ab. <BR>
+A:</B> Klicken Sie mit der rechten Maustaste im Hauptfenster auf eines der entsprechenden Module und w&auml;hlen Sie <I>Options</I>. Entfernen Sie das Kreuz bei <I>Include DMI Information</I>. Wenn das funktioniert, wiederholen Sie die Prozedur bei den anderen Modulen. Ihr BIOS hat ein DMI Problem (es handelt sich wahrscheinlich um ein Award BIOS) - besorgen Sie sich wenn m&ouml;glich eine neuere Version, und flashen Sie es. Kontakten Sie ihren Mainboard- oder Computerhersteller wenn keine neuere Version zur Verf&uuml;gung steht. Benutzen Sie die neueste Version von Sandra.</P>
+<B><P>F: Die Module "Mainboard Information" und "CPU &amp; BIOS Information" st&uuml;rzen ab!<BR>
+A:</B> Klicken Sie mit der rechten Maustaste im Hauptfenster auf eines der entsprechenden Module und w&auml;hlen Sie <I>Options.</I> Entfernen Sie das Kreuz bei <I>Include Temperature Information</I>. Wenn das funktioniert, wiederholen Sie die Prozedur bei den anderen Modulen. Es scheint ein Problem zu geben wenn Sandra versucht die Board Temperatur Sensoren auszulesen (LM78/75). Wenn ihr Mainboard diese M&ouml;glichkeiten der &Uuml;berwachung nicht bietet sollten Sie diese Option ausschalten. Wenn ihr Board aber eine derartige M&ouml;glichkeit bietet und Sandra trotzdem abst&uuml;rzt schicken Sie uns bitte einen Report.</P>
+<B><P>F: Das Modul "Printer Information" st&uuml;rzt ab!<BR>
+A: </B>Wenn Sie einen Netzwerkdrucker verwenden der offline ist oder ihr Druckerserver aus irgendeinem Grund nicht zu erreichen ist, braucht das Module einige Zeit um das zu erkennen (je nach dem welche Einstellungen Sie in der Time-out Funktion vorgenommen haben). Das kann manchmal bis zu 5 Minuten dauern, abh&auml;ngig von der Anzahl der Drucker. Das Modul st&uuml;rzt also nicht ab, sondern wartet nur. Haben Sie bitte etwas Geduld. </P>
+<B><P>F: Das Modul "Network Information" st&uuml;rzt ab!<BR>
+A: </B>In gro&szlig;en Netzwerken mit vielen Arbeitsgruppen und Computern braucht das Modul etwas Zeit um alle Ger&auml;te zu scannen. Haben Sie etwas Geduld. </P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="install">Installation</A></H2>
+<B><P>F: Einige Programme im Men&uuml; Tools fehlen!<BR>
+A:</B> Diese Programme sind <B>nicht</B> in Sandra enthalten. Es sind entweder Programme, die Sie auf ihrer Windows CD finden oder Sie m&uuml;ssen Sie aus dem Internet downloaden. Um das herauszufinden - dr&uuml;cken Sie <B>F1</B> nachdem Sie diese Option gew&auml;hlt haben oder konsultieren Sie die Hilfe Datei (Englisch).</P>
+<B><P>F: Sandra hat ein Problem mit der Datei MFC42.DLL oder MSVCRT.DLL!<BR>
+A:</B> Deinstallieren Sie Sandra. Dann l&ouml;schen Sie bitte die beiden Dateien aus dem <B>\windows\system</B> Ordner. Danach installieren Sie Sandra wieder. Sandra wird dann eine neue Version dieser Dateien (die mit ihren Anwendungen nat&uuml;rlich auch funktionieren) installieren.</P>
+<B><P>F: Sandra hat Probleme mit dem Internet!<BR>
+A:</B> Deinstallieren Sie Sandra. Wenn Sie den MS-Internet Explorer 4.0 oder h&ouml;her installiert haben, m&uuml;ssen Sie diesen vielleicht erneut installieren. Wenn nicht, l&ouml;schen Sie die Datei WININET.DLL im <B>\windows\system</B> Ordner. Danach installieren Sie Sandra erneut. Sandra wird eine neue Version dieser Datei in ihren Systemordner kopieren.</P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="det_cpu">Probleme bei der Erkennung der - CPU</A></H2>
+<B><P>F: Einige der Informationen im Modul "Mainboard Information" sind falsch!<BR>
+A:</B> Sandra fragt das BIOS nach den Informationen, die Sie in diesem Modul sehen. Viele BIOSe (sogar die Versionen von 1997) enthalten immer noch Fehler im DMI Kern. Obwohl Sandra alle gezeigten Informationen doppel &uuml;berpr&uuml;ft, gibt es leider keine M&ouml;glichkeit einige internen Informationen (z.B. Steckpl&auml;tze) einfach zu &uuml;bernehmen. Die einzige M&ouml;glichkeit dieses Problem zu beheben ist, sich eine neuere BIOS Version zu besorgen und das BIOS upzudaten. Siehe <A HREF="../sandra/html/links.htm">Links</A>.</P>
+<B><P>F: Mein Prozessor wird nicht richtig erkannt!<BR>
+A:</B> Gehen Sie folgenderma&szlig;en vor: </P>
+
+<UL>
+<LI>Lesen Sie das <A HREF="compatibility.htm">Kompatibilit&auml;tsdokument </A>um zu &uuml;berpr&uuml;fen ob ihre CPU unterst&uuml;tzt wird. </LI>
+<LI>Benutzen Sie die neueste Version von Sandra. </LI></UL>
+
+<P>Sandra kann keine Prozessoren erkennen, die erst verf&uuml;gbar waren nachdem Sandra erschienen ist<B>! </P>
+<P>F: Die Geschwindigkeit meines Cyrix 6x86MX's wird nicht richtig erkannt.<BR>
+A:</B> Es handelt sich dabei um keinen Fehler. Die wirkliche Geschwindigkeit der CPU ist eine andere als das sog. Performance Rating (PR) :</P>
+<TABLE BORDER CELLSPACING=1 WIDTH=576>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<P><B><FONT COLOR="#ffffff">Prozessor</B></FONT> </TD>
+<TD WIDTH="23%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>Reale Geschwindigkeit (MHz)</B></FONT> </TD>
+<TD WIDTH="17%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>PR-Rating</B></FONT> </TD>
+<TD WIDTH="34%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>Vergleichbarer Prozessor</B></FONT> </TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86MX-PR266+</TD>
+<TD WIDTH="23%" VALIGN="MIDDLE">
+<P>225 = 3x75</TD>
+<TD WIDTH="17%" VALIGN="MIDDLE">
+<P>266</TD>
+<TD WIDTH="34%" VALIGN="MIDDLE">
+<P>Pentium 266</TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86MX-PR233+</TD>
+<TD WIDTH="23%" VALIGN="MIDDLE">
+<P>188 = 2.5x75 oder <BR>
+3x66 </TD>
+<TD WIDTH="17%" VALIGN="MIDDLE">
+<P>233</TD>
+<TD WIDTH="34%" VALIGN="MIDDLE">
+<P>Pentium II 233 oder<BR>
+AMD K6 233 </TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86MX-PR200+</TD>
+<TD WIDTH="23%" VALIGN="MIDDLE">
+<P>166 = 2.5x66 </TD>
+<TD WIDTH="17%" VALIGN="MIDDLE">
+<P>200</TD>
+<TD WIDTH="34%" VALIGN="MIDDLE">
+<P>Pentium MMX 200 oder<BR>
+AMD K6 200 </TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86MX-PR166+</TD>
+<TD WIDTH="23%" VALIGN="MIDDLE">
+<P>150 = 2.5x60 </TD>
+<TD WIDTH="17%" VALIGN="MIDDLE">
+<P>166</TD>
+<TD WIDTH="34%" VALIGN="MIDDLE">
+<P>Pentium MMX 166 oder<BR>
+AMD K6 166 </TD>
+</TR>
+</TABLE>
+
+<P>Beachten Sie, da&szlig; wenn Sie einen anderen Multiplikator oder eine andere Busgeschwindigkeit einstellen, da&szlig; sich auch das PR rating ver&auml;ndert. Einige Kombinationen f&uuml;hren zu einem h&ouml;heren PR rating auch wenn die interne Geschwindigkeit niedriger ist.</P>
+<B><P>F:Die Geschwindigkeit meines Cyrix 6x86 wird nicht richtig erkannt.<BR>
+A:</B> Es handelt sich dabei um keinen Fehler. Die wirkliche Geschwindigkeit der CPU ist eine Andere als das sog. Performance Rating (PR):</P>
+<TABLE BORDER CELLSPACING=1 WIDTH=576>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<P><B><FONT COLOR="#ffffff">Prozessor</B></FONT> </TD>
+<TD WIDTH="20%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>Reale Geschwindigkeit (MHz)</B></FONT> </TD>
+<TD WIDTH="18%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>PR-Rating</B></FONT> </TD>
+<TD WIDTH="36%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>Vergleichbarer Prozessor</B></FONT> </TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86-PR200+</TD>
+<TD WIDTH="20%" VALIGN="MIDDLE">
+<P>150 = 2x75</TD>
+<TD WIDTH="18%" VALIGN="MIDDLE">
+<P>200</TD>
+<TD WIDTH="36%" VALIGN="MIDDLE">
+<P>Pentium 200</TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86-PR166+</TD>
+<TD WIDTH="20%" VALIGN="MIDDLE">
+<P>133 = 2x66</TD>
+<TD WIDTH="18%" VALIGN="MIDDLE">
+<P>166</TD>
+<TD WIDTH="36%" VALIGN="MIDDLE">
+<P>Pentium 166</TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86-PR150+</TD>
+<TD WIDTH="20%" VALIGN="MIDDLE">
+<P>120 = 2x60</TD>
+<TD WIDTH="18%" VALIGN="MIDDLE">
+<P>150</TD>
+<TD WIDTH="36%" VALIGN="MIDDLE">
+<P>Pentium 150</TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86-PR133+</TD>
+<TD WIDTH="20%" VALIGN="MIDDLE">
+<P>110 = 2x55</TD>
+<TD WIDTH="18%" VALIGN="MIDDLE">
+<P>133</TD>
+<TD WIDTH="36%" VALIGN="MIDDLE">
+<P>Pentium 133</TD>
+</TR>
+<TR><TD WIDTH="26%" VALIGN="MIDDLE">
+<P>6x86-PR120+</TD>
+<TD WIDTH="20%" VALIGN="MIDDLE">
+<P>100 = 2x50</TD>
+<TD WIDTH="18%" VALIGN="MIDDLE">
+<P>120</TD>
+<TD WIDTH="36%" VALIGN="MIDDLE">
+<P>Pentium 120</TD>
+</TR>
+</TABLE>
+
+<P>Der 6x86 unterst&uuml;tzt nur einen <B>2-fachen</B> Multiplikator.F&uuml;r einen PR200 m&uuml;ssen Sie also eine Busgeschwindigkeit von 75MHz einstellen, die aber nicht von allen Mainboards und Chips&auml;tzen unterst&uuml;tzt wird.</P>
+<B><P>F: Die Geschwindigkeit meines AMD K5 wird nicht richtig erkannt.<BR>
+A:</B> Es handelt sich dabei um keinen Fehler. Die wirkliche Geschwindigkeit der CPU ist eine Andere als das sog. Performance Rating (PR):</P>
+<TABLE BORDER CELLSPACING=1 WIDTH=377>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<P><B><FONT COLOR="#ffffff">Prozessor</B></FONT> </TD>
+<TD WIDTH="30%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>Reale Geschwindigkeit(MHz)</B></FONT> </TD>
+<TD WIDTH="30%" VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<B><FONT COLOR="#ffffff"><P>PR-Rating</B></FONT> </TD>
+</TR>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE">
+<P>K5-P200</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>133</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>200 </TD>
+</TR>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE">
+<P>K5-P166</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>117</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>166 </TD>
+</TR>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE">
+<P>K5-P150</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>105</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>150 </TD>
+</TR>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE">
+<P>K5-P133</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>100</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>133 </TD>
+</TR>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE">
+<P>K5-P120</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>90</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>120 </TD>
+</TR>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE">
+<P>K5-P100</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>100</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>100 </TD>
+</TR>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE">
+<P>K5-P90</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>90</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>90 </TD>
+</TR>
+<TR><TD WIDTH="40%" VALIGN="MIDDLE">
+<P>K5-P75</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>75</TD>
+<TD WIDTH="30%" VALIGN="MIDDLE">
+<P>75 </TD>
+</TR>
+</TABLE>
+
+<B><P>F: Mein 6x86, 6x86MX ist von IBM gefertigt, wird aber als Cyrix Chip erkannt.<BR>
+A:</B> Der 6x86 ist von Cyrix entwickelt und wird von Cyrix, IBM und SGS Thompson gebaut. Es handelt sich immer um den gleichen Chip, ganz egal wer ihn letztendlich gefertigt hat..</P>
+<B><P>F: Mein Intel/AMD/etc. Prozessor wird als Generic CPU erkannt.<BR>
+A:</B> Es ist nicht m&ouml;glich &auml;ltere Prozessoren verl&auml;&szlig;lich zu erkennen (vor 1994 gefertigte). Alle dieses CPUs werden als "generic" bezeichnet. Dies gilt haupts&auml;chlich f&uuml;r 486er und 386er Chips.</P>
+<B><P>F: Mein IBM Blue Lighting DX3 Prozessor wird als Cyrix 486DX4 CPU erkannt.<BR>
+A:</B> Der IBM Blue Lighting ist ein Cyrix 486DX4 CPU der von IBM gefertigt wird.<BR>
+<BR>
+<IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="det_bus">Probleme bei der Erkennung des System Buses </A></H2>
+<B><P>F: Mein AGP Bus wird nicht erkannt.<BR>
+A:</B> Updaten Sie Sandra auf Version 2.20 oder h&ouml;her.</P>
+<B><P>F: Sandra erkennt einen VESA VL-BUS in einem reinen PCI/ISA Rechner. <BR>
+A:</B> Updaten Sie Sandra auf Version 2.07 oder h&ouml;her.</P>
+<B><P>F: Mein USB Bus wird nicht richtig erkannt.<BR>
+A:</B> Updaten Sie Sandra auf Version 1.18 oder h&ouml;her.</P>
+<B><P>F: Mein MCA Bus wird nicht erkannt.<BR>
+A:</B> Updaten Sie Sandra auf Version 1.18 oder h&ouml;her<BR>
+<BR>
+<IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="det_chipset">Probleme bei der Erkennung des Chipsatzes </A></H2>
+<B><P>F: Die Einstellungen des internen/externen Busses (Busmultiplikator) sind nicht korrekt.<BR>
+A: </B>Sandra kann nicht alle Chips&auml;tze bez&uuml;glich dieser Informationen auslesen, in diesem Fall wird einfach geraten. Es gibt also eine faire Chance, da&szlig; das Ergebnis falsch ist, so einfach ist das…</P>
+<B><P>F: Die Organisation der Spreicherb&auml;nke wird nicht richtig erkannt.<BR>
+A:</B> Obwohl die Gesamtgr&ouml;&szlig;e des Speichers korrekt ist, sind Sie vielleicht durch die Organisation des Speichers etwas verwirrt. Der Grund daf&uuml;r ist, da&szlig; Speicherslots (also die Halterungen f&uuml;r die Speichermodule) und Speicherb&auml;nke (oder -reihen) nicht identisch sind. </P>
+<P>Nehmen wir einmal an, Ihr Computer hat 4 Speicherslots und 8MB in der ersten Bank (slots 0 und 1) und 16MB in der zweiten Bank (slots 2 und 3), insgesamt also 24MB . Sandra erkennt 8MB in der 1, 3, und 4ten Bank. Auch das ergibt insgesamt 24MB . Das entspricht der logischen Organisation und nicht der wirklichen Best&uuml;ckung mit Modulen auf ihren mainboard. Solange die Gesamtgr&ouml;&szlig;e des Speichers korrekt ist, ist auch die von Sandra erkannte Belegung korrekt.<BR>
+<BR>
+<IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="det_temp">Probleme bei der Erkennung der Temperatur </A></H2>
+<B><P>F: Warum sind die angezeigten Temperaturen bei Sandra und im BIOS unterschiedlich?<BR>
+A:</B> Abh&auml;ngig vom CPU Typ, mu&szlig; man einen gewissen Temperaturaufschlag mit einrechnen. Das liegt daran, da&szlig; sich der Temperatursensor nicht direkt auf der CPU befindet sondern in der Mitte unter der CPU und Sie nicht ber&uuml;hrt. Es ist also eine Korrektur notwendig, um diesen Abstand zu kompenSieren. Dieser Wert ist nicht bei allen Prozessoren gleich und das f&uuml;hrt zu diesem Effekt. </P>
+<B><P>F: Die Temperatur erh&ouml;ht sich sehr schnell nachdem der Computer gestartet wurde!<BR>
+A:</B> Das liegt h&ouml;chstwahrscheinlich an dem Temperaturaufschlag, der bei einigen CPU´s sehr hoch ist. Bei einer Raumtemperatur von 25-29°C kann der Wert sehr schnell 50-60 °C erreichen.</P>
+<B><P>F: Die L&uuml;ftergeschwindigkeit ist doppelt so hoch wie im BIOS!<BR>
+A:</B> Das Asus TX97 BIOS vor 1.07 hat einen BUG, der zu dieser Verf&auml;lschung f&uuml;hrt. Versuchen Sie ihr BIOS upzudaten.</P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="det_software">Probleme bei der Erkennung von Software </A></H2>
+<B><P>F: Einige 32-bit Programme werden als 16-bittige erkannt. Ist das ein BUG?<BR>
+A:</B> Sandra liest nur die Informationen, die in der Datei als Version gespeichert sind. Microsoft hat einfach <B>vergessen</B> einige Dateiversionen von Windows 95 upzudaten (Media Player, Sound Recorder, etc.)<B>!</P>
+<P>F: Processor load zeigt 100% w&auml;hrend des CPU Benchmarks. Ist das richtig?<BR>
+A:</B> Ja! Wenn weniger angezeit wird, bedeutet das, da&szlig; die CPU von anderen Programmen benutzt wird und Sie erhalten niedrigere Werte. <BR>
+<BR>
+<IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="det_misc">Probleme bei der Erkennung von </A>anderen Dingen</H2>
+<B><P>F: Meine ATAPI Festplatte (aber auch CD-ROM, ATAPI ZIP, etc.) wird als SCSI Ger&auml;t, oder mein SCSI Ger&auml;t wird als IDE/EIDE erkannt! <BR>
+A:</B> In IOMEGA´s ATAPI ZIP hei&szlig;t es:<B><I> "Windows installiert Treiber oder Adapter die das ATAPI Interface benutzen als SCSI Adapter</B></I>". Dies macht eigentlich auch Sinn, da ATAPI durchaus in einigen Punkten mit SCSI fast identisch ist, f&uuml;hrt aber auch zu Verwirrungen. Es gibt keinen einfachen Weg um zwischen SCSI und ATAPI in einer Windows Umgebung zu unterscheiden. Das f&uuml;hrt dazu, da&szlig; Sandra mit den erkannten Informationen falsch liegen kann. An diesem Problem wird gearbeitet und es wird vielleicht schon bald in einer h&ouml;heren Version behoben sein.</P>
+<B><P>F: Es gibt keine Option f&uuml;r die Einstellung des DMA in meinem Festplattenkonfigurationsdialog!<BR>
+A:</B> Sie ben&ouml;tigen Windows 95 OSR2 oder h&ouml;her um diese Option zu benutzen.</P>
+<B><P>F: Ich kann die DMA Funktion in dem Konfigurationsdialog nicht dauerhaft einschalten!<BR>
+A:</B> Das bedeutet, da&szlig; das fragliche Laufwerk (z.B. CD-ROM, ZIP) DMA Transfermode nicht unterst&uuml;tzt. Pech gehabt. </P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="bench_cpu">Benchmark Probleme - CPU</A></H2>
+<B><P>F: Was ist der Dhrystone Benchmark?<BR>
+A:</B> Der Original Dhrystone Benchmark wird h&auml;ufig in der Industrie benutzt um die CPU Performance zu messen. Der Benchmark ist so gestaltet, da&szlig; er eine representative Anzahl von Operationen verwendet, haupts&auml;chlich numerische, die haupts&auml;chlich in Anwendungen verwendet werden. Leider repr&auml;sentiert das Ergebnis nicht immer die wirkliche Geschwindigkeit eines gesamten Computersystems, aber ist sehr n&uuml;tzlich um verschiedene Prozessoren zu vergleichen.</P>
+<P>Der Dhrystone Benchmark den Sandra verwendet ist eine 32-Bit Variante des urspr&uuml;nglichen Benchmarks der unter UNIX l&auml;uft. Das Ergebnis kommt durch die Zeitmessung zustande, die das Programm ben&ouml;tigt um eine feste Anzahl Operationen auszuf&uuml;hren. Aufgrund verschiedener &Auml;nderungen kann man das Ergebnis nicht direkt mit anderen Dhrystone Benchmarks vergleichen. Trotzdem sollten die MIPS (Millionen Operationen pro Sekunde) auch mit unterschiedlichen Benchmarks die gleichen sein (+/- 5-10%).</P>
+<P>Diese Version des Benchmarks &uuml;berpr&uuml;ft ebenfalls das Erzielte- mit dem erwarteten Ergebnis, f&uuml;r den Fall, da&szlig; es Probleme mit Prozessor oder Speicher geben sollte.</P>
+<B><P>F: Was ist der Whetstone Benchmark?<BR>
+A:</B> Der Whetstone Benchmark wird benutzt um die Geschwindigkeit des Co-Prozessors, der sog. FPU (Floating Point Unit) zu messen. Diese Gleitkommaeinheit ist in Programmen die einen Co-Prozessor (heute meist im Prozessor integriert) ben&ouml;tigen sehr wichtig. Es handelt sich dabei h&auml;ufig um wissenschaftliche, statistische oder auch CAD Programme. Auch Spiele ben&ouml;tigen eine schnelle FPU.</P>
+<P>Der Whetstone Benchmark den Sandra verwendet ist eine 32-Bit Variante des urspr&uuml;nglichen Benchmarks der unter UNIX l&auml;uft. Das Ergebnis kommt durch die Zeitmessung zustande, die das Programm ben&ouml;tigt um eine feste Anzahl Gleitkommaberechnungen auszuf&uuml;hren. Aufgrund verschiedener &Auml;nderungen kann man das Ergebnis nicht direkt mit anderen Whetstone Benchmarks vergleichen. Trotzdem sollten die MFLOPS (Millionen Gleitkommaberechnungen pro Sekunde) auch mit unterschiedlichen Benchmarks die gleichen sein (+/- 5-10%).</P>
+<B><P>F: Warum ver&auml;ndert sich das Ergebnis bei aufeinanderfolgenden Messungen?<BR>
+A:</B> Auf den meisten Systemen sollte sich der Wert um nicht mehr als 5% ver&auml;ndern. Auf Systemen mit weniger Hauptspeicher kann das Ergebnis aufgrund von Hauptspeicherauslagerungen auf die Festplatte um 10% variieren. Sollten Sie h&ouml;here Abweichungen feststellen, liegt m&ouml;glicherweise ein Hard- und/oder Softwareproblem vor.</P>
+<P>M&ouml;gliche Softwareprobleme: </P>
+
+<UL>
+<LI>Bewegen Sie nicht die Maus! Spielereien mit der Maus w&auml;hrend der Messung, haben einen enormen Einflu&szlig; auf das Ergebnis! </LI>
+<LI>Spielen Sie keine MIDI, Wave oder irgenwelche anderen Files ab. AVI, MPEG oder andere Files fallen ebenso aus. Sie wissen was ich meine... </LI>
+<LI>Es sind andere Programme aktiv. Schlie&szlig;en Sie alle anderen Programme. Wird das Problem dadurch nicht gel&ouml;st, entfernen Sie eventuelle Programme aus der Autostartgruppe, der Win.ini oder der AUTOEXEC.BAT. </LI>
+<LI>Falsch konfigurierte Ger&auml;tetreiber. Ger&auml;tetreiber die nicht korrekt installiert und/oder konfiguriert sind verlangsamen das System. </LI>
+<LI>Der Stromsparmodus ist eingeschaltet (APM). Diese Einstellungen k&ouml;nnen dazu f&uuml;hren, das der Prozessor nach wenigen Sekunden Inaktivit&auml;t den Stromsparmodus aktiviert. Das pasSiert selbst dann, wenn Programme laufen, die Maus oder die Tastatur aber nicht bet&auml;tigt werden.. </LI></UL>
+
+<P>M&ouml;gliche Hardwareprobleme: </P>
+
+<UL>
+<LI>&Uuml;berpr&uuml;fen Sie, ob der Turbo Schalter (wenn vorhanden) gedr&uuml;ckt ist.. </LI>
+<LI>Zu wenig Hauptspeicher. Beenden Sie alle anderen Anwendungen. Vermeiden Sie, unn&ouml;tige Treiber zu laden.. </LI>
+<LI>Zu wenig sekund&auml;rer Cache (L2). Nicht alle Chips&auml;tze k&ouml;nnen den gesamten Hauptspeicher cachen. Viele Chipsatzhersteller begn&uuml;gen sich damit, den cache f&uuml;r z.B. nur max. 64 MB Hauptspeicher auszulegen. Das f&uuml;hrt dazu, da&szlig; Anwendungen die in einem nicht-gecachten Bereich des Hauptspeichers ausgef&uuml;hrt werden normalerweise langsamer ablaufen.</LI></UL>
+
+<B><P>F: Warum variiert das Ergebnis bei verschiedenen Programml&auml;ufen?<BR>
+A:</B> Sie werden feststellen, da&szlig; das Benchmarkergebnis direkt nach dem Windows Start besser ist. Das sollte zwar in der Praxis nicht pasSieren, kommt aber trotzdem vor. M&ouml;glicherweise liegt ein Hard- und/oder Softwareproblem vor.</P>
+<P>M&ouml;gliche Softwareprobleme: </P>
+
+<UL>
+<LI>Einige Programme "r&auml;umen nicht richtig auf". Abgest&uuml;rzte Anwendungen hinterlassen "Dateileichen". Manchmal ist es besser den Rechner einfach neu zu starten... </LI>
+<LI>Speicherfragmentierung. Nach h&auml;ufigen Starten und Beenden von Programmen wird der Hauptspeicher zunehmend fragmentiert. Das f&uuml;hrt zu nicht immer 100 prozentigen Ergebnissen. </LI></UL>
+
+<P>M&ouml;gliche Hardwareprobleme: </P>
+
+<UL>
+<LI>Schlechtes Cache Management. Einige &auml;ltere 486er, aber auch viele neuere Pentiummainboards k&ouml;nnen nicht den gesamten Hauptspeicher "cachen". Anwendungen die auf diesen Speicherbereich zugreifen laufen sehr langsam. </LI></UL>
+
+<B><P>F: Mein Cyrix 6x86, 6x86MX oder AMD K5, K6 erzielt sehr niedrige Werte f&uuml;r die Gleitkommaeinheit (FPU)! <BR>
+A:</B> Die eingebaute FPU in diesen Prozessoren ist nicht so schnell wie bei vergleichbaren Intel Prozessoren (Pentium, Pentium Pro, Pentium II). Das hat auf "normale" Anwendungen keinen gro&szlig;en Einflu&szlig;. Bei Programmen die allerdings h&auml;ufig auf die FPU zugreifen (z.B. Quake, Hexen II, Pov Ray usw.) kann es die Performance zum Teil erheblich verringern.</P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="bench_disk">Benchmark Probleme - Festplatten/CD-ROM</A> </H2>
+<B><P>F: Warum dauert der Disk Benchmark so lange?<BR>
+A:</B> Das pasSiert dann, wenn Sie sehr viel Hauptspeicher und eine verh&auml;ltnism&auml;&szlig;ig kleine Festplatte haben. Um einigerma&szlig;en aussagekr&auml;ftige Resultate zu erhalten mu&szlig; der Plattencache "geswappt" werden. Dazu ben&ouml;tigt man ein m&ouml;glichst gro&szlig;es Testfile. Da es keine M&ouml;glichkeit gibt den Cache abzuschalten mu&szlig; Sandra eine sehr gro&szlig;e Datei erzeugen - und das dauert.</P>
+<B><P>F: Warum kann Sandra die genaue Geschwindigkeit eines 16X oder schnellerem CD-ROMs nicht erkennen?<BR>
+A:</B> CD-ROM´s mit 16-facher oder h&ouml;herer Geschwindigkeiten erreichen die maximale Transferrate nur im Au&szlig;enbereich der CD-ROM. Wenn das ausgew&auml;hlte Testfile sich aber im Innenbereich der CD befindet, ist das erzielte Ergebnise niedriger als vom Hersteller angegeben. Au&szlig;erdem ist es sehr unwahrscheinlich, das ihr CD-ROM Laufwerk jemals die theoretisch maximale Transferrate erreicht.</P>
+<B><P>F: Ich benutze CD QuickCache und Sandra st&uuml;rzt ab wenn ich den CD-ROM Benchmark ausf&uuml;hre.<BR>
+A:</B> Versuchen Sie entweder Sandra oder die CD-ROM Caching Software upzudaten.</P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="bench_mem">Benchmark Probleme - </A>Speicher</H2>
+<B><P>F: Was ist STREAM?<BR>
+A:</B> STREAM ist ein popul&auml;rer Speicherbandbreitenbenchmark der sowohl auf "normalen" als auch auf Supercomputern eingesetzt wird. Er mi&szlig;t die durchschnittliche Speichertransferrate. Sandra baSiert auf diesem Benchmark.</P>
+<B><P>F: Was ist der Unterschied zwischen Sandra's Memory Benchmark und STREAM? <BR>
+A:</B> STREAM 2.0 benutzt eine bestimmte Menge an Daten f&uuml;r die Messung (etwa 12MB) - Die Daten, die Sandra benutzt variieren je nach System (etwa 40-60% des physikalischen Hauptspeichers). Das bedeutet, da&szlig; auf Computern mit schnellem Speicher Sandra auf etwas niedrigere Ergebnisse als STREAM kommt. Es ist nicht m&ouml;glich, da&szlig; Sandra eine bestimmte Menge an Daten f&uuml;r den Benchmark benutzt - da Sandra viel mehr als nur ein Benchmark ist. Zudem benutzt Sandra optimierten Programmcode um akkurate Ergebnisse zu erzielen.</P>
+<B><P>F: Warum gibt es bei verschiedenen Programml&auml;ufen unterschiedliche Ergebnisse?<BR>
+A:</B> Stellen Sie sicher, da&szlig; Sie genug RAM haben (16MB oder mehr) und das ausschlie&szlig;lich Sandra aktiv ist. Wenn das Festplattenl&auml;mpchen w&auml;hrend des Benchmarks blinkt, bedeutet das, da&szlig; ihr Computer "swappt" - d.h. Teile des Hauptspeichers auf die Festplatte auslagert. Es k&ouml;nnen nur dann verl&auml;&szlig;liche Ergebnisse erzielt werden, wenn ihr Computer keine Daten auslagert.</P>
+<B><P>F: Ist Sandra kompatibel mit STREAM?<BR>
+A:</B> Hmm… Nein. Die Ergebnisse stellen lediglich eine Basis dar um verschiedene Computer mit unterschiedlichen Konfigurationen vergleichen zu k&ouml;nnen.</P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2><A NAME="register">Registrierung</A> (Nur in der Standard Version) </H2>
+<B><P>F: Gibt es eine komplett Deutsche Vollversion (Professional Version)? <BR>
+A:</B> Nein, noch nicht. Dies ist die erste deutsche Testversion. Wobei nur die Dokumentation und der kostenlose Support in Deutsch verfa&szlig;t sind. Ob es eine Deutsche Vollversion geben wird h&auml;ngt von dem Erfolg/Mi&szlig;erfolg der deutschen Sharewareversion ab. Wenn Sie gefallen an Sandra finden, gibt es zwei M&ouml;glichkeiten. Entweder Sie kaufen sich die Vollversion &uuml;ber den Web-Server des Autors, oder Sie nerven mich so lange mit e-Mails bis ich eine komplett Deutsche Version zur Verf&uuml;gung stelle.</P>
+<B><P>F: Gibt es einen Crack um die deaktivierten Module freizuschalten.?<BR>
+A:</B> Nein, denn der Programmcode f&uuml;r die fehlenden Module nicht in dem Sharewarepaket enthalten. Es gibt also nichts zu "cracken". </P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<H2>Verschiedenes</H2>
+<B><P>F: Hat der Name "Sandra" irgend etwas mit einer Dame gleichen Names zu tun?<BR>
+A:</B> Nein.</P>
+<B><P>F: Ich habe einige DOS System Analyzer die mehr Informationen als Sandra zeigen. Warum kannst du das nicht?<BR>
+A:</B> Nun, fragen Sie die Autoren, warum es noch keine Windows Version dieser Programme gibt. Einige Informationen stehen unter Windows einfach nicht zur Verf&uuml;gung oder k&ouml;nnen nicht ausgelesen werden. Zudem sind viele Windows Analyzer immer noch 16-bittig, Sandra nicht. </P>
+<B><P>F: Um Gottes willen! Wenn Sandra abst&uuml;rzt "rei&szlig;t" es Windows 95 mit. Wo liegt das Problem?<BR>
+A:</B> Hmm, ich sage immer, wenn du etwas tust, dann tu es richtig...</P>
+<B><P>F: Wie oft wird Sandra upgedatet?<BR>
+A:</B> Etwa alle 3-4 Monate. </P>
+<B><P>F: Ich mag deine Art nicht.<BR>
+A:</B> Das beruht auf Gegenseitigkeit </P>
+<P><IMG src="../gifs/fireline.gif" height=5 width=100%></P>
+<P>Copyright &copy; 1995-1998 C. A. Silasi. Alle Rechte vorbehalten. <BR>
+<A HREF="contact.htm">Kontakt</A> </P></BODY>
+</HTML>

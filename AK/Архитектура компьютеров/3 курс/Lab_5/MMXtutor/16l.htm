@@ -1,0 +1,89 @@
+<!doctype html> 
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Topic 16</TITLE>
+<SCRIPT language="JavaScript">
+<!--
+function ldpcmpeq() { 
+self.location="#pcmpeq"
+}
+function ldpcmpgt() { 
+self.location="#pcmpgt"
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#CCCCCC">
+<SCRIPT language="JavaScript">
+<!--
+if (document.location==parent.document.location)
+document.write("<CENTER><H3>This page is part of the Introduction to MMX&#153; Technology tutorial. To start the tutorial, please open the MMXSTART.HTM page in the same directory!</H3></CENTER>")
+//-->
+</SCRIPT>
+<A NAME="s"></A>
+MMX-команды сравнения попарно сравнивают элементы данных 
+(байты, 16- или 32-разрядные слова) входного и выходного операндов. 
+В зависимости от результата сравнения соответствующий элемент данных 
+выходного операнда заполняется нулями либо единицами.
+<BR>
+Эти команды, как и все остальные MMX-команды, не устанавливают
+флагов (признаков).
+<p>
+Для получения информации о конкретной команде щелкните мышкой на 
+названии команды:
+<UL>
+<LI><A target="figure" HREF="pcmpeq.gif" onClick="ldpcmpeq()"><TT>pcmpeq</TT></A>
+<LI><A target="figure" HREF="pcmpgt.gif" onClick="ldpcmpgt()"><TT>pcmpgt</TT></A>
+</UL>
+
+
+<p><img src="space.gif" height=55 width=1>
+
+<p>
+<A NAME="pcmpeq"></A>
+<B>Команды pcmpeq</B><BR>
+Команды <font color="#000099"><TT>pcmpeq</TT></font> попарно сравнивают элементы данных 
+(байты, 16- или 32-разрядные слова) входного и выходного операндов. 
+Если элемент данных выходного операнда равен соответствующему элементу
+входного, такой элемент выходного операнда заполняется единицами.
+Если равенства нет, он заполняется нулями.
+
+<BR><B>Входной операнд</B> может находиться в MMX-регистре или в памяти;
+<BR><B>выходной операнд</B> должен находиться в MMX-регистре.
+<BR><B>Поддерживаются команды:</B><BR>
+<font color="#000099">
+<TT>pcmpeqb</TT>,
+<TT>pcmpeqw</TT>,
+<TT>pcmpeqd</TT>.
+</font>
+<p>
+<A HREF="#s"><IMG SRC="button/back.gif" alt="back" width=44 height=47 border=0 align="middle"></A>
+<A HREF="#s"><small>Возврат к началу темы</small></A>
+<p><img src="space.gif" height=55 width=1>
+
+<p>
+<A NAME="pcmpgt"></A>
+<B>Команды pcmpgt</B><BR>
+Команды <font color="#000099"><TT>pcmpgt</TT></font> попарно сравнивают элементы данных 
+(байты, 16- или 32-разрядные слова <B>со знаком</B>) входного и выходного операндов. 
+Если элемент данных выходного операнда больше соответствующего элемента
+входного, такой элемент выходного операнда заполняется единицами;
+eсли же он не больше входного, то он заполняется нулями.
+
+<BR><B>Входной операнд</B> может находиться в MMX-регистре или в памяти;
+<BR><B>выходной операнд</B> должен находиться в MMX-регистре.
+<BR><B>Поддерживаются команды:</B><BR>
+<font color="#000099">
+<TT>pcmpgtb</TT>,
+<TT>pcmpgtw</TT>,
+<TT>pcmpgtd</TT>.
+</font>
+<p>
+<A HREF="#s"><IMG SRC="button/back.gif" alt="back" width=44 height=47 border=0 align="middle"></A>
+<A HREF="#s"><small>Возврат к началу темы</small></A>
+<p><img src="space.gif" height=600 width=1>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,130 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; utf-8">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title></title>
+</head>
+
+<body background="Images/Gray.gif" bgcolor="#FFFFFF">
+<p align="center"><font color="#000000" size="5"><b>Базово-индексная адресация 
+  со смещением и масштабированием </b></font></p>
+
+<div align="center">
+  <table border="1" cellpadding="5" cellspacing="1" width="748">
+    <tr> 
+      <td width="263" cellpadding="10"> 
+        <p><font color="#0000FF"><img
+        src="Images/ball.gif" width="13" height="13"></font><a
+        href="direct.html"><font color="#0000FF">Ditect</font></a><font
+        color="#0000FF"><br>
+          <img src="Images/ball.gif" width="13" height="13"></font><a
+        href="regind.html"><font color="#0000FF">Register indirect </font></a><font color="#0000FF"><br>
+          <img src="Images/ball.gif" width="13" height="13"></font><a
+        href="based.html"><font color="#0000FF">Base</font></a><font
+        color="#0000FF"><br>
+          <img src="Images/ball.gif" width="13" height="13"></font><a
+        href="indexed.html"><font color="#0000FF">Index</font></a><font
+        color="#0000FF"><br>
+          <img src="Images/ball.gif" width="13" height="13"></font><a
+        href="indexedsc.html"><font color="#0000FF">Index with scaling</font></a><br>
+          <font color="#0000FF"><img
+        src="Images/ball.gif" width="13" height="13"></font><a
+        href="baseindex.html"><font color="#0000FF">Base index</font></a><font
+        color="#0000FF"><br>
+          <img src="Images/ball.gif" width="13" height="13"></font><a
+        href="baseindexs.html"><font color="#0000FF">Base index with scaling</font></a><font color="#0000FF"><br>
+          <img src="Images/ball.gif" width="13" height="13"></font><a
+        href="baseindexo.html"><font color="#0000FF">Base index with offset </font></a><font color="#000000"><b><br>
+          <img src="Images/ball.gif" width="13" height="13"></b><strong><b>Base 
+          index with offset and scaling </b></strong><b><br>
+          </b></font></p>
+        </td>
+      <td width="456"> 
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td colspan="3"><font color="#000000"><b><img
+                src="Images/top.gif" width="439" height="3"></b></font></td>
+          </tr>
+          <tr> 
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/basel.gif"
+                width="276" height="13"></b></font></td>
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/baseb.gif"
+                width="136" height="13" name="base"></b></font></td>
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/baser.gif"
+                width="27" height="13"></b></font></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><font color="#000000"><b><img
+                src="Images/basebtm.gif" width="439" height="7"></b></font></td>
+          </tr>
+          <tr> 
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/indl.gif"
+                width="276" height="13"></b></font></td>
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/indb.gif"
+                width="136" height="13" name="index"></b></font></td>
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/indr.gif"
+                width="27" height="13"></b></font></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><font color="#000000"><b><img
+                src="Images/indbtm.gif" width="439" height="47"></b></font></td>
+          </tr>
+          <tr> 
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/scl.gif"
+                width="276" height="20"></b></font></td>
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/scb.gif"
+                width="136" height="20" name="scale"></b></font></td>
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/scr.gif"
+                width="27" height="20"></b></font></td>
+          </tr>
+          <tr> 
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/offl.gif"
+                width="276" height="13"></b></font></td>
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/offb.gif"
+                width="136" height="13" name="offset"></b></font></td>
+            <td cellpadding="0" cellspace="0"><font
+                color="#000000"><b><img src="Images/offr.gif"
+                width="27" height="13"></b></font></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><font color="#000000"><b><img
+                src="Images/offbtm.gif" width="439" height="194"><br>
+              </b></font></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td align="center" colspan="2">LA = segment_base_address + base + index 
+        * scale<font color="#000000"> + disp</font></td>
+    </tr>
+    <tr> 
+      <td colspan="2" cellpadding="15"> 
+        <p>Исполнительный адрес формируется путем сложения содержимого базового 
+          регистра с содержимым индексного регистра, умноженным на масштабный 
+          коэффициент и смещением, указанным в команде.</p>
+        <p>Пример команды:</p>
+        <p
+                align="center"></p>
+        <p align="center">MOV EAX, LOCAL TABLE[EDI*4][EBP+87]</p>
+      </td>
+    </tr>
+  </table>
+</div>
+<p align="center"><a href="index.html"><font
+color="#0000FF"><b>[Information]</b></font></a></p>
+</body>
+</html>

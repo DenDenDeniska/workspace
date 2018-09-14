@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - Network Benchmark</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - Network Benchmark</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft
+Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: I get <i>Packet too large for Network/Host</i> error<BR>
+A:</B> Sandra uses 64Kb blocks to test the transfer rate. Some interfaces do not support packets this large, but only smaller packets. You can try the following:
+<P>
+
+<UL>
+ <LI>Try the latest network drivers from the network card manufacturer. In most cases the built-in Windows drivers are scaled -down versions.
+ <LI>Check the driver settings - there may be a setting to allow large packet fragmentation or change max. packet size.
+ <LI>If you've used a <i>modem speed booster</i> make sure you've changed only the dial-up settings and not the LAN settings too. Go back to the defaults and/or clear all the settings from the registry.
+ <LI>As a last resort, try a clean install of Windows. This seems to work in most cases.
+</UL>
+<P>
+
+<B>Q: I get <i>Cannot get IP address of host</i> error<BR>
+A:</B> Go to a console and try to ping the host by name. If you cannot, make sure DNS/WINS is correctly set up, otherwise enter the host names and their IP addresses in the HOSTS file.
+<P>
+
+<B>Q: Why are there no workgroups/domains visible?<BR>
+A:</B> Check that you've set your computer to be part of a workgroup or the correct domain and that you're running the Microsoft Networks Client.
+<P>
+
+<B>Q: Why are there no computers on the domain/workgroup?<BR>
+A:</B> Check that the network settings are correct. Try to connect to some of the computers you know should be on the network or ping them.
+<P>
+
+<B>Q: Why is my computer not listed in the domain/workgroup?<BR>
+A:</B> There would be no point benchmarking the local interface, thus your computer is not shown if the workgroup/domain it is in is selected.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

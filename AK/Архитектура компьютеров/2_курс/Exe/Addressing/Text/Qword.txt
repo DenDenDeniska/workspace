@@ -1,0 +1,7 @@
+QWORD
+Sizeof 	64бит
+ Min..Max Value	[0h..FFFFFFFFFFFFFFFFh]
+64-bit integer with sign
+ Min..Max Value	[Ц2^63..2^63Ц1]
+Digit with double float point
+ Min..Max Value	[5.0 x 10^Ц324 ..1.7 x 10^308]

@@ -1,0 +1,55 @@
+BODY, TD, P	{
+		font-family: "Verdana";
+		font-size: 10pt;
+		font-weight: plain;
+		}
+
+.title		{
+		font: 10pt/12pt "Verdana";
+		font-style: "plain";
+		font-weight: light;
+     		color: #FFFFFF;
+     		text-align: center;
+		background: black;
+		}
+
+BLOCKQUOTE 	{
+		background: #7fffd4
+		}
+
+H1		{
+		font-family: "Verdana";
+		font-size: 16pt;
+		font-weight: bold;
+		color: #0000CC;
+		}
+
+H2		{
+		font-family: "Verdana";
+		font-size: 14pt;
+		font-weight: bold;
+		color: #0000CC;
+		}
+
+H3		{
+		font-family: "Verdana";
+		font-size: 12pt;
+		font-weight: bold;
+		color: #0000CC;
+		}
+
+H4		{
+		font-family: "Verdana";
+		font-size: 10pt;
+		font-weight: bold;
+		color: black;
+		}
+
+H5		{
+		font: 8pt/10pt "Verdana";
+		font-weight: light;
+		}
+
+A:link		{ color:#003399 }
+A:visited	{ color:#003399 }
+A:hover		{ color:red    }

@@ -1,0 +1,68 @@
+@font-face {
+	src: url("font/segoeui.ttf");
+}
+
+* {
+	font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	line-height: 22px;
+}
+
+body {
+	color: #333;
+}
+
+p {
+  text-align: justify;
+}
+
+h1, h2, h3, h4 {
+  text-shadow: 3px -3px 1px #ddd;
+  font-weight: bold;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.common {
+  text-align: left;
+}
+
+table caption {
+	font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background: #ddd;
+}
+
+th {
+  background: #222;
+  color: #FFF;
+  text-align: center;
+}
+
+th, td {
+  padding: 5px;
+}
+
+a {
+	color: #66f;
+}
+
+.bgpink {
+	background: #fbd;
+}

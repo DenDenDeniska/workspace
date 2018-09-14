@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - PLL IC (Clock Generator) Detection</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - PLL IC (Clock Generator)</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: Does Sandra support the clock generator of my mainboard?<BR>
+A: </B>The clock generator is supported only if the following are true:
+<P>
+
+<OL>
+<LI>The mainboard is known, thus the PLL IC is known <b>or</b> PLL IC can be auto-detected.
+<LI>The mainboard SMBus/i2c controller is detected and enabled.
+<LI>The PLL IC is actually connected to the SMBus/i2c bus.
+<LI>The PLL IC supports read-back.
+<LI>The PLL IC is supported. See the <A HREF="../compat.htm">Compatibility Document</A> for the list of supported chips.
+</OL>
+<P>
+
+<B>Q: Sandra 2000 did detect my PLL IC. Sandra Me/2001 does not. Why?<BR>
+A: </B>If the mainboard is not on our list, the PLL IC may not be supported. You can try forcing PLL IC detection by right-clicking module, select <i>Options</i> and uncheck <i>do not attempt to detect unknown PLL IC</i>.
+<P>
+
+<B>Q: PLL IC detection locks up my computer completly! Why and how do I fix it?<BR>
+A: </B>Your PLL IC is write-only. See <A HREF="det_chip.htm">Chipset Q & A</A> for more information.
+<P>
+
+<B>Q: Why doesn't Sandra detect PLL ICs natively?<BR>
+A: </B>Only the very latest PLL IC chips can be autodetected. The older ones cannot - most cannot be detected at all!
+<P>
+
+<B>Q: Sandra detects my PLL IC incorrectly!<BR>
+A: </B>Go to module <i>Options</i> and turn <i>Auto Detect PLL IC</i> off. If this does not help, contact us.
+<P>
+
+<B>Q: Why does Sandra support so few clock generators?<BR>
+A: </B>The reasons are quite a few:
+<P>
+
+<UL>
+<LI>Only modern clock generators (since around 1997) are software programmable.
+<LI>Most clock generators are write-only (e.g. the entire IC-Works line). This means that the bus speed can be changed but it cannot be detected. This is not a problem for programs like SoftFSB but it is critical for Sandra.
+</UL>
+<P>
+
+<B>Q: Sandra does not detect the PLL IC of my mainboard!<BR>
+A: </B>PLL ICs (unlike other SMBus/i2c devices) cannot be detected. This is because there are no ID registers and most are write-only. One of the few possible ways is to do it by mainboard type. If Sandra does not know what your board uses, have a look and <A HREF="../contact.htm">let us know</A>.
+<P>
+
+<B>Q: Sandra does detect the PLL IC type but cannot find it.<BR>
+A: </B>There are various reasons why this can happen:
+<P>
+
+<UL>
+<LI>Sandra does not detect the SMBus/i2c controller or the controller has locked.
+<LI>The PLL IC is not at its known address or it is write-only.
+<LI>The PLL IC has locked. 
+</UL>
+<P>
+
+<B>Q: Sandra does detect the PLL IC and reads it fine, but I get no useful information.<BR>
+A: </B>If the speed selected is <i>by hardware</i> then no useful information can be inferred. Only if the chip is software programmed useful information can be read back.
+<P>
+
+<B>Q: How can I modify the FSB by software?<BR>
+A: </B>Sandra is an analyser not a PLL IC programmer. You can use programs like <A HREF="http://www.h-oda.com" TARGET="_top">SoftFSB</A> to program the PLL IC.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

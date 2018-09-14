@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - Disk/CD-ROM/DVD Benchmark</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - Disk/CD-ROM/DVD Benchmark</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft
+Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: Why does it take so long to run the disk benchmark?<BR>
+<B>A:</B></B> This occurs when you have a large amount of memory and a rather slow disk. In order to make accurate measurements, the disk and software cache must be swamped by using a test file at least twice as big, as big as possible. Since Windows uses a dynamically allocated disk cache which can be as large 80% of your total memory, Sandra must use a huge file which takes a long time to process. There is no other way since the cache cannot be turned off.
+<P>
+
+<B>Q: Why does the rating vary between sequential runs?<BR>
+A:</B> Since the disk cache is dynamic, the size will increase after many disk operations. Since a disk benchmark does only disk operations it is likely that the cache will increase between runs up to the maximum size possible. Generally the bigger the cache the larger the index, therefore the index should increase slightly between runs. When the size of the cache is constant the index should not vary appreciably.
+<P>
+
+<B>Q: How do I know what ATA mode my EIDE disk is in?<BR>
+A:</B> Firstly, update to Sandra 6.40 or later. The <i>burst read speed</i> should tell you that information. Thus:
+
+<UL>
+<LI>Over 66MB/s -> UDMA ATA100
+<LI>Over 33MB/s -> UDMA ATA66
+<LI>Over 16MB/s -> UDMA ATA33
+<LI>Over 6MB/s -> UDMA
+</UL>
+<P>
+
+<B>Q: Changing the ATA mode does not change the index! Is the benchmark bad?<BR>
+A:</B> The burst read/write speeds are <B>not</B> included in the index! Thus, unless the sequential & random read/write speeds are limited by the interface the index will stay the same. A slow drive is not faster in, say ATA66 mode than in ATA33!
+<P>
+
+<B>Q: I've put the drive on a new ATA66/100 controller and I get worse results! What's going on?<BR>
+A:</B> The <b>controller driver</b> performance is paramount! A fast controller with a slow driver will be outperformed by the built-in controller using Microsoft/Intel drivers. The burst speeds <i>do not</i> influence the index value.
+<P>
+
+<B>Q: Why are the SMP tests disabled?<BR>
+A: </B>We haven't found a way to simulate a multi-threaded disk benchmark that would yield proper results yet. Once we do, we'll release an update.
+<P>
+
+<B>Q: Why is Sandra unable to detect the exact speed of 16X or higher CD-ROMs ?<BR>
+A:</B> The 16X or higher CD-ROMs achieve the rated speed only when the test data file is stored on the outer tracks. If the data file selected by the test happens to be located at inner tracks, the test result will be slower than what the vendors specified. Also due to various overheads you will never get the maximum data transfer from the drive.
+<P>
+
+<B>Q: I have CD QuickCache and the benchmark crashes when running the CD-ROM benchmark.<BR>
+A:</B> Try and update to a newer version of the CD-ROM caching software.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

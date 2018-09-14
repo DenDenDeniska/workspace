@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - Lockups & Crashes</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - Lockups & Crashes</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft Sandra</B></I>. Please read the <B>Help File</B> as well! 
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: Does Sandra run on Windows 98/Me/2000?<BR>
+A: </B>This is the current status:
+
+<UL>
+<LI>Windows 98/Me (i.e. Windows 9X kernel): Yes.
+<LI>Windows 2000/2001 Professional/Server (i.e. Windows NT kernel): Same as for Windows NT (see below).
+</UL>
+<P>
+
+<B>Q: Does Sandra run on Windows NT?<BR>
+A: </B>Not fully. We will be adding more support for NT/2000+ in future releases.
+<P>
+Our next product <A HREF="../../sam/index.htm">Samantha</a> will natively support NT/2000+.
+<P>
+
+<B>Q: I cannot install it on Windows NT/2000 - I get <i>Can't run 16-bit Windows program. This application is not supported by Windows</i>!<BR>
+A: </B>You will need to update some libraries, for more information see <A HREF="http://support.microsoft.com/support/kb/articles/Q191/6/90.ASP?LNG=ENG&SA=ALLKB&FR=0">Microsoft KB Article</A>.
+<P>
+
+<B>Q: The <i>Performance Tune-Up Wizard</i> crashes!<BR>
+A: </B>The problem lies with another module. If only <B>one</B> module crashes, the wizard will not work since it runs <B>all</B> enabled modules. First find the module with the problem and fix it (see below). If you cannot fix it, delete the module (select it and press Del). The Wizard will skip the module.
+<P>
+
+<B>Q: Sandra 2001 crashes with missing WSOCK2.DLL!<BR>
+A: </B>Sandra 2001 <b>requires</b> a WinSock 2.0+ stack. Please update through Windows Update.
+<P>
+
+<B>Q: Sandra crashes with an exception in MFC42.DLL!<BR>
+A: </B>See <A HREF="install.htm">Install Problems</A>.
+<P>
+
+<B>Q: The <i>Modules Information</i> module crashes.<BR>
+A: </B>This module does not work if you have a 2D Matrox video card installed (e.g. Millennium, Millennium II, Mystique) and the original drivers. First, verify that the drivers are the problem by changing to the <i>Standard VGA Display Driver</i> (640x480 16 colours). Both Windows 98 and DirectX 5/6 and later come with drivers for these video cards which should work. Make sure you download the <b>complete</b> version, not just the core.
+<P>
+Please note that it may not be possible to fix this problem with any Matrox drivers. However, you can try the latest <i>Unified</i> drivers from <A HREF="http://www.matrox.com" TARGET="_top">Matrox Website</A>. Please let them know of this problem!
+<P>
+This module also does not work with drivers for the Neomagic 128/256 video adapters (usually found in laptop computers). Follow the same steps as outlined above, and check for new video drivers on the manufacturer's web site. Please let them know of this problem!
+<P>
+
+<B>Q: Sandra locks at the splash screen on Windows 2000!<br>
+A: </B>Update to Sandra version 6.20 or later.
+<P>
+
+<B>Q: Sandra crashes/locks on my Intel/Dell/Gateway mainboard/system!<BR>
+A: </B>Update to Sandra version 6.60 or later.
+<P>
+
+<B>Q: Module <i>Video Information</i> locks the computer / monitor powers down!<BR>
+A: </B>This is a bug in ATI's latest video drivers (e.g. 86114) for the Rage 128 series of cards. When querying the video BIOS through the VESA VBE interface the card locks and the monitor powers down. A hard reset is needed.
+<P>
+Older drivers (on the CD) and all other cards work fine. ATI may fix this problem in future versions. Please let them know of this problem!
+<P>
+A work around is to right-click the <i>Video Information</i> module, select <I>Options</i> and uncheck <I>Include VESA Info</I>. You can also revert to the original drivers on the CD that came with your video card.
+<P>
+
+<B>Q: Modules <i>System Information</i>, <i>Mainboard Information</i>, <i>CPU & BIOS Information</i> cause <i>Fatal Exception 0D</i> in Windows<BR>
+A: </B>Update to Sandra version 6.00 or later. Your Athlon system is not supported by the old version of Sandra you have.
+<P>
+
+<B>Q: Modules <i>System Information</i>, <i>Mainboard Information</i>, <i>CPU & BIOS Information</i> crash.<BR>
+Q: Module <i>SAN16</i> crashes!<BR>
+A: </B>In module list (main window), right-click a module, choose <I>Options</I> and uncheck <I>Include DMI Information</I>. If it works, repeat for the other modules. Your BIOS does not support DMI properly in Windows. Find a newer BIOS version, and flash it. If no new version is available - contact your mainboard/system manufacturer. If you're running a version of Sandra earlier than 2.05, please upgrade to the latest version.
+<P>
+
+<B>Q: Modules <i>Mainboard Information</i> and <i>CPU & BIOS Information</i> lock up!<BR>
+A: </B>Try the following: in module list (main window), right-click a module, choose <I>Options</I> and:
+<P>
+
+<OL>
+<LI>Uncheck <I>Include Temperature Information</I>. If it works, repeat for the other modules. The mainboard may not have a compatible system monitoring sensor chip. You can also try updating to the latest version of Sandra.
+<P>
+
+<LI>Uncheck <I>Include Programable Clock Generator Information</I> from the module <I>Options</I>. If this works, repeat for the other modules. The PLL IC may be locking the SMBus/i2c bus - or it may be write-only.
+<P>
+
+<LI>Uncheck <I>Include SPD EEPROM Information</I> from the module <I>Options</I>. If this works, repeat for the other modules. The mainboard/chipset may not support the SMBus/i2c bus correctly or the memory modules do not implement SPD correctly or are damaged in some way. You can also try updating to the latest version of Sandra.
+<P>
+
+</OL>
+<P>
+
+<B>Q: DirectX module crashes with DirectX 6.0!<br>
+Q: DirectX module crashes with exception 10H<br>
+A: </b>Upgrade to DirectX 6.1 or later. <a href="http://www.microsoft.com/directx" TARGET="_top">DirectX @ Microsoft</a>. DirectX 6.0 does not work with multi-threaded applications like Sandra.
+<P>
+
+<B>Q: DirectX module crashes with DirectX 1, 2 or 3 (including NT version)<br>
+A: </b>Upgrade to Sandra version 4.10 or later.
+<P>
+
+<B>Q: The <i>CPU MultiMedia Benchmark</i> (SSE/2 tests in fact) crashes on my system<BR>
+A: </B>Your operating system does not support the new SSE processor state. If you're running Windows 95, upgrade to Windows 98/Millennium. If you're running Windows NT, upgrade to SP6. 
+<P>
+
+<B>Q: The <i>CPU MultiMedia Benchmark</i> module crashes on SMP box<BR>
+A: </B>If the processors have different model/stepping versions, make sure the boot processor is the one that has the lowest version. If the processors have different feature sets, make sure the boot processor is the one with the lowest feature set. (e.g. in a PII & PIII SMP box, make the PII the boot processor)
+<P>
+
+<B>Q: Sandra crashes at start-up with a Trumpet WinSock<BR>
+A: </B>It seems there is an incompatibility between Sandra and Trumpet. It may be due to the use of the IE web-engine. There is no fix at this time - however the standard Microsoft WinSock (which you can upgrade to version 2.2) is very good.
+<P>
+
+<B>Q: My non-Microsoft mouse locks!<BR>
+A: </B>Download the latest drivers from your mouse manufacturer. For example the newest Kesington Mouse/Trackball drivers fix this problem. If you have a graphics tablet, make sure it's configured properly and the drivers are also recent.
+<P>
+
+<B>Q: The <i>Printer Information</i> module reports &quot;Out of Memory&quot;!<BR>
+A: </B>Right-click the module, select <i>Options</i> and uncheck <i>Printer Modes Information</i>. Upgrade to Sandra version 4.20 or later and install a printer if none are installed. Some Epson drivers cause this problem.
+<P>
+
+<B>Q: The <i>Printer Information</i> module locks!<BR>
+A: </B>If you have networked printers which are off-line or their print servers are unavailable for some reason, the information gathering may take some time depending on the time-outs. Sometimes this can take 2-10 minutes depending on the number of printers. Therefore, the module does not actually lock - let it finish.
+<P>
+
+<B>Q: The <i>Network Information</i> module locks!<BR>
+<B>A: </B></B>On large networks with many workgroups and hosts this module may take some considerable time to scan them all (2-10 minutes). So the module does not actually lock but takes a long time to complete.
+<P>
+
+<B>Q: The <i>MCI Information</i> module crashes.<BR>
+<B>A:</B></B> Go to <I>Control Panel - Multimedia - Advanced - Media Control Devices</I>. Select <I>LiveAudioMetafile</I> and click <I>Properties</I>. Select <I>Do not use this Media Control Device</I> and click <I>OK</I>. Do the same for <I>DBCRMVideo</I> device. Alternatively, update to Sandra version 4.20 or later.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

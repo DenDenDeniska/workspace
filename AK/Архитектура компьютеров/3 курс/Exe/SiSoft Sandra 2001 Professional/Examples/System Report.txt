@@ -1,0 +1,865 @@
+***** SiSoft Sandra Professional Version 99.7.5.16 *****
+-----------------------------------------------------------------------------------------------
+Product Licensed to Internal Use at SiSoftware
+Report done by AdrianS
+System-Run ID: 1178-3574
+Report done on 12 July 1999 at 21:38:11
+-----------------------------------------------------------------------------------------------
+
+<<< Comments >>>
+-----------------------------------------------------------------------------------------------
+
+This is a sample text mode report.
+
+<<< System Summary >>>
+-----------------------------------------------------------------------------------------------
+
+  < Computer System >
+    Name:                                 SUPERDANTUM
+    User Name:                            AdrianS
+
+  < Mainboard & Processor(s) >
+    Processor(s):                         Intel Pentium III 515MHz
+    Performance Rating:                   PR618  (estimated)
+    L2 On-board Cache:                    512kB ECC synchronous write-back
+    System Bus(es):                       ISA(16-bit), PCI(32-bit), USB, AGP(32-bit)
+    System BIOS:                          Award Software, Inc. ASUS P2B ACPI BIOS Revision 1009 
+                                                                         
+    System Chipset:                       Intel 82443BX/ZX Chipset, CPU to PCI Bridge
+
+  < System Memory >
+    Installed Memory:                     256MB  (56% true allocated load)
+
+  < Video System >
+    Monitor/Panel:                        IBM 9513 T55D TFT Monitor 
+    Adapter:                              Matrox Millennium G200 AGP - English
+
+  < Drives & Storage Devices >
+    GENERIC NEC  FLOPPY DISK:             A: 1.44MB 3.5"
+    GENERIC IDE  DISK TYPE46:             C: 4.9GB, D: 3.0GB (7.9GB)
+    IOMEGA ZIP 100         :              E: (Removable)
+    MATSHITA DVD-ROM SR-8583 :            F: (CD-ROM/DVD)
+
+  < Peripherals >
+    Serial/Parallel Port(s):              2 COM / 1 LPT
+    Keyboard:                             Standard 101/102-Key or Microsoft Natural Keyboard
+    Mouse:                                PS/2 Compatible Mouse Port
+
+  < MultiMedia Device(s) >
+    Device:                               Creative SB Live! Value
+    Device:                               Wave Device for Voice Modem
+
+  < Communication Device(s) >
+    Device:                               U.S. Robotics 56K Voice EXT
+
+  < Printer(s) >
+    Printer:                              Canon Bubble-Jet BJ-20
+    Printer:                              HP LaserJet Series II
+
+  < Operating System(s) >
+    Windows System:                       Microsoft Windows 98 Ver 4.10 (4.10.1998     )
+    DOS Sub-System:                       Microsoft MS-DOS Ver 7.10 A
+
+  < Network Adapter(s) >
+    Networking Installed:                 Yes
+    Adapter:                              Dial-Up Adapter
+    Adapter:                              Intel(R) PRO/100+ PCI Adapter
+
+<<< Mainboard Information >>>
+-----------------------------------------------------------------------------------------------
+
+  < General System Information >
+    Class:                                IBM PC/AT
+    System Bus(es):                       ISA(16-bit), PCI(32-bit), USB, AGP(32-bit)
+    Fast Windows System:                  Yes
+
+  < Entire System >
+    Manufacturer:                         System Manufacturer
+    Name:                                 System Name
+    Version:                              System Version
+    Serial Number:                        SYS-1234567890
+
+  < System Chassis >
+    Manufacturer:                         Chassis Manufacture
+    Can be locked:                        No
+    Version:                              Chassis Version
+    Serial Number:                        Chassis Serial Number
+    Asset Tag Number:                     Asset-1234567890
+
+  < System Mainboard >
+    Manufacturer:                         ASUSTeK Computer INC.
+    Type:                                 Single Processor
+    Model:                                P2B
+    Version:                              REV 1.xx
+    Serial Number:                        MB-1234567890
+
+  < Extended Mainboard Data >
+    Model:                                ASUS P2B ACPI BIOS Revision 1009
+    Serial Number:                        05/10/99-i440BX-
+
+  < Memory Controller >
+    Error Detection Method:               64-bit ECC
+    Error Correction Capability:          1-bit
+    Supported Memory Interleave:          1 way
+    Current Memory Interleave:            1 way
+    Number of Memory Slots:               6
+    Maximum Installable Memory:           1536MB
+    Maximum Module Size:                  256MB
+    Supported FPM/EDO Speeds:             70ns, 60ns, 50ns
+    Supported Memory Types:               EDO, Parity, DIMM
+    Supported Memory Voltages:            3.3V
+
+  < Physical/BIOS Memory Banks >
+    DIMM1-1  :                            Empty
+    DIMM1-2  :                            Empty
+    DIMM2-1   (RASLine-2 RASLine-3):      64MB DIMM double-bank
+    DIMM2-2   (RASLine-2 RASLine-3):      64MB DIMM double-bank
+    DIMM3-1   (RASLine-4 RASLine-5):      64MB DIMM double-bank
+    DIMM3-2   (RASLine-4 RASLine-5):      64MB DIMM double-bank
+
+  < System Chipset >
+    System Chipset:                       Intel 82443BX/ZX Chipset, CPU to PCI Bridge
+    Front Side Bus Speed:                 103MHz
+    CPU Speed Multiplier:                 5x
+    SMBus Support:                        Yes
+
+  < Logical/Chipset Memory Banks >
+    Bank 2 Setting:                       64MB ECC SDRAM 7-1-1-1R 5-1-1-1W
+    Banks 2 + 3 Memory Module:            Micron 18LSDT1672AG-133B4 120118D2 128MB 18x(8Mx8) 
+                                          ECC SDRAM CAS3 PC133U-333-542
+    Bank 3 Setting:                       64MB ECC SDRAM 7-1-1-1R 5-1-1-1W
+    Bank 4 Setting:                       64MB ECC SDRAM 7-1-1-1R 5-1-1-1W
+    Banks 4 + 5 Memory Module:            128MB 18x(8Mx8) ECC SDRAM CAS2 PC100-222-620
+    Bank 5 Setting:                       64MB ECC SDRAM 7-1-1-1R 5-1-1-1W
+    Memory Bus Speed:                     103MHz
+
+  < System Monitor Device >
+    Name:                                 Winbond W83781D
+    Version:                              1.01
+    I2C/SMBus Support:                    Yes
+
+  < Temperature Sensor(s) >
+    Board Temperature:                    32.0°C / 89.6°F
+    CPU Temperature:                      41.5°C / 106.7°F
+    Power / Aux Temperature:              50.5°C / 122.9°F
+
+  < Cooling Device(s) >
+    Chassis Fan Speed:                    3444rpm
+    CPU Fan Speed:                        3792rpm
+    Power / Aux Fan Speed:                3169rpm
+
+  < Voltage Sensor(s) >
+    CPU Core Voltage:                     1.97V
+    Aux Voltage:                          1.98V
+    +3.3V Voltage:                        3.49V
+    +5V Voltage:                          5.03V
+    +12V Voltage:                         12.10V
+    -12V Voltage:                         -12.29V
+    -5V Voltage:                          -5.03V
+
+  < AGP Bus >
+    Version:                              1.00
+    Bus Speed:                            69MHz
+    Data Transfer Rate:                   2x  (138MHz)
+    Side Band Enabled:                    Yes
+
+  < PCI Bus >
+    Version:                              2.10
+    Bus Speed:                            34MHz
+    Speed Multiplier:                     1/3x
+
+  < ISA Bus >
+    PIIX Chip:                            Intel 82371AB/EB PIIX4 PCI to ISA Bridge
+    Speed Multiplier:                     1/4x
+    Bus Speed:                            9MHz
+    DMA Speed:                            5MHz
+
+  < USB Bus >
+    USB Chip:                             Intel 82371AB/EB PIIX4 USB Controller
+    Version:                              1.00
+    Bus Speed:                            48MHz
+
+  < Expansion Slots >
+    PCI Slot1 (Ch):                       PCI 32-bit 5V FullLength Available
+    PCI Slot2 (Bh):                       PCI 32-bit 5V FullLength Available
+    PCI Slot3 (Ah):                       PCI 32-bit 5V FullLength InUse (Intel 82557/8 10/
+                                          100MBps EthernetPro Adapter)
+    PCI Slot4 (9h):                       PCI 32-bit 5V FullLength InUse (Creative Labs 
+                                          SoundBlaster Live!)
+    ISA Slot1:                            ISA 16-bit 5V Shared FullLength
+    ISA Slot2:                            ISA 16-bit 5V FullLength
+    ISA Slot3:                            ISA 16-bit 5V FullLength
+
+  < Port Connectors >
+    COM1 - COM A:                         Serial Port 16550A Compatible - 9 Pin Dual Inline / 
+                                          DB-9 pin male
+    COM2 - COM B:                         Serial Port 16550A Compatible - 9 Pin Dual Inline / 
+                                          DB25 pin male
+    PRINTER - LPT:                        Parallel Port ECP/EPP - 25 Pin Dual Inline / DB25 pin 
+                                          female
+    KEY - KEYBOARD:                       Keyboard Port - None / Micro-DIN
+    PS2MOUSE - PS/2 Mouse:                Mouse Port - Proprietary / Micro-DIN
+    PRIMARY IDE - IDE-1:                  (E)IDE
+    SECONDARY IDE - IDE-2:                (E)IDE
+    FLOPPY - FLOPPY:                      Floppy
+
+  < Performance Tips >
+    Tip T2511:                            Some memory slots are free so the memory can be 
+                                          easily upgraded.
+
+<<< PCI & AGP Buses Information >>>
+-----------------------------------------------------------------------------------------------
+
+<< Buses Information >>
+  < PCI & AGP Buses >
+    Interface Version:                    2.10
+    No. Buses:                            2
+    Config space access mechanism 1 suppo:Yes
+    Config space access mechanism 2 suppo:No
+    Cycle generation mechanism 1 support: Yes
+    Cycle generation mechanism 2 support: No
+
+<< Intel 82443BX/ZX Chipset, CPU to PCI Bridge >>
+  < Device Information >
+    Device Type:                          Host Processor Bridge
+    Device ID:                            Device 0h on bus 1 F0
+    Windows Device Name:                  Intel 82443BX Pentium(r) II Processor to PCI bridge 
+                                          (with GART support)
+    OEM Device Name:                      Intel 82443BX/ZX Chipset, CPU to PCI Bridge
+    OEM Hardware ID:                      FUN_0, VEN_8086, DEV_7190
+    Revision No.:                         2
+
+  < AGP Capabilities >
+    Version:                              1.00
+    Command Queue Length:                 32
+    Side Band Addressing Support:         Yes
+    Data Transfer Modes Support:          1x, 2x
+
+  < Device Properties >
+    Latency Timer:                        64 clocks
+    I/O Access:                           No
+    Memory Access:                        Yes
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            No
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    Yes
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  Yes
+    Device Select Timing:                 Medium
+
+<< Intel 82443BX/ZX Chipset, CPU to AGP Bridge >>
+  < Device Information >
+    Device Type:                          PCI to PCI Bridge
+    Device ID:                            Device 1h on bus 1 F0
+    Windows Device Name:                  Intel 82443BX Pentium(r) II Processor to AGP 
+                                          controller
+    OEM Device Name:                      Intel 82443BX/ZX Chipset, CPU to AGP Bridge
+    OEM Hardware ID:                      FUN_0, VEN_8086, DEV_7191
+    Revision No.:                         2
+
+  < Device Properties >
+    Latency Timer:                        64 clocks
+    I/O Access:                           Yes
+    Memory Access:                        Yes
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            Yes
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    Yes
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    Yes
+    New Capability List:                  No
+    Device Select Timing:                 Medium
+
+<< Intel 82371AB/EB PIIX4 PCI to ISA Bridge >>
+  < Device Information >
+    Device Type:                          PCI to ISA Bridge
+    Device ID:                            Device 4h on bus 1 F0
+    Windows Device Name:                  Intel 82371EB PCI to ISA bridge (ISA mode)
+    OEM Device Name:                      Intel 82371AB/EB PIIX4 PCI to ISA Bridge
+    OEM Hardware ID:                      FUN_0, VEN_8086, DEV_7110
+    Revision No.:                         2
+
+  < Device Properties >
+    I/O Access:                           Yes
+    Memory Access:                        Yes
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            Yes
+    Memory Write & Invalidate:            No
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    No
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  No
+    Device Select Timing:                 Medium
+
+<< Intel 82371AB/EB PIIX4 Dual EIDE Controller >>
+  < Device Information >
+    Device Type:                          EIDE Mass Storage Controller
+    Device ID:                            Device 4h on bus 1 F1
+    Windows Device Name:                  Intel 82371AB/EB PCI Bus Master IDE Controller
+    OEM Device Name:                      Intel 82371AB/EB PIIX4 Dual EIDE Controller
+    OEM Hardware ID:                      FUN_1, VEN_8086, DEV_7111
+    Revision No.:                         1
+
+  < Device Properties >
+    Latency Timer:                        48 clocks
+    I/O Access:                           Yes
+    Memory Access:                        No
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            No
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    No
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  No
+    Device Select Timing:                 Medium
+
+<< Intel 82371AB/EB PIIX4 USB Controller >>
+  < Device Information >
+    Device Type:                          Universal Serial Bus Controller
+    Device ID:                            Device 4h on bus 1 F2
+    Windows Device Name:                  Intel 82371AB/EB PCI to USB Universal Host Controller
+    OEM Device Name:                      Intel 82371AB/EB PIIX4 USB Controller
+    OEM Hardware ID:                      FUN_2, VEN_8086, DEV_7112
+    Revision No.:                         1
+
+  < Device Properties >
+    Latency Timer:                        48 clocks
+    I/O Access:                           Yes
+    Memory Access:                        No
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            No
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    No
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  No
+    Device Select Timing:                 Medium
+    Interrupt Line:                       IRQ5
+    Interrupt Pin:                        INTD#
+
+<< Intel 82371AB/EB Power Management Controller >>
+  < Device Information >
+    Device Type:                          Other Bridge
+    Device ID:                            Device 4h on bus 1 F3
+    Windows Device Name:                  Intel 82371EB Power Management Controller
+    OEM Device Name:                      Intel 82371AB/EB Power Management Controller
+    OEM Hardware ID:                      FUN_3, VEN_8086, DEV_7113
+    Revision No.:                         2
+
+  < Device Properties >
+    I/O Access:                           Yes
+    Memory Access:                        Yes
+    Bus Master Capable:                   No
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            No
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    No
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  No
+    Device Select Timing:                 Medium
+
+  < Performance Tips >
+    Tip T1202:                            Device does not support bus mastering.
+
+<< Creative Labs SoundBlaster Live! >>
+  < Device Information >
+    Device Type:                          Audio Multimedia Device
+    Device ID:                            Device 9h on bus 1 F0
+    Windows Device Name:                  Creative SB Live! Value
+    OEM Device Name:                      Creative Labs SoundBlaster Live!
+    OEM Hardware ID:                      FUN_0, VEN_1102, DEV_0002
+    Product Device Name:                  Creative Labs Unknown
+    Product Hardware ID:                  VEN_1102, DEV_0020
+    Revision No.:                         4
+
+  < Power Management Capabilities >
+    Version:                              1.00
+    Supports D1 PM State:                 No
+    Supports D2 PM State:                 No
+    Supports PME#:                        No
+    Supports PME Clock:                   No
+
+  < Device Properties >
+    Latency Timer:                        48 clocks
+    I/O Access:                           Yes
+    Memory Access:                        No
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            No
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    No
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  Yes
+    Device Select Timing:                 Medium
+    Interrupt Line:                       IRQ5
+    Interrupt Pin:                        INTA#
+
+<< Creative Labs SoundBlaster Live!, Multi-Media Interface >>
+  < Device Information >
+    Device Type:                          Other Input Device
+    Device ID:                            Device 9h on bus 1 F1
+    Windows Device Name:                  Creative MultiMedia Interface
+    OEM Device Name:                      Creative Labs SoundBlaster Live!, Multi-Media 
+                                          Interface
+    OEM Hardware ID:                      FUN_1, VEN_1102, DEV_7002
+    Product Device Name:                  Creative Labs Unknown
+    Product Hardware ID:                  VEN_1102, DEV_0020
+    Revision No.:                         1
+
+  < Power Management Capabilities >
+    Version:                              1.00
+    Supports D1 PM State:                 No
+    Supports D2 PM State:                 No
+    Supports PME#:                        No
+    Supports PME Clock:                   No
+
+  < Device Properties >
+    Latency Timer:                        48 clocks
+    I/O Access:                           Yes
+    Memory Access:                        No
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            No
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    No
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  Yes
+    Device Select Timing:                 Medium
+
+<< Intel 82557/8 10/100MBps EthernetPro Adapter >>
+  < Device Information >
+    Device Type:                          Ethernet Network Adapter
+    Device ID:                            Device Ah on bus 1 F0
+    Windows Device Name:                  Intel(R) PRO/100+ PCI Adapter
+    OEM Device Name:                      Intel 82557/8 10/100MBps EthernetPro Adapter
+    OEM Hardware ID:                      FUN_0, VEN_8086, DEV_1229
+    Product Device Name:                  Intel Unknown
+    Product Hardware ID:                  VEN_8086, DEV_0009
+    Revision No.:                         5
+
+  < Power Management Capabilities >
+    Version:                              1.00
+    Supports D1 PM State:                 Yes
+    Supports D2 PM State:                 Yes
+    Supports PME#:                        Yes
+    Supports PME Clock:                   No
+
+  < Device Properties >
+    Line Cache Size:                      8 bytes
+    Latency Timer:                        48 clocks
+    I/O Access:                           Yes
+    Memory Access:                        Yes
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            Yes
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    No
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  Yes
+    Device Select Timing:                 Medium
+    Interrupt Line:                       IRQ10
+    Interrupt Pin:                        INTA#
+
+<< Matrox MGA-G200 AGP GUI+3D Accelerator >>
+  < Device Information >
+    Device Type:                          VGA Display Adapter
+    Device ID:                            Device 0h on bus 2 F0
+    OEM Device Name:                      Matrox MGA-G200 AGP GUI+3D Accelerator
+    OEM Hardware ID:                      FUN_0, VEN_102B, DEV_0521
+    Product Device Name:                  Matrox Unknown
+    Product Hardware ID:                  VEN_1014, DEV_FF03
+    Revision No.:                         1
+
+  < Power Management Capabilities >
+    Version:                              1.00
+    Supports D1 PM State:                 No
+    Supports D2 PM State:                 No
+    Supports PME#:                        No
+    Supports PME Clock:                   No
+
+  < AGP Capabilities >
+    Version:                              1.00
+    Command Queue Length:                 32
+    Side Band Addressing Support:         Yes
+    Data Transfer Modes Support:          1x, 2x
+
+  < Device Properties >
+    Line Cache Size:                      8 bytes
+    Latency Timer:                        64 clocks
+    I/O Access:                           Yes
+    Memory Access:                        Yes
+    Bus Master Capable:                   Yes
+    Special Cycle Recognition:            No
+    Memory Write & Invalidate:            No
+    VGA Palette Snoop:                    No
+    Parity Error Response:                No
+    Address/Data Stepping:                No
+    System Error Line:                    No
+    Fast back-to-back Transactions:       No
+    Detects Parity Errors:                No
+    Supports System Error Line:           No
+    Supports Parity Line:                 No
+    User Defined Format:                  No
+    PCI66 Bus Support:                    No
+    New Capability List:                  Yes
+    Device Select Timing:                 Medium
+    Interrupt Line:                       IRQ11
+    Interrupt Pin:                        INTA#
+
+<<< Sound Card Information >>>
+-----------------------------------------------------------------------------------------------
+
+<< Wave Input Devices (Recording) >>
+<< SB Live! Wave In [D000] >>
+  < General Device Information >
+    Device Name:                          SB Live! Wave In [D000]
+    Manufacturer:                         Creative Labs
+    Version:                              4.00
+    Product ID:                           4 / 2
+
+  < Specific Wave Information >
+    Maximum Sampling Bits:                16-bit
+    Maximum Sampling Rate:                44.1kHz
+    Channels:                             Stereo
+
+<< Game Compatible Device >>
+  < General Device Information >
+    Device Name:                          Game Compatible Device
+    Manufacturer:                         Microsoft
+    Version:                              4.00
+    Product ID:                           90 / 1
+
+  < Specific Wave Information >
+    Maximum Sampling Bits:                8-bit
+    Maximum Sampling Rate:                11.025kHz
+    Channels:                             Mono
+
+<< Voice Modem Wave #00 Line >>
+  < General Device Information >
+    Device Name:                          Voice Modem Wave #00 Line
+    Manufacturer:                         Microsoft
+    Version:                              4.00
+    Product ID:                           80 / 1
+
+  < Specific Wave Information >
+    Maximum Sampling Bits:                8-bit
+    Maximum Sampling Rate:                11.025kHz
+    Channels:                             Mono
+
+<< Microsoft Sound Mapper >>
+  < General Device Information >
+    Device Name:                          Microsoft Sound Mapper
+    Manufacturer:                         Microsoft
+    Version:                              4.03
+    Product ID:                           2 / 1
+
+  < Specific Wave Information >
+    Maximum Sampling Bits:                16-bit
+    Maximum Sampling Rate:                44.1kHz
+    Channels:                             Stereo
+
+<< Wave Output Devices (Playback) >>
+<< SB Live! Wave Out [D000] >>
+  < General Device Information >
+    Device Name:                          SB Live! Wave Out [D000]
+    Manufacturer:                         Creative Labs
+    Version:                              4.00
+    Product ID:                           104 / 2
+
+  < Specific Wave Information >
+    Maximum Sampling Bits:                16-bit
+    Maximum Sampling Rate:                44.1kHz
+    Channels:                             Stereo
+
+  < Device Capabilities >
+    Pitch Control:                        No
+    Playback Rate Control:                No
+    Synchronous Operation:                No
+    Sample Accurate Position Information: Yes
+    DirectSound Certified:                No
+    Volume Control:                       Yes
+    Balance Control:                      Yes
+
+<< Game Compatible Device >>
+  < General Device Information >
+    Device Name:                          Game Compatible Device
+    Manufacturer:                         Microsoft
+    Version:                              4.00
+    Product ID:                           89 / 1
+
+  < Specific Wave Information >
+    Maximum Sampling Bits:                8-bit
+    Maximum Sampling Rate:                11.025kHz
+    Channels:                             Mono
+
+  < Device Capabilities >
+    Pitch Control:                        No
+    Playback Rate Control:                No
+    Synchronous Operation:                No
+    Sample Accurate Position Information: No
+    DirectSound Certified:                No
+    Volume Control:                       No
+
+<< Voice Modem Wave #00 Line >>
+  < General Device Information >
+    Device Name:                          Voice Modem Wave #00 Line
+    Manufacturer:                         Microsoft
+    Version:                              4.00
+    Product ID:                           81 / 1
+
+  < Specific Wave Information >
+    Maximum Sampling Bits:                8-bit
+    Maximum Sampling Rate:                11.025kHz
+    Channels:                             Mono
+
+  < Device Capabilities >
+    Pitch Control:                        No
+    Playback Rate Control:                No
+    Synchronous Operation:                No
+    Sample Accurate Position Information: No
+    DirectSound Certified:                No
+    Volume Control:                       No
+
+<< Microsoft Sound Mapper >>
+  < General Device Information >
+    Device Name:                          Microsoft Sound Mapper
+    Manufacturer:                         Microsoft
+    Version:                              4.03
+    Product ID:                           2 / 1
+
+  < Specific Wave Information >
+    Maximum Sampling Bits:                16-bit
+    Maximum Sampling Rate:                44.1kHz
+    Channels:                             Stereo
+
+  < Device Capabilities >
+    Pitch Control:                        No
+    Playback Rate Control:                No
+    Synchronous Operation:                No
+    Sample Accurate Position Information: Yes
+    DirectSound Certified:                No
+    Volume Control:                       Yes
+    Balance Control:                      Yes
+
+<< MIDI Input Devices (Control) >>
+<< SB Live! MIDI In [D000] >>
+  < General Device Information >
+    Device Name:                          SB Live! MIDI In [D000]
+    Manufacturer:                         Creative Labs
+    Version:                              4.00
+    Product ID:                           202 / 2
+
+<< MIDI Output Devices (Playback) >>
+<< Creative S/W Synth >>
+  < General Device Information >
+    Device Name:                          Creative S/W Synth
+    Manufacturer:                         Creative Labs
+    Version:                              1.00
+    Product ID:                           310 / 2
+
+  < Specific Synthesizer Information >
+    MIDI Device Type:                     Special Synthesizer
+    Synthesizer Voices:                   1024
+    Synthesizer Notes:                    1024
+    Channels Supported:                   16
+    Channels Supported Mask:              FFFFh
+
+  < Device Capabilities >
+    Patch Caching:                        No
+    Stream Support:                       No
+    Volume Control:                       No
+
+  < Performance Tips >
+    Warning W710:                         Driver may be obsolete. Check that it is the latest 
+                                          version.
+
+<< A: SB Live! MIDI Synth >>
+  < General Device Information >
+    Device Name:                          A: SB Live! MIDI Synth
+    Manufacturer:                         Creative Labs
+    Version:                              4.00
+    Product ID:                           306 / 2
+
+  < Specific Synthesizer Information >
+    MIDI Device Type:                     Special Synthesizer
+    Synthesizer Voices:                   64
+    Synthesizer Notes:                    64
+    Channels Supported:                   16
+    Channels Supported Mask:              FFFFh
+
+  < Device Capabilities >
+    Patch Caching:                        No
+    Stream Support:                       No
+    Volume Control:                       Yes
+    Balance Control:                      Yes
+
+<< B: SB Live! MIDI Synth >>
+  < General Device Information >
+    Device Name:                          B: SB Live! MIDI Synth
+    Manufacturer:                         Creative Labs
+    Version:                              4.00
+    Product ID:                           306 / 2
+
+  < Specific Synthesizer Information >
+    MIDI Device Type:                     Special Synthesizer
+    Synthesizer Voices:                   64
+    Synthesizer Notes:                    64
+    Channels Supported:                   16
+    Channels Supported Mask:              FFFFh
+
+  < Device Capabilities >
+    Patch Caching:                        No
+    Stream Support:                       No
+    Volume Control:                       Yes
+    Balance Control:                      Yes
+
+<< SB Live! MIDI Out [D000] >>
+  < General Device Information >
+    Device Name:                          SB Live! MIDI Out [D000]
+    Manufacturer:                         Creative Labs
+    Version:                              4.00
+    Product ID:                           201 / 2
+
+  < Specific Synthesizer Information >
+    MIDI Device Type:                     MIDI Port
+    Channels Supported:                   16
+    Channels Supported Mask:              FFFFh
+
+  < Device Capabilities >
+    Patch Caching:                        No
+    Stream Support:                       No
+    Volume Control:                       No
+
+<< MIDI Mapper >>
+  < General Device Information >
+    Device Name:                          MIDI Mapper
+    Manufacturer:                         Microsoft
+    Version:                              4.00
+    Product ID:                           1 / 1
+
+  < Specific Synthesizer Information >
+    MIDI Device Type:                     MIDI Mapper
+    Channels Supported:                   16
+    Channels Supported Mask:              FFFFh
+
+  < Device Capabilities >
+    Patch Caching:                        No
+    Stream Support:                       Yes
+    Volume Control:                       Yes
+    Balance Control:                      Yes
+
+<< Mixer Devices (Mixing) >>
+<< SB Live! Mixer [D000] >>
+  < General Device Information >
+    Device Name:                          SB Live! Mixer [D000]
+    Manufacturer:                         Creative Labs
+    Version:                              4.00
+    Product ID:                           409 / 2
+
+  < Play Control Line >
+    Component Type:                       Speakers  (Destination)
+    Channels:                             Stereo
+    Line is Active:                       Yes
+    Line is Disconnected:                 No
+    Source Line:                          No
+
+  < Record Control Line >
+    Component Type:                       Wave Input  (Destination)
+    Channels:                             Mono
+    Line is Active:                       Yes
+    Line is Disconnected:                 No
+    Source Line:                          No
+
+<<< Hardware IRQ Settings >>>
+-----------------------------------------------------------------------------------------------
+
+    0:          System timer
+    1:          Standard 101/102-Key or Microsoft Natural Keyboard
+    2:          Programmable interrupt controller
+    3:          Communications Port (COM2)
+    4:          Communications Port (COM1)
+    5:          Creative SB Live! Value
+    5:          Intel 82371AB/EB PCI to USB Universal Host Controller
+    5:          IRQ Holder for PCI Steering
+    6:          Standard Floppy Disk Controller
+    7:          ECP Printer Port (LPT1)
+    8:          System CMOS/real time clock
+    10:         Intel(R) PRO/100+ PCI Adapter
+    10:         IRQ Holder for PCI Steering
+    11:         IRQ Holder for PCI Steering
+    11:         Matrox Millennium G200 AGP - English
+    12:         PS/2 Compatible Mouse Port
+    13:         Numeric data processor
+    14:         Intel 82371AB/EB PCI Bus Master IDE Controller
+    14:         Primary IDE controller (dual fifo)
+    15:         Intel 82371AB/EB PCI Bus Master IDE Controller
+    15:         Secondary IDE controller (dual fifo)
+
+-----------------------------------------------------------------------------------------------
+*****  End of Report - Report created successfully  *****
+
+

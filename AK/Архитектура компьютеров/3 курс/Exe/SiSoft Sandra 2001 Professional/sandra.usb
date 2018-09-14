@@ -1,0 +1,1370 @@
+; SiSoft Sandra - USB Devices File
+;
+; Compiled for SiSoft Sandra from various sources by
+; Adrian@sisoftware.co.uk
+;
+; Credits: Windows 95/95b/98/NT .INF files
+;          Ralph Brown's Interrupt List
+;
+; If you want to use data from this file, for God's sake, let's help each other to
+; compile a complete version. Is that fair enough?
+;
+; Version=100
+
+[0506]
+N=3Com Corporation
+
+[059C]
+N=A-Trend Technology
+
+[04E4]
+N=ACC Microelectronics
+
+[0460]
+N=Ace Cad Enterprise
+
+[049C]
+N=Acer Advanced Labs
+
+[0402]
+N=Acer Labs
+
+[04A5]
+N=Acer Peripheral
+
+[042E]
+N=Acer
+
+[0502]
+N=Acer
+
+[0515]
+N=ACTC
+
+[03F3]
+N=Adaptec
+
+[0422]
+N=ADI System
+
+[0459]
+N=Adobe Systems
+
+[0522]
+N=Advanced Connectek
+
+[0428]
+N=Advanced Gravis Computer
+
+[059D]
+N=Advanced Input Devices
+
+[0438]
+N=Advanced Micro Devices
+
+[0479]
+N=Advanced Peripheral Laboratories
+
+[0476]
+N=AESP
+
+[0521]
+N=Airborn Connectors
+
+[0533]
+N=Alcatel Mobile Phones
+
+[058F]
+N=Alcor Micro
+
+[044E]
+N=Alps Electric
+
+[0433]
+N=Alps Electric
+
+[048C]
+N=Alps Electric
+
+[04D2]
+N=Altec Lansing Technologies
+
+[0527]
+N=ALTRA
+
+[0587]
+N=America Kotobuki Electronics
+
+[046B]
+N=American Megatrends
+
+[0530]
+N=American Microsystems
+
+[051D]
+N=American Power Conversion
+
+[0464]
+N=AMP
+
+[0456]
+N=Analog Devices
+
+[0555]
+N=ANAM S&T
+
+[0547]
+N=Anchor Chips
+
+[04ED]
+N=Annabooks
+
+[03E8]
+N=AOX
+
+[05AC]
+N=Apple Computer
+
+[0556]
+N=Asahi Kasei Microsystems
+
+[0418]
+N=AST Research
+
+[0486]
+N=ASUS Computers
+
+[0467]
+N=AT&T Paradyne
+
+[0523]
+N=ATEN GMBH
+
+[0557]
+N=ATEN International
+
+[0528]
+N=ATI Technologies
+
+[03EB]
+N=Atmel
+
+[052D]
+N=Avid Electronics
+
+[057C]
+N=AVM Gmbh
+
+[0412]
+N=Award Software
+
+[0509]
+N=Aztech Systems
+
+[0576]
+N=BAFO/Quality Computer Accessories
+
+[046E]
+N=Behavior Tech. Computer
+
+[050D]
+N=Belkin Components
+
+[0514]
+N=Berg Electronics
+
+[04FB]
+N=Biostar Microtech
+
+[05A7]
+N=Bose
+
+[0599]
+N=Brilliance Semiconductor
+
+[04EA]
+N=Brooktree
+
+[04F9]
+N=Brother International
+
+[0517]
+N=Butterfly Communications
+
+[050B]
+N=Cable System International
+
+[0559]
+N=Cadence Design Systems
+
+[04D6]
+N=CAE Technology
+
+[04A9]
+N=Canon
+
+[052C]
+N=Canon Information System
+
+[0491]
+N=Capetronic
+
+[0498]
+N=Capetronic (Kaohsiung)
+
+[044C]
+N=CCL/ITRI
+
+[05C5]
+N=Central Data Corporation
+
+[05C8]
+N=Cheng Uei Precision Industry
+
+[046A]
+N=Cherry Mikroscholter GMBH
+
+[04F2]
+N=Chicony Electronics
+
+[0564]
+N=Chinon Industries
+
+[0420]
+N=Chips and Technologies
+
+[04AB]
+N=Chromatic Research
+
+[0698]
+N=Chuntex (CTX)
+
+[050A]
+N=Cinch Connectors
+
+[0488]
+N=Cirque
+
+[0429]
+N=Cirrus Logic
+
+[05A6]
+N=Cisco Systems
+
+[0574]
+N=City University of Hong Kong
+
+[0508]
+N=Clarion
+
+[0453]
+N=CMD Technology
+
+[04B7]
+N=Compal Electronics
+
+[049F]
+N=Compaq Computers
+
+[0423]
+N=Computer Access Technology
+
+[0551]
+N=CompuTrend  Systems
+
+[0478]
+N=Connectix
+
+[041E]
+N=Creative Labs
+
+[052A]
+N=Crescent Heart Software
+
+[0544]
+N=Cristie Electronics
+
+[046F]
+N=Crystal Semiconductor
+
+[055E]
+N=CTX Opto-Electronics
+
+[04B4]
+N=Cypress Semiconductor
+
+[041B]
+N=d'TV
+
+[04F0]
+N=Daewoo Electronics
+
+[04AA]
+N=DaeWoo Telecom
+
+[04FA]
+N=Dallas Semiconductor
+
+[03EA]
+N=Data Broadcasting
+
+[0501]
+N=DDK Electronics
+
+[056B]
+N=Decicon Incorporated
+
+[047C]
+N=Dell Computer
+
+[0580]
+N=Denron
+
+[0450]
+N=DFI
+
+[05B5]
+N=Dialogic
+
+[045A]
+N=Diamond Multimedia Systems
+
+[0554]
+N=Dictaphone
+
+[03F4]
+N=Diebold
+
+[04D0]
+N=Digi International
+
+[04A0]
+N=Digital Equipment
+
+[05BA]
+N=Digital Persona
+
+[0513]
+N=digital-X
+
+[04AD]
+N=Dooin Electronics
+
+[04FF]
+N=E-CMOS
+
+[056C]
+N=e-TEK Labs
+
+[040A]
+N=Eastman Kodak
+
+[040F]
+N=Echo Speech Corporation
+
+[0572]
+N=EEH Datalink Gmbh
+
+[048F]
+N=Eicon Tech.
+
+[04F3]
+N=Elan Microelectronics Corportation
+
+[056E]
+N=Elecom
+
+[053E]
+N=Electronic Accessory Specialists
+
+[059F]
+N=Electronique D2
+
+[051F]
+N=Elite Electronics
+
+[03FC]
+N=Elitegroup Computer Systems
+
+[04E7]
+N=ELO TouchSystems
+
+[0577]
+N=ELSA
+
+[05CC]
+N=ELSA Gmbh
+
+[0570]
+N=Epson America
+
+[03F8]
+N=Epson Research Center
+
+[042A]
+N=Ericsson Austrian, AG
+
+[0442]
+N=Ericsson
+
+[0495]
+N=ESS Technology
+
+[04E2]
+N=Exar Corporation
+
+[0592]
+N=Exide Electronics
+
+[0518]
+N=EzKEY
+
+[03FE]
+N=Farallon
+
+[0529]
+N=Fast Security AG
+
+[04A2]
+N=FirePower Systems
+
+[05B1]
+N=First International Computer
+
+[0585]
+N=FlashPoint Technology
+
+[04D5]
+N=Forte Technologies
+
+[05B0]
+N=Fountain Technologies
+
+[0489]
+N=Foxconn / Hon Hai
+
+[0437]
+N=Framatome Connectors USA
+
+[05A2]
+N=Fuji Film Microdevices
+
+[04CB]
+N=Fuji Photo Film
+
+[0550]
+N=Fuji Xerox
+
+[04C5]
+N=Fujitsu Limited
+
+[04C5]
+N=Fujitsu
+
+[054A]
+N=Fujitsu Microelectronics
+
+[0407]
+N=Fujitsu Personal Systems
+
+[0430]
+N=Fujitsu Takamisawa America
+
+[0406]
+N=Fujitsu-ICL Computers
+
+[04F5]
+N=Fujitsu-ICL Systems
+
+[0403]
+N=Future Technology Devices
+
+[04F8]
+N=FuturePlus Systems
+
+[049A]
+N=Gandalf Technologies
+
+[0443]
+N=Gateway 2000
+
+[03F1]
+N=Genoa Technology
+
+[0414]
+N=Giga-Byte Technology
+
+[053B]
+N=Global Village Communication
+
+[05BA]
+N=Grey Cell Systems
+
+[0579]
+N=GVC Corporation
+
+[04F4]
+N=Harting Elektronik
+
+[0504]
+N=Hayes Microcomputer Products
+
+[03F0]
+N=Hewlett Packard
+
+[04B6]
+N=Hint Corporation
+
+[0503]
+N=Hitachi America
+
+[045B]
+N=Hitachi
+
+[04A4]
+N=Hitachi
+
+[051C]
+N=Holco Enterprise
+
+[04D9]
+N=Holtek Microelectronics
+
+[0507]
+N=Hosiden
+
+[0512]
+N=Hualon Microelectronics
+
+[04DC]
+N=Huan Hsin
+
+[04DB]
+N=Hypertec Pty
+
+[0435]
+N=Hyundai Electronics America
+
+[04BB]
+N=I-O Data Device
+
+[04B3]
+N=IBM
+
+[04E1]
+N=Iiyama North America
+
+[0563]
+N=Immersion Corporation
+
+[058C]
+N=In Focus Systems
+
+[05AB]
+N=In-System Design
+
+[0593]
+N=Incite
+
+[050C]
+N=InnoMedia
+
+[042C]
+N=Innovative Semiconductors
+
+[053C]
+N=Institut of Microelectronic & Mechatronic Systems
+
+[0426]
+N=Integrated Device Technology
+
+[048D]
+N=Integrated Technology Express
+
+[8086]
+N=Intel Corporation
+
+[042B]
+N=Intel Corporation
+
+[059E]
+N=Intelligent Instrumentation
+
+[0571]
+N=Interex
+
+[0560]
+N=Interface
+
+[04DF]
+N=Interlink Electronics
+
+[0578]
+N=Intrinsix
+
+[0537]
+N=Inventec Corporation
+
+[059B]
+N=Iomega Corporation
+
+[0431]
+N=Itac Systems
+
+[04D1]
+N=ITT Canon
+
+[03EC]
+N=Iwatsu America
+
+[05AF]
+N=Jing-Mold Enterprise
+
+[05C1]
+N=Kawasaki Steel
+
+[050F]
+N=Kawatsu Semiconductor
+
+[C251]
+N=Keil Software
+
+[047D]
+N=Kensington
+
+[055A]
+N=Kenwood USA
+
+[03F9]
+N=KeyTronic
+
+[055B]
+N=KnowledgeTek
+
+[04C8]
+N=Konica Corporation
+
+[056F]
+N=Korea Data Systems
+
+[0458]
+N=KYE/Mouse Systems
+
+[0482]
+N=Kyocera Electronics
+
+[041F]
+N=LCS Telegraphics
+
+[0413]
+N=Leadtek Research
+
+[043D]
+N=Lexmark International
+
+[043E]
+N=LG Electronics USA
+
+[05B4]
+N=LG Semicon
+
+[0535]
+N=LIH TZU Electric
+
+[04CA]
+N=Lite-On Technology
+
+[04C4]
+N=Lockheed Martin Energy Research
+
+[046D]
+N=Logitech
+
+[0516]
+N=Longwell Electronics
+
+[04D4]
+N=LSI Logic
+
+[047E]
+N=Lucent Microelectronics Technologies
+
+[0445]
+N=Lucent Technologies
+
+[0445]
+N=Lucent Technologies
+
+[05D0]
+N=Lunar
+
+[0493]
+N=MAG Technology
+
+[04C3]
+N=Maxi Switch
+
+[040E]
+N=MCCI
+
+[05B7]
+N=Medianix Semiconductor
+
+[05C2]
+N=Mediaphonics S.A.
+
+[0411]
+N=Melco
+
+[04C2]
+N=Methode Electronics Far East
+
+[0463]
+N=MGE UPS Systems
+
+[058D]
+N=Micrel Semiconductor
+
+[04AC]
+N=Micro Audiometrics
+
+[04D8]
+N=Micro Chip Technology
+
+[0524]
+N=Micro Devices Technology
+
+[04C7]
+N=Micro Macro Technologies
+
+[0496]
+N=Micron Electronics
+
+[042D]
+N=Micronics
+
+[045E]
+N=Microsoft
+
+[0596]
+N=Microtouch Systems
+
+[04DE]
+N=MindShare
+
+[03ED]
+N=Mitel
+
+[0452]
+N=Mitsubishi Electronics America
+
+[03EE]
+N=Mitsumi
+
+[042F]
+N=Molex
+
+[0447]
+N=Momentum Microsystems
+
+[0534]
+N=Motorola
+
+[0427]
+N=Motorola Electronics Taiwan
+
+[0425]
+N=Motorola Semiconductors HK
+
+[04A8]
+N=Multivideo Labs
+
+[055F]
+N=Mustek Systems
+
+[04CF]
+N=Myson Technology
+
+[0511]
+N=N'ABLE Technologies
+
+[0440]
+N=NANAO Corporation
+
+[0401]
+N=National Registry
+
+[0400]
+N=National Semiconductor
+
+[0404]
+N=NCR
+
+[0409]
+N=NEC
+
+[050E]
+N=Neon Technology
+
+[0525]
+N=Net Chip Technology
+
+[054B]
+N=New Media
+
+[04F7]
+N=Newnex Technology
+
+[0598]
+N=Nigata Canotec
+
+[04B0]
+N=Nikon
+
+[057E]
+N=Nintendo
+
+[0446]
+N=NMB Technologies
+
+[0573]
+N=Nogatech
+
+[058A]
+N=Nohau
+
+[04A6]
+N=Nokia Display Products
+
+[0421]
+N=Nokia Mobile Phones
+
+[0485]
+N=Nokia Monitors
+
+[04F6]
+N=Norand
+
+[045D]
+N=Northern Telecom
+
+[04EB]
+N=Northstar Systems
+
+[03F2]
+N=Oak Technology
+
+[0561]
+N=Oasis Design
+
+[04D7]
+N=Oki Semiconductor
+
+[05A9]
+N=OmniVision Technologies
+
+[0590]
+N=OMRON
+
+[03FB]
+N=OPTi
+
+[05A4]
+N=Ortek Technology
+
+[04EF]
+N=Pacific Electronic International
+
+[0583]
+N=Padix
+
+[04B1]
+N=Pan International
+
+[04DA]
+N=Panasonic (Matsushita)
+
+[04E9]
+N=PC-Tel
+
+[0565]
+N=Peracom Networks
+
+[04FE]
+N=PFU Limited
+
+[0471]
+N=Philips
+
+[0552]
+N=Philips Monitors
+
+[05B9]
+N=Philips Research Laboratories
+
+[04CC]
+N=Philips Semiconductors
+
+[041A]
+N=Phoenix Technologies
+
+[0549]
+N=Pixera
+
+[047F]
+N=Plantronics
+
+[0546]
+N=Polaroid
+
+[05CB]
+N=Powerchip Semiconductor
+
+[053A]
+N=Preh Werke Gmbh & Co. KG
+
+[0461]
+N=Primax Electronics
+
+[0594]
+N=Princeton Graphic Systems
+
+[04E5]
+N=Promise Technology
+
+[054E]
+N=Proside
+
+[055C]
+N=Proton Electronic
+
+[05B6]
+N=Proxima
+
+[05C7]
+N=Qtronix
+
+[05C6]
+N=Qualcomm
+
+[0408]
+N=Quanta Computer
+
+[0568]
+N=Quartz Ingenierie
+
+[0591]
+N=Questra Consulting
+
+[057F]
+N=Quickshot Technology
+
+[0581]
+N=Racal Data Group
+
+[043F]
+N=RadiSys
+
+[04B9]
+N=Rainbow Technologies
+
+[0584]
+N=RATOC System
+
+[05BE]
+N=Raychem
+
+[0475]
+N=Relisys/TECO Information System
+
+[05CA]
+N=Ricoh Company
+
+[0572]
+N=Rockwell Semiconductor Systems
+
+[04B5]
+N=ROHM LSI Systems
+
+[0582]
+N=Roland
+
+[05BF]
+N=S & S Research
+
+[048A]
+N=S-MOS Systems
+
+[041D]
+N=S3
+
+[05A5]
+N=Sampo Technology
+
+[055D]
+N=Samsung Electro-Mechanics
+
+[057A]
+N=Samsung Electronics America
+
+[04E8]
+N=Samsung Electronics
+
+[0419]
+N=Samsung Info. Systems America
+
+[0434]
+N=Samsung Info. Systems America
+
+[0492]
+N=Samsung SemiConductor
+
+[0405]
+N=Sand Microelectronics
+
+[0538]
+N=Santa Cruz Operation
+
+[0474]
+N=Sanyo Electric
+
+[0473]
+N=Sanyo Information Business
+
+[0588]
+N=Sapien Design
+
+[04CE]
+N=ScanLogic Corporation
+
+[051E]
+N=Scientific Atlanta
+
+[0477]
+N=Seagate Technology
+
+[0569]
+N=SegaSoft
+
+[04B8]
+N=Seiko Epson
+
+[0510]
+N=Sejin Electron
+
+[05C9]
+N=Semtech Corporation
+
+[0483]
+N=SGS Thomson Microelectronics
+
+[044A]
+N=Shamrock Tech
+
+[057D]
+N=Shark Multimedia
+
+[04DD]
+N=Sharp Corporation
+
+[04E6]
+N=Shuttle Technology
+
+[0539]
+N=Shyh Shiun Terminals
+
+[0500]
+N=Siam United Hi-Tech
+
+[05CE]
+N=SICAN Gmbh
+
+[03F5]
+N=Siemens Electromechanical
+
+[044D]
+N=Siemens Nixdorf
+
+[058B]
+N=Siemens Semiconductor
+
+[05CD]
+N=Silicom
+
+[053D]
+N=Silicon Architect
+
+[051B]
+N=Silicon Graphics
+
+[0457]
+N=Silicon Integrated Systems
+
+[047B]
+N=Silitek
+
+[04EA]
+N=Sipex Corporation
+
+[0541]
+N=Sirf Technology
+
+[0497]
+N=Smile International
+
+[04FD]
+N=Soliton Systems, K.K.
+
+[054C]
+N=Sony Corporation
+
+[05A8]
+N=Spacetec IMC Corporation
+
+[0484]
+N=Specialix
+
+[059A]
+N=Spectrum Signal Processing
+
+[0424]
+N=Standard Microsystems
+
+[052E]
+N=Standard Microsystems
+
+[0519]
+N=Star Micronics America
+
+[0487]
+N=Stewart Connector
+
+[0472]
+N=Sun Microsystems
+
+[05CF]
+N=Sung Forn
+
+[04FC]
+N=Sunplus Technology
+
+[0575]
+N=Swets & Zeitlinger BV
+
+[0417]
+N=Symbios Logic
+
+[053F]
+N=Synopsys
+
+[05AE]
+N=Synopsys
+
+[0532]
+N=Systech Corporation
+
+[049B]
+N=System Connection
+
+[04A1]
+N=SystemSoft Corporation
+
+[0520]
+N=Taiwan Semiconductor Manufacturing
+
+[04CD]
+N=Tatung America
+
+[0436]
+N=Taugagreining HF
+
+[04BF]
+N=TDK USA Corporation
+
+[052B]
+N=Tekom Development
+
+[0455]
+N=Telematics International
+
+[0562]
+N=Telex Communications
+
+[04BE]
+N=Telia Research AB
+
+[0526]
+N=Temic Matra
+
+[0451]
+N=Texas Instruments
+
+[03E9]
+N=Thesys Microelectronics
+
+[044F]
+N=ThrustMaster
+
+[04EC]
+N=Tokyo Electron
+
+[046C]
+N=Toshiba
+
+[04C6]
+N=Toshiba America Electronic Components
+
+[0480]
+N=Toshiba America Info. Systems
+
+[04BD]
+N=Toshiba Electronics Taiwan
+
+[04BA]
+N=Toucan Systems
+
+[04A3]
+N=Trident Microsystems
+
+[058E]
+N=Tripath Technology
+
+[0597]
+N=Trisignal Communications
+
+[0558]
+N=Truevision
+
+[054D]
+N=Try Corporation
+
+[0EF7]
+N=Tulip Computers International
+
+[0548]
+N=Tyan Computer
+
+[04C1]
+N=U.S. Robotics
+
+[052F]
+N=Unicore Software
+
+[0432]
+N=Unisys
+
+[0490]
+N=United Microelectronics
+
+[0540]
+N=Universal Access
+
+[047A]
+N=USAR Systems
+
+[05A1]
+N=USC Corporation
+
+[05AA]
+N=Utilux South China
+
+[05A3]
+N=VAutomation
+
+[05A0]
+N=Vetronix Corporation
+
+[040D]
+N=VIA Technologies
+
+[04F1]
+N=Victor Company of Japan
+
+[0589]
+N=Victron
+
+[04D3]
+N=VidUS
+
+[0543]
+N=View Sonic Corporation
+
+[04A7]
+N=Visioneer
+
+[049D]
+N=VLSI Technology
+
+[0553]
+N=VLSI Vision
+
+[0454]
+N=Vobis Microcomputer AG
+
+[0439]
+N=Voice Technologies Group
+
+[040C]
+N=VTech Computers
+
+[056A]
+N=WACOM
+
+[0531]
+N=Wacom Technology
+
+[0536]
+N=Welch Allyn
+
+[040B]
+N=Weltrend Semiconductor
+
+[0468]
+N=Wieson Electronic
+
+[0416]
+N=Winbond Electronics
+
+[0441]
+N=Winbond Systems Lab.
+
+[04AF]
+N=Winnov L.P.
+
+[044B]
+N=WSI
+
+[051A]
+N=WYSE Technology
+
+[054F]
+N=WYSE Technology Taiwan
+
+[03FD]
+N=Xilinx
+
+[0545]
+N=Xirlink
+[0567]
+N=Xyratex Int'l
+
+[057B]
+N=Y-E Data
+
+[05AD]
+N=Y.C.Cable U.S.A.
+
+[0499]
+N=Yamaha Corporation
+
+[0481]
+N=Zenith Data Systems
+
+[04E3]
+N=Zilog
+
+[0595]
+N=Zoran Microelectronics
+
+[0586]
+N=ZyXEL Communications

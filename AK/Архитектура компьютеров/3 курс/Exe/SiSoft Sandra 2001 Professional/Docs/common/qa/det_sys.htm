@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SiSoft Sandra Q & A - System Monitoring</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../style/default.css">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H2>SiSoft Sandra - The Diagnostic Tool, Q & A - System Monitoring</H2>
+<P>
+This document provides some frequently asked questions about <I><B>SiSoft Sandra</B></I>. Please read the <B>Help File</B> as well!
+<P>
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+
+<B>Q: How can I tell whether my mainboard has a system monitor chip?<BR>
+A: </B>Check the manual. Most mainboards will display system monitoring information in the BIOS (power management). You can also try other software like Intel's LDCM (LanDesk Client Manager) or other popular software like Motherboard Monitor.
+<P>
+
+<B>Q: My mainboard has system monitoring facilities but Sandra does not display any information!<BR>
+A: </B>While Sandra supports popular system monitoring chips (see <A HREF="../compat.htm">Compatibility</A>) it does not support all of them. Let us know which chip you have and we'll do our best to add this functionality in future versions.
+<P>
+
+<B>Q: I get system monitoring information only the 1st time I run the module, but not afterwards!<BR>
+A: </B>Right-click module <i>Mainboard Information</i>, choose <i>Options</i> and uncheck <i>Include Programable Clock Generator Information</i>. The PLL IC may be locking up when read or it may be write-only.
+<P>
+
+<B>Q: Sandra displays only the mainboard temperature not the CPU temperature as well!<BR>
+A: </B>Most system monitoring chips can measure only one temperature (internal sensor) by default and need an external sensor to measure other temperatures. There may be some sockets where you can plug in additional sensors - please consult the mainboard manual.
+<P>
+
+<B>Q: Sandra does not display the temperature of my PII/PIII/Xeon.<BR>
+Q: Sandra displays an very high (e.g. 130C) temperature for my CPU!<BR>
+A:</B> See previous question.
+<P>
+
+While Deschutes PII and PIII CPUs have an internal junction within the chip itself to allow precise core temperature measurement, few boards actually have the hardware to use it. Existing system monitoring chips <b>do not</b> work with such a device since they're designed to use thermistors.
+<P>
+
+<B>Q: The information shown is incorrect on for my Asus P3B-F (Asus AS99127F)!<BR>
+A: </B>Update to Sandra 6.40 or later.
+<P>
+
+<B>Q: The voltage readings shown by Sandra are incorrect!<BR>
+A: </B>Some voltages (e.g. +12V) need to be scaled down before conversion using a resistor bridge. Negative values (e.g. -5V or +12V) are usually converted to positive values using inverters. Sandra uses the values listed in the manufacturer's application notes for the chip but some mainboard manufacturers (e.g. QDI, PC Chips) use different values. They may also use different ports to measure different voltages instead - there is no way for the software to tell.
+<P>
+
+<B>Q: The mainboard does not have a system monitor chip but Sandra displays some bogus values!<BR>
+A:</B> Some system monitor chips do not have ID registers which can be used to detect the chip; add to that SMBus/i2c controllers which do not return an error value when reading from a free address but bogus values and it becomes nearly impossible to make sure. If unsure, Sandra does not display anything but such issues are possible in certain combinations. Right-click the module, select <i>Options</i>, and uncheck <i>Include sensors information</i> to turn it off.
+<P>
+
+<B>Q: Why is there a difference between the CPU temperature shown by Sandra and that shown by the BIOS?<BR>
+A:</B> Depending on the CPU type, a compensating value must be added. This is because the temperature sensor, which is placed under the CPU socket or on the heatsink, does not actually touch the CPU. A correction must be made to compensate for this distance. This correction is not defined for all CPUs and there are exceptions to the rule. Don't compare the BIOS which is tuned for your board with Sandra which must work on <b>ALL</b> boards!
+<P>
+
+<B>Q: What are the compensation values used by Sandra?<BR>
+A: </B>The compensation values vary with the processor type and model and are set to agree with the BIOS/Probe on <A HREF="http://www.asus.com.tw">Asus</A> boards. Generally the same values are used by other board makers as well but some may indeed vary.
+<P>
+
+<B>Q: Does Sandra give an accurate temperature readout?<BR>
+<B>A:</B></B> Depends. The surest way is to actually compare it with another method and see what you get. What's sure is that changes should be accurate (e.g. if after adding a card the readout shows a higher temperature then the system is hotter) but actual values may not be.
+<P>
+
+<B>Q: The temperature seems to go up too fast when I start the computer!<BR>
+<B>A:</B></B> This may be due to the compensation factor which can be quite high for some CPUs. If the room temperature is 25-29&#176;C the readout may show 50-60&#176;C quite soon.
+<P>
+
+<B>Q: The FAN speed reported is twice the value reported by the BIOS!<BR>
+<B>A:</B></B> The Asus TX97 BIOS earlier than 1.07 had a bug in the BIOS. This is fixed in later version so you may try to update your BIOS if you can.
+<P>
+
+<B>Q: What temperature should the case (mainboard) be at?<BR>
+A:</B> There is not a specific temperature, but we like to keep our systems below 35&#176;C with a room temperature of 26&#176;C. Generally it should be 5&#176;C below the lowest maximum temperature of all the internal devices installed (memory, disks, cards, etc.).
+<P>
+
+<B>Q: What temperature should the CPU be at?<BR>
+A:</B> Consult the manufacturer's CPU thermal guidelines (see their website) for specific details. Do remember that the temperature is taken to be the core temperature and not heatsink temperature. Most CPUs should be at below
+60&#176;C in normal use.
+<P>
+
+<B>Q: Sandra has the fan speeds mixed up.<BR>
+A:</B> Make sure you plugged the fans in their respective connectors. New mainboards have up to 3 similar (CPU, Chassis, Power) connectors. Consult the manual for specific information. When 2 CPUs are installed, the 'Power' fan is the 2nd CPU fan. Some boards like the Abit BH6 have the connectors mixed up.
+<P>
+
+<B>Q: Sandra does not display the fan speed.<BR>
+A:</B> You need 3-wire <i>smart</i> fans to make this work. Some system monitoring chips can only monitor a certain number of fans (e.g. 1 or 2) and no more. Also, if the rotational speed of the fan is low (e.g. 2000 rpm) or very high the chip may be unable to detect it.
+<P>
+
+<IMG src="../../gifs/fireline.gif" height=5 width=100%>
+<P>
+<A HREF="../contact.htm">Copyright & Contact Information</A>
+</BODY>
+</HTML>

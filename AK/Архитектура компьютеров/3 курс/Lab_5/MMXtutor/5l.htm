@@ -1,0 +1,35 @@
+<!doctype html> 
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Topic 5</TITLE>
+</HEAD>
+<BODY BGCOLOR="#CCCCCC">
+<SCRIPT language="JavaScript">
+<!--
+if (document.location==parent.document.location)
+document.write("<CENTER><H3>This page is part of the Introduction to MMX&#153; Technology tutorial. To start the tutorial, please open the MMXSTART.HTM page in the same directory!</H3></CENTER>")
+//-->
+</SCRIPT>
+
+В технологии MMX использована модель обработки данных 
+SIMD (single instruction, multiple data, т.е.
+одна команда <TT>-</TT> много данных).
+Это повышает производительность программ, поскольку
+одна команда обрабатывает несколько 
+<!A HREF="glossary.htm#dataelements" TARGET="right">элементов данных<!/A> 
+одновременно.
+MMX-команды обеспечивают параллельную обработку нескольких байтов, 
+слов или двойных слов.
+
+<p>
+Справа Вы видите пример, моделирующий работу двух графических программ. 
+Обе программы выводят на экран одну и ту же последовательность кадров.
+Первая программа написана без MMX-команд; она обрабатывает лишь одну
+точку цветного изображения (8 бит) за одну команду. 
+Во второй программе применена технология MMX; 
+ее команды способны обрабатывать 8 точек (64 бит) одновременно!
+
+</BODY>
+</HTML>
+
