@@ -1,0 +1,235 @@
+# Design: Design lab2 already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -work lab2 -2002  $dsn/src/chem1.vhd $dsn/src/chem3.vhd $dsn/src/chem2.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem1.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem3.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem2.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# Top-level unit(s) detected:
+# Entity => chem1
+# Error: COMP96_0020: chem3.vhd : (16, 1): Variable can be declared only in a process or subprogram.
+# Error: COMP96_0047: chem3.vhd : (18, 2): Concurrent statement or ':' expected.
+# Error: COMP96_0047: chem3.vhd : (19, 2): Concurrent statement or ':' expected.
+# Error: COMP96_0047: chem3.vhd : (20, 2): Concurrent statement or ':' expected.
+# Error: COMP96_0047: chem3.vhd : (21, 2): Concurrent statement or ':' expected.
+# Error: COMP96_0047: chem3.vhd : (22, 2): Concurrent statement or ':' expected.
+# Error: COMP96_0047: chem3.vhd : (23, 2): Concurrent statement or ':' expected.
+# Error: COMP96_0047: chem3.vhd : (24, 2): Concurrent statement or ':' expected.
+# Error: COMP96_0047: chem3.vhd : (25, 2): Concurrent statement or ':' expected.
+# Error: COMP96_0019: chem2.vhd : (22, 19): Keyword 'when' expected.
+# Error: COMP96_0015: chem2.vhd : (22, 19): ';' expected.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -work lab2 -2002  $dsn/src/chem1.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem1.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+asim -O5 +access +r +m+chem1 chem1 chem1
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6007 kB (elbread=1023 elab2=4892 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location D:\Repository\workspace\LMod\my_design\laba2\lab2\src\wave.asdb
+#  17:30, 18 сент€бр€ 2018 г.
+#  Simulation has been initialized
+#  Selected Top-Level: chem1 (chem1)
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6007 kB (elbread=1023 elab2=4892 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location D:\Repository\workspace\LMod\my_design\laba2\lab2\src\wave.asdb
+#  17:30, 18 сент€бр€ 2018 г.
+#  Simulation has been initialized
+#  Selected Top-Level: chem1 (chem1)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+#  Simulation has been stopped
+# Design: Error: There are no modules selected for elaboration.
+# Design: Error: Elaboration failed
+# Design: Design lab2 already active.
+# 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+asim -O5 +access +r +m+chem1 chem1 chem1
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+acom -O3 -work lab2 -2002  $dsn/src/chem1.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem1.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6007 kB (elbread=1023 elab2=4892 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location D:\Repository\workspace\LMod\my_design\laba2\lab2\src\wave.asdb
+#  17:32, 18 сент€бр€ 2018 г.
+#  Simulation has been initialized
+#  Selected Top-Level: chem1 (chem1)
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# 12 signal(s) traced.
+# Error: Advanced Dataflow is disabled.
+# Error: To enable Advanced Dataflow close the simulation session, set the Generate Data for Advanced Dataflow option in Design Settings.
+# Error: Initialize simulation from Simulation Menu or use asim macro command with -advdataflow switch.
+acom -O3 -work lab2 -2002  $dsn/src/chem1.vhd $dsn/src/chem3.vhd $dsn/src/chem2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem1.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem3.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# Error: COMP96_0019: chem3.vhd : (15, 1): Keyword 'begin' expected.
+# Error: COMP96_0016: chem3.vhd : (15, 9): Design unit declaration expected.
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem2.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work lab2 -2002  $dsn/src/chem1.vhd $dsn/src/chem3.vhd $dsn/src/chem2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem1.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem3.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem2.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work lab2 -2002  $dsn/src/chem1.vhd $dsn/src/chem3.vhd $dsn/src/chem2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem1.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem3.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# File: D:\Repository\workspace\LMod\my_design\laba2\lab2\src\chem2.vhd
+# Compile Entity "chem1"
+# Compile Architecture "chem1" of Entity "chem1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 102 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 202 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 302 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 402 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 502 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 602 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 702 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 802 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5749 kB (elbread=1023 elab2=4634 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location D:\Repository\workspace\LMod\my_design\laba2\lab2\src\wave.asdb
+#  17:36, 18 сент€бр€ 2018 г.
+#  Simulation has been initialized
+#  Selected Top-Level: chem1 (chem1)
+# KERNEL: Signal '/chem1/x1' has already been traced
+# KERNEL: Signal '/chem1/x2' has already been traced
+# KERNEL: Signal '/chem1/x3' has already been traced
+# KERNEL: Signal '/chem1/x4' has already been traced
+# KERNEL: Signal '/chem1/y' has already been traced
+# Warning: WAVEFORM: Signal /chem1/s5 not found.
+# Warning: WAVEFORM: Signal /chem1/s6 not found.
+# Warning: WAVEFORM: Signal /chem1/s7 not found.
+# Warning: WAVEFORM: Signal /chem1/s8 not found.
+# Warning: WAVEFORM: Signal /chem1/s9 not found.
+# Warning: WAVEFORM: Signal /chem1/s10 not found.
+# Warning: WAVEFORM: Signal /chem1/s11 not found.
+# KERNEL: Signal '/chem1/x1' has already been traced
+# KERNEL: Signal '/chem1/x2' has already been traced
+# KERNEL: Signal '/chem1/x3' has already been traced
+# KERNEL: Signal '/chem1/x4' has already been traced
+# KERNEL: Signal '/chem1/y' has already been traced
+# 0 signal(s) traced.
+#  Simulation has been stopped

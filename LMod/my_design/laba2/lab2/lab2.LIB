@@ -1,0 +1,25 @@
+timestamp=1537281270126
+
+[chem1]
+A/chem1=21|./src/chem2.vhd|14|1*21270
+BinI32/chem1=3*0
+I=0*508
+I/chem1=0*4782
+M=11|0|v98|1537280801714|./src/chem1.vhd|0*188*0x7b3a289e87a9b59f8da67b690d3cef48c8cee283|0*437*0xab32bc1a2daf049573e14469f634e0e6
+M/chem1=21|0|v98|1537281270067|./src/chem2.vhd|0*4384*0x8c60f21030f4c9014902c9397aedf7b34b2cf03f|0*4702*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/chem1.vhd|4
+Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+Version/chem1=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+
+[~A]
+ModifyID=65
+Version=73
+
+[~MFT]
+0=48|0lab2.mgf|4782|3777
+1=20|1lab2.mgf|21270|21270
+3=0|3lab2.mgf|0|0
+
+[~U]
+chem1=11|0*0|
+
