@@ -1,0 +1,4 @@
+[General]
+CurrentVersion=103
+[Gui config]
+RunFor=100 ns
