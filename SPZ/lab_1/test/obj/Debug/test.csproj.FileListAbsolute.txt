@@ -1,0 +1,7 @@
+E:\_Сtrl\Projects\C#\090918\test\test\bin\Debug\test.exe.config
+E:\_Сtrl\Projects\C#\090918\test\test\bin\Debug\test.exe
+E:\_Сtrl\Projects\C#\090918\test\test\bin\Debug\test.pdb
+E:\_Сtrl\Projects\C#\090918\test\test\obj\Debug\test.csprojAssemblyReference.cache
+E:\_Сtrl\Projects\C#\090918\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+E:\_Сtrl\Projects\C#\090918\test\test\obj\Debug\test.exe
+E:\_Сtrl\Projects\C#\090918\test\test\obj\Debug\test.pdb
