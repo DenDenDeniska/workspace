@@ -1,113 +1,167 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+
 namespace test.Source
 {
     enum Subjects {s_0,s_1,s_2,s_3,s_4,s_5,s_6,s_7,s_8,s_9};
-    
+    //основной класс программы
     class Program
     {
-        private static string str = "Hello, World !";
+        private static string str = "Hello, World !";//традиция, данная строчка не обсуждается
         static void Main(string[] args)
-        {
-            
-                Dictionary<Subjects, short> marksmap = new Dictionary<Subjects, short>();
+        { 
+            Controller controller = new Controller();
 
-                marksmap.Add(Subjects.s_0, 10);
-                marksmap.Add(Subjects.s_1, 20);
-                marksmap.Add(Subjects.s_2, 30);
-                marksmap.Add(Subjects.s_3, 40);
-                marksmap.Add(Subjects.s_4, 50);
-                marksmap.Add(Subjects.s_5, 60);
-                marksmap.Add(Subjects.s_6, 70);
-                marksmap.Add(Subjects.s_7, 80);
-                marksmap.Add(Subjects.s_8, 90);
-                marksmap.Add(Subjects.s_9, 100);
-            
-            ProfileStud Profile0 = new ProfileStud();
-            Profile0.AddMarks(marksmap);
-
-
-            ProfileStud Profile1 = new ProfileStud("www","10","3");
-            Profile1.AddMarks(marksmap);
-            Console.WriteLine("Profile1 Average : {0}", Profile1.CalcAverage());
-
-            Console.WriteLine("Mark By Subject s_3: {0}", Profile1.GetMarkBySubject(Subjects.s_3));
-
-            Profile1.SetMarkBySubject(Subjects.s_0, 100);
-            Console.WriteLine("s_0 = 100");
-            Console.WriteLine("Mark By Subject s_0: {0}", Profile1.GetMarkBySubject(Subjects.s_0));
-            Console.WriteLine("Profile1 Average : {0}", Profile1.CalcAverage());
-
-            Console.WriteLine(Profile1.ToString());
-
-            Dictionary<Subjects, short> tMap = Profile1.Comparison(Profile0);
-
-
-            ProfileStud Profile3 = new ProfileStud("", "10", "3");
-            ProfileStud Profile4 = new ProfileStud("Admin", "", "4");
-            ProfileStud Profile5 = new ProfileStud("www1111111", "16", "3");
-            ProfileStud Profile6 = new ProfileStud("w111", "16", "");
-
+            controller.AddProfile("", "", "");
+            controller.AddProfile("Test_number111", "IDTest1", "3");
+            controller.AddProfile("Profile_test", "ID Test_with_tab", "3");
+            controller.AddProfile("Profile_test", "IDTest3", "-3");
+            //////////////////////////////////////////////////////////////
+            controller.AddProfile("Profile", "ID001", "3");
+            controller.FindProfile("Profile", "ID001", "3").AddMarks(RewriteMarks());
+            //////////////////////////////////////////////////////////////
+            controller.AddProfile("Profile", "ID002", "3");
+            controller.FindProfile("Profile", "ID002", "3").AddMarks(RewriteMarks());
+            //////////////////////////////////////////////////////////////
+            controller.AddProfile("Profile", "ID003", "3");
+            controller.FindProfile("Profile", "ID003", "3").AddMarks(RewriteMarks());
+            Console.WriteLine("{0} : Subject s_8 - {1}",
+                controller.FindProfile("Profile", "ID003", "3").ToString(), 
+                controller.FindProfile("Profile", "ID003", "3").GetMarkBySubject(Subjects.s_8));
+            controller.FindProfile("Profile", "ID003", "3").SetMarkBySubject(Subjects.s_8, 100);
+            Console.WriteLine("{0} : Subject s_8 - {1}",
+                controller.FindProfile("Profile", "ID003", "3").ToString(),
+                controller.FindProfile("Profile", "ID003", "3").GetMarkBySubject(Subjects.s_8));
+            ///////////////////////////////////////////////////////////////
+            Dictionary<Subjects, short> tMap = 
+                controller.FindProfile("Profile", "ID001", "3").Comparison(controller.FindProfile("Profile", "ID002", "3"));
+            ///////////////////////////////////////////////////////////////
+            controller.AddProfile("Profile", "ID004", "4");
+            controller.FindProfile("Profile", "ID004", "4").AddMarks(RewriteMarks());
+            Console.WriteLine("Average score by {1} - {0}",
+                controller.FindProfile("Profile", "ID004", "4").CalcAverage(),
+                controller.FindProfile("Profile", "ID004", "4").ToString());
+            ///////////////////////////////////////////////////////////////
+            Console.WriteLine("Result of comparison :");
+            foreach (var element in tMap)
+            {
+                Console.WriteLine("{0} = {1}",element.Key.ToString(),element.Value);
+            }
+            ///////////////////////////////////////////////////////////////
             Console.ReadLine();
+        }
+
+        //тестовый метод генерации оценок 
+        public static Dictionary<Subjects, short> RewriteMarks()
+        {
+            Dictionary<Subjects, short> marksmap = new Dictionary<Subjects, short>();
+            //Создание объекта для генерации чисел
+            Random rnd = new Random();
+            marksmap.Add(Subjects.s_0, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_1, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_2, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_3, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_4, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_5, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_6, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_7, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_8, (short)rnd.Next(0, 100));
+            marksmap.Add(Subjects.s_9, (short)rnd.Next(0, 100));
+            return marksmap;
         }
     }
 
+    //для удобства обработки входных данных в основной класс с информацией можна использовать внешний класс контроллер
+    class Controller
+    {
+        //вектор для хранения профилей студентов
+        public List<ProfileStud> ListOfStudents;
+
+        //использован конструктор по умолчанию, так как для инициализации контейнера с профилями не требуются данные
+        public Controller()
+        {
+            ListOfStudents = new List<ProfileStud>();
+        }
+
+        //метод для обработки ошибок и добавления в контейнер профилей только корректных данных
+        public void AddProfile(string name,string id, string course)
+        {
+
+            if (name.Equals(""))
+            {
+                Console.WriteLine("Name is empty");
+                return;
+            }
+            for (int i = 0; i < name.Length; i++)
+            {
+                if (name[i] >= '0' && name[i] <= '9')
+                {
+                    Console.WriteLine("Invalidate name. You must write without numbers");
+                    return;
+                }
+            }
+            if (id.Equals(""))
+            {
+                Console.WriteLine("ID is empty");
+                return;
+            }
+            if (id.Contains(" "))
+            {
+                Console.WriteLine("Invalidate ID. You must wrire without tabs");
+                return;
+            }
+            if (course.Equals(""))
+            {
+               Console.WriteLine("Cource is empty");
+                return;
+            }
+            if (short.Parse(course) <= 0) 
+            {
+                Console.WriteLine("Invalidate course. You must write number more then null");
+                return;
+            }
+            ListOfStudents.Add(new ProfileStud(name, id, course));
+        }
+
+        //метод для возвращения из текущего объекта нужный профиль(используем для дальнейшего поиска и редактирования нужного контейнера)
+        public ProfileStud FindProfile(string name, string id, string course)
+        {
+            for (var i = 0; i < this.ListOfStudents.Count;i++)
+            {
+                if (this.ListOfStudents[i].IsFind(name, id, course))
+                {
+                    return this.ListOfStudents[i];
+                }
+            }
+            return null;
+        }
+    }
+
+    //класс профиля студента
     class ProfileStud
     {   
         private string Name;
         private string ID;
         private string CourseYear;
 
+        //отображение, где предмет - ключ, оценка за него - значение (позволит сделать предметы уникальными и добавит удобства работы с оценками)
         Dictionary<Subjects, short> Marks;
 
-        public ProfileStud()
-        {
-            Console.WriteLine("*Have not data*");
-        }
+        //инициализирующий конструктор
         public ProfileStud(string name, string id, string course)
         {
-            
-            short sError;
-           
-            if (id.Equals(""))
-            {
-                Console.WriteLine("*invalidate id*");
-            }
-            else
-            {
                 ID = id;
-            }
-           
-            if (short.TryParse(name,out sError))
-            {
-                Console.WriteLine("*invalidate name* ");
-            }
-            else if(name.Equals(""))
-            {
-                Console.WriteLine("*Name is empty*");
-            }
-            else
-            {
                 Name = name;
-            }
-
-            if (course.Equals(""))
-            {
-                Console.WriteLine("*invalidate Cource*");
-            }
-            else
-            {
                 CourseYear = course; 
-            }
-           
         }
         
+        //метод, доббавляющий привязывающий отображение с оценками к студенту 
         public void AddMarks(Dictionary<Subjects, short> map)
         {
             Marks = new Dictionary<Subjects, short>(map);
         }
        
+        //метод вычесления среднего балла
         public double CalcAverage()
         {
             double summ = 0;
@@ -115,15 +169,18 @@ namespace test.Source
             {
                 summ += element.Value;
             }
-            return summ/10.0;
+            return summ/(double)Marks.Count;
         }
 
+        //метод возврата оценки по соответствующему предмету
         public short GetMarkBySubject(Subjects subject)
         {
             short Data;
             Marks.TryGetValue(subject,out Data);
             return Data;
         }
+
+        //метод записи оценки для заданного предмета
         public void SetMarkBySubject(Subjects subject, short mark)
         {
             foreach (var element in this.Marks)
@@ -136,11 +193,13 @@ namespace test.Source
             }
         }
 
+        //перегрузка метода ToString
         public override string ToString()
         {
             return "Person: "+this.Name+"  ID: "+this.ID+"  Couse Year: "+this.CourseYear;
         }
 
+        //метод возврата результата сравнения оценок текущего профиля с выбранным
         public Dictionary<Subjects, short> Comparison(ProfileStud stud)
         {
             Dictionary<Subjects, short> tValues = this.Marks;
@@ -149,6 +208,19 @@ namespace test.Source
                 tValues[element.Key] -= element.Value;
             }
             return tValues;
+        }
+
+        //метод для потверждения найденого профиля при поиске по имени, идентификатору и курсу  
+        public bool IsFind(string name, string id, string course)
+        {
+            if (Name == name && ID == id && CourseYear == course)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
