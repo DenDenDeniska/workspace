@@ -17,7 +17,7 @@ namespace lab2_University
         public string[] LectionRooms { get; private set; }
 
         /// <summary>
-        /// реалізація індексатора за кількістю лабораторій та лекційних аудторій
+        /// реалізація індексатора за кількістю лабораторій та лекційних аудиторій
         /// </summary>
         /// <param name="type"></param>
         /// <param name="index"></param>
@@ -101,7 +101,7 @@ namespace lab2_University
             {
                 this.LectionRooms[i] = temp[i];
             }
-            this.LectionRooms[NumberOfLectionRooms] = name;
+            this.LectionRooms[LectionRooms.Length-1] = name;
         }
 
         /// <summary>
@@ -116,7 +116,7 @@ namespace lab2_University
             {
                 this.Labs[i] = temp[i];
             }
-            this.Labs[NumberOfLabs] = name;
+            this.Labs[Labs.Length-1] = name;
         }
 
         /// <summary>
@@ -127,26 +127,26 @@ namespace lab2_University
             NameOfUniversity = name;
             Random rnd = new Random();
             Faculties = new string[100];
-            for (var i = 0; i<100;i++ )
+            for (var i = 0; i< Faculties.Length; i++ )
             {
-                Faculties[i] = rnd.Next(0,10000).ToString();
+                Faculties[i] = i.ToString();
             }
             Labs = new string[100];
-            for (var i = 0; i < 100; i++)
+            for (var i = 0; i < Labs.Length; i++)
             {
-                Labs[i] = rnd.Next(0, 10000).ToString();
+                Labs[i] = i.ToString();
             }
             NumberOfFaculties = Faculties.Length;
             NumberOfLabs = Labs.Length;
-            NumberOfStudents = 100;
+            NumberOfStudents = rnd.Next(500,5000);
             LectionRooms = new string[100];
-            for (var i = 0; i < 100; i++)
+            for (var i = 0; i < LectionRooms.Length; i++)
             {
-                Labs[i] = rnd.Next(0, 10000).ToString();
+                LectionRooms[i] = i.ToString();
             }
             NumberOfLectionRooms = LectionRooms.Length;
             NumberOfStaff = (NumberOfLectionRooms + NumberOfLabs) / 2;
-            NumberOfTeachers = NumberOfStudents / 10;
+            NumberOfTeachers = (NumberOfStudents / 10) + 1;
 
         }
 
@@ -165,14 +165,32 @@ namespace lab2_University
             temp.NumberOfStaff = this.NumberOfStaff;
             temp.NumberOfStudents = this.NumberOfStudents;
             temp.NumberOfTeachers = this.NumberOfTeachers;
+            
         }
 
         
         /// <summary>
-        /// наймання/звільнення співробітників(персонал/викладач)
+        /// наймання співробітників(персонал/викладач)
         /// </summary>
         /// <param name="param">1 - преподаватель, 0 - персонал</param>
         public void EnrollmentStaff(ushort param)
+        {
+            switch (param)
+            {
+                case 0:
+                    ++NumberOfStaff;
+                    break;
+                case 1:
+                    ++NumberOfTeachers;
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// звільнення співробітників(персонал/викладач)
+        /// </summary>
+        /// <param name="param">1 - преподаватель, 0 - персонал</param>
+        public void RemandStaff(ushort param)
         {
             switch (param)
             {
@@ -236,8 +254,6 @@ namespace lab2_University
 
         }
         
-        
-
         public bool IsFind(string name)
         {
             if (this.NameOfUniversity == name)

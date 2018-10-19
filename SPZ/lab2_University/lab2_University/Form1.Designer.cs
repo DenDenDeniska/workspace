@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Number_of_LecRooms = new System.Windows.Forms.Label();
+            this.Number_of_faculties = new System.Windows.Forms.Label();
             this.listBox4 = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.listBox3 = new System.Windows.Forms.ListBox();
@@ -38,6 +40,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.UName2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.UName1 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
@@ -53,16 +58,25 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.UName1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.UName2 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Number_of_Labs = new System.Windows.Forms.Label();
+            this.Number_of_Staff = new System.Windows.Forms.Label();
+            this.Number_of_Teachers = new System.Windows.Forms.Label();
+            this.Number_of_Students = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Number_of_Students);
+            this.groupBox1.Controls.Add(this.Number_of_Teachers);
+            this.groupBox1.Controls.Add(this.Number_of_Staff);
+            this.groupBox1.Controls.Add(this.Number_of_Labs);
+            this.groupBox1.Controls.Add(this.Number_of_LecRooms);
+            this.groupBox1.Controls.Add(this.Number_of_faculties);
             this.groupBox1.Controls.Add(this.listBox4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.listBox3);
@@ -76,6 +90,24 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Обзор";
+            // 
+            // Number_of_LecRooms
+            // 
+            this.Number_of_LecRooms.AutoSize = true;
+            this.Number_of_LecRooms.Location = new System.Drawing.Point(310, 125);
+            this.Number_of_LecRooms.Name = "Number_of_LecRooms";
+            this.Number_of_LecRooms.Size = new System.Drawing.Size(35, 13);
+            this.Number_of_LecRooms.TabIndex = 10;
+            this.Number_of_LecRooms.Text = "label8";
+            // 
+            // Number_of_faculties
+            // 
+            this.Number_of_faculties.AutoSize = true;
+            this.Number_of_faculties.Location = new System.Drawing.Point(238, 19);
+            this.Number_of_faculties.Name = "Number_of_faculties";
+            this.Number_of_faculties.Size = new System.Drawing.Size(35, 13);
+            this.Number_of_faculties.TabIndex = 9;
+            this.Number_of_faculties.Text = "label8";
             // 
             // listBox4
             // 
@@ -139,6 +171,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button11);
+            this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.UName2);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.UName1);
@@ -162,6 +196,31 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Управление";
+            // 
+            // UName2
+            // 
+            this.UName2.Location = new System.Drawing.Point(232, 398);
+            this.UName2.Name = "UName2";
+            this.UName2.Size = new System.Drawing.Size(95, 20);
+            this.UName2.TabIndex = 18;
+            this.UName2.Text = "Name of Sharaga";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(213, 400);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(13, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "c";
+            // 
+            // UName1
+            // 
+            this.UName1.Location = new System.Drawing.Point(112, 398);
+            this.UName1.Name = "UName1";
+            this.UName1.Size = new System.Drawing.Size(95, 20);
+            this.UName1.TabIndex = 16;
+            this.UName1.Text = "Name of Sharaga";
             // 
             // button9
             // 
@@ -209,6 +268,7 @@
             this.button7.TabIndex = 10;
             this.button7.Text = "Добавить лабораторию";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Lab_Name
             // 
@@ -226,33 +286,37 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "Добавить аудиторию";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(9, 293);
+            this.button5.Location = new System.Drawing.Point(9, 247);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(240, 35);
+            this.button5.Size = new System.Drawing.Size(240, 20);
             this.button5.TabIndex = 7;
             this.button5.Text = "Уволить преподавателя";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(9, 252);
+            this.button4.Location = new System.Drawing.Point(9, 221);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(240, 35);
+            this.button4.Size = new System.Drawing.Size(240, 20);
             this.button4.TabIndex = 6;
             this.button4.Text = "Добавить преподавателя";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(9, 211);
+            this.button3.Location = new System.Drawing.Point(9, 195);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(240, 35);
+            this.button3.Size = new System.Drawing.Size(240, 20);
             this.button3.TabIndex = 5;
             this.button3.Text = "Отчислить студента";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Room_Name
             // 
@@ -275,10 +339,11 @@
             // 
             this.button2.Location = new System.Drawing.Point(9, 169);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(240, 36);
+            this.button2.Size = new System.Drawing.Size(240, 20);
             this.button2.TabIndex = 1;
             this.button2.Text = "Зачислисть студента";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -298,35 +363,66 @@
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 2;
             // 
-            // UName1
-            // 
-            this.UName1.Location = new System.Drawing.Point(112, 396);
-            this.UName1.Name = "UName1";
-            this.UName1.Size = new System.Drawing.Size(95, 20);
-            this.UName1.TabIndex = 16;
-            this.UName1.Text = "Name of Sharaga";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(213, 400);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 13);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "c";
-            // 
-            // UName2
-            // 
-            this.UName2.Location = new System.Drawing.Point(232, 398);
-            this.UName2.Name = "UName2";
-            this.UName2.Size = new System.Drawing.Size(95, 20);
-            this.UName2.TabIndex = 18;
-            this.UName2.Text = "Name of Sharaga";
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Number_of_Labs
+            // 
+            this.Number_of_Labs.AutoSize = true;
+            this.Number_of_Labs.Location = new System.Drawing.Point(258, 233);
+            this.Number_of_Labs.Name = "Number_of_Labs";
+            this.Number_of_Labs.Size = new System.Drawing.Size(35, 13);
+            this.Number_of_Labs.TabIndex = 11;
+            this.Number_of_Labs.Text = "label8";
+            // 
+            // Number_of_Staff
+            // 
+            this.Number_of_Staff.AutoSize = true;
+            this.Number_of_Staff.Location = new System.Drawing.Point(180, 387);
+            this.Number_of_Staff.Name = "Number_of_Staff";
+            this.Number_of_Staff.Size = new System.Drawing.Size(66, 13);
+            this.Number_of_Staff.TabIndex = 12;
+            this.Number_of_Staff.Text = "Персонал : ";
+            // 
+            // Number_of_Teachers
+            // 
+            this.Number_of_Teachers.AutoSize = true;
+            this.Number_of_Teachers.Location = new System.Drawing.Point(180, 364);
+            this.Number_of_Teachers.Name = "Number_of_Teachers";
+            this.Number_of_Teachers.Size = new System.Drawing.Size(92, 13);
+            this.Number_of_Teachers.TabIndex = 13;
+            this.Number_of_Teachers.Text = "Преподаватели :";
+            // 
+            // Number_of_Students
+            // 
+            this.Number_of_Students.AutoSize = true;
+            this.Number_of_Students.Location = new System.Drawing.Point(180, 340);
+            this.Number_of_Students.Name = "Number_of_Students";
+            this.Number_of_Students.Size = new System.Drawing.Size(61, 13);
+            this.Number_of_Students.TabIndex = 14;
+            this.Number_of_Students.Text = "Студенты :";
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(9, 273);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(240, 20);
+            this.button10.TabIndex = 19;
+            this.button10.Text = "Дообавить персонал";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(9, 299);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(240, 20);
+            this.button11.TabIndex = 20;
+            this.button11.Text = "Уволить персонал";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Form1
             // 
@@ -381,6 +477,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox UName1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label Number_of_faculties;
+        private System.Windows.Forms.Label Number_of_LecRooms;
+        private System.Windows.Forms.Label Number_of_Students;
+        private System.Windows.Forms.Label Number_of_Teachers;
+        private System.Windows.Forms.Label Number_of_Staff;
+        private System.Windows.Forms.Label Number_of_Labs;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
     }
 }
 
