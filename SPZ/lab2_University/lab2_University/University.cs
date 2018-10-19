@@ -78,7 +78,7 @@ namespace lab2_University
         /// </summary>
         public void EnrollmentStud()
         {
-            ++NumberOfStudents;
+                ++NumberOfStudents;
         }
 
         /// <summary>
@@ -86,7 +86,8 @@ namespace lab2_University
         /// </summary>
         public void RemandStud()
         {
-            --NumberOfStudents;
+            if(NumberOfStudents > 0)
+                --NumberOfStudents;
         }
 
         /// <summary>
@@ -178,10 +179,10 @@ namespace lab2_University
             switch (param)
             {
                 case 0:
-                    ++NumberOfStaff;
+                        ++NumberOfStaff;
                     break;
                 case 1:
-                    ++NumberOfTeachers;
+                        ++NumberOfTeachers;
                     break;
             }
         }
@@ -195,10 +196,12 @@ namespace lab2_University
             switch (param)
             {
                 case 0:
-                    --NumberOfStaff;
+                    if(NumberOfStaff > 0)
+                        --NumberOfStaff;
                     break;
                 case 1:
-                    --NumberOfTeachers;
+                    if(NumberOfTeachers > 0)
+                        --NumberOfTeachers;
                     break;
             }
         }
@@ -219,7 +222,7 @@ namespace lab2_University
             {
                 temp.Labs[i] = u1.Labs[i];
             }
-            for (var k = 0; k < u2.NumberOfLabs; k++)
+            for (var k = 0; k < u2.NumberOfLabs; k++,i++)
             {
                 temp.Labs[i] = u2.Labs[k];
             }
@@ -230,7 +233,7 @@ namespace lab2_University
             {
                 temp.Faculties[i] = u1.Faculties[i];
             }
-            for (var k=0; k < u2.NumberOfFaculties; k++)
+            for (var k=0; k < u2.NumberOfFaculties; k++,i++)
             {
                 temp.Faculties[i] = u2.Faculties[k];
             }
@@ -241,7 +244,7 @@ namespace lab2_University
             {
                 temp.LectionRooms[i] = u1.LectionRooms[i];
             }
-            for (var k = 0; k < u2.NumberOfLectionRooms; k++)
+            for (var k = 0; k < u2.NumberOfLectionRooms; k++,i++)
             {
                 temp.LectionRooms[i] = u2.LectionRooms[k];
             }

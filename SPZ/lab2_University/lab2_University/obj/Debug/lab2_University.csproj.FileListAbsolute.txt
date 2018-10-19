@@ -1,7 +1,6 @@
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\bin\Debug\lab2_University.exe.config
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\bin\Debug\lab2_University.exe
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\bin\Debug\lab2_University.pdb
-E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_University.csprojAssemblyReference.cache
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_University.Properties.Resources.resources
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_University.csproj.GenerateResource.cache
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_University.csproj.CoreCompileInputs.cache
