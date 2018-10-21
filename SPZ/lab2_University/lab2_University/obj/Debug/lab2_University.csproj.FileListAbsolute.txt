@@ -7,3 +7,4 @@ E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_University.exe
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_University.pdb
 E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_University.Form1.resources
+E:\_Сtrl\reposGit\workspace\SPZ\lab2_University\lab2_University\obj\Debug\lab2_University.csprojAssemblyReference.cache

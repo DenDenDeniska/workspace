@@ -64,9 +64,16 @@ namespace lab2_University
         private void button9_Click(object sender, EventArgs e)
         {
 
-            Program.controller.RemoveUniversity(listBox1.SelectedItem.ToString());
+            if (Program.controller.Universities.Count != 0)
+            {
+                Program.controller.RemoveUniversity(listBox1.SelectedItem.ToString());
             label4.Text = "Университет " + University_Name.Text + " удален .";
-        }
+            }
+            else
+            {
+                label4.Text = "База университетов не заполнена !";
+            }
+}
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -181,32 +188,74 @@ namespace lab2_University
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Program.controller.FindByName(listBox1.SelectedItem.ToString()).EnrollmentStud();
-        }
+            if (Program.controller.Universities.Count != 0)
+            {
+                Program.controller.FindByName(listBox1.SelectedItem.ToString()).EnrollmentStud();
+            }
+            else
+            {
+                label4.Text = "База университетов не заполнена !";
+            }
+}
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Program.controller.FindByName(listBox1.SelectedItem.ToString()).RemandStud();
+            if (Program.controller.Universities.Count != 0)
+            {
+                Program.controller.FindByName(listBox1.SelectedItem.ToString()).RemandStud();
+            }
+            else
+            {
+                label4.Text = "База университетов не заполнена !";
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Program.controller.FindByName(listBox1.SelectedItem.ToString()).EnrollmentStaff(1);
+            if (Program.controller.Universities.Count != 0)
+            {
+                Program.controller.FindByName(listBox1.SelectedItem.ToString()).EnrollmentStaff(1);
+            }
+            else
+            {
+                label4.Text = "База университетов не заполнена !";
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Program.controller.FindByName(listBox1.SelectedItem.ToString()).RemandStaff(1);
+            if (Program.controller.Universities.Count != 0)
+            {
+                Program.controller.FindByName(listBox1.SelectedItem.ToString()).RemandStaff(1);
+            }
+            else
+            {
+                label4.Text = "База университетов не заполнена !";
+            }
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Program.controller.FindByName(listBox1.SelectedItem.ToString()).EnrollmentStaff(0);
+            if (Program.controller.Universities.Count != 0)
+            {
+                Program.controller.FindByName(listBox1.SelectedItem.ToString()).EnrollmentStaff(0);
+            }
+            else
+            {
+                label4.Text = "База университетов не заполнена !";
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Program.controller.FindByName(listBox1.SelectedItem.ToString()).RemandStaff(0);
+            if (Program.controller.Universities.Count != 0)
+            {
+                Program.controller.FindByName(listBox1.SelectedItem.ToString()).RemandStaff(0);
+            }
+            else
+            {
+                label4.Text = "База университетов не заполнена !";
+            }
         }
     }
 }
