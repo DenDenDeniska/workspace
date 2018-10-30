@@ -156,16 +156,16 @@ namespace lab2_University
         /// </summary>
         public University(University temp)
         {
-            temp.Faculties = this.Faculties;
-            temp.Labs = this.Labs;
-            temp.LectionRooms = this.LectionRooms;
-            temp.NameOfUniversity = this.NameOfUniversity;
-            temp.NumberOfFaculties = this.NumberOfFaculties;
-            temp.NumberOfLabs = this.NumberOfLabs;
-            temp.NumberOfLectionRooms = this.NumberOfLectionRooms;
-            temp.NumberOfStaff = this.NumberOfStaff;
-            temp.NumberOfStudents = this.NumberOfStudents;
-            temp.NumberOfTeachers = this.NumberOfTeachers;
+            this.Faculties = temp.Faculties;
+            this.Labs = temp.Labs;
+            this.LectionRooms = temp.LectionRooms;          
+            this.NameOfUniversity = temp.NameOfUniversity;      
+            this.NumberOfFaculties = temp.NumberOfFaculties;     
+            this.NumberOfLabs = temp.NumberOfLabs;       
+            this.NumberOfLectionRooms = temp.NumberOfLectionRooms;  
+            this.NumberOfStaff = temp.NumberOfStaff;
+            this.NumberOfStudents = temp.NumberOfStudents;
+            this.NumberOfTeachers = temp.NumberOfTeachers;      
             
         }
 
@@ -275,11 +275,14 @@ namespace lab2_University
     {
         public bool Equals(University u1,University u2)
         {
-            return true;
+            if (u1.Faculties == u2.Faculties)
+                return true;
+            else
+                return false;
         }
         public int GetHashCode(University university)
         {
-            return 1;
+            return university.Faculties.Length ^ university.Labs.Length;
         }
     }
 }

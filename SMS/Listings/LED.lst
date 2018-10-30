@@ -1,0 +1,78 @@
+C51 COMPILER V9.56.0.0   LED                                                               10/26/2018 13:57:21 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE LED
+OBJECT MODULE PLACED IN .\Objects\LED.obj
+COMPILER INVOKED BY: E:\Program files\keilC51\C51\BIN\C51.EXE LED.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\
+                    -Listings\LED.lst) TABS(2) OBJECT(.\Objects\LED.obj)
+
+line level    source
+
+   1          #include<reg52.h> 
+   2          
+   3          sbit LATCH1=P2^0;
+   4          sbit LATCH2=P2^1;
+   5          
+   6          sbit SEG = P1; 
+   7          
+   8          unsigned char code Data[10]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+   9          // 0123456789  
+  10          unsigned char code Zn_data[]={0x1,0x2,0x4,0x8,0x10,0x20,0x40,0x80};
+  11          // 
+  12          
+  13          
+  14          void Delay (unsigned int t)
+  15          {   
+  16   1       while(--t);
+  17   1      }
+  18          void main (void)
+  19          {
+  20   1      while (1)        
+  21   1        {
+  22   2          unsigned k = 0;
+  23   2          unsigned int i = 1;
+  24   2            while(i != 8){
+  25   3              LATCH1 = 1;
+  26   3              P1=Data[i];
+  27   3              LATCH1 = 0;
+  28   3              
+  29   3              LATCH2 = 1;
+  30   3              P1 = Zn_data[k];
+  31   3              LATCH2 = 0;
+  32   3              Delay(25000);
+  33   3              
+  34   3              i++;
+  35   3              k++;
+  36   3            }
+  37   2            while(i != 1){
+  38   3              LATCH1 = 1;
+  39   3              P1=Data[i];
+  40   3              LATCH1 = 0;
+  41   3              
+  42   3              LATCH2 = 1;
+  43   3              P1 = Zn_data[k];
+  44   3              LATCH2 = 0;
+  45   3              Delay(25000);
+  46   3              
+  47   3              i--;
+  48   3              k--;
+  49   3            }
+  50   2            
+  51   2        }
+  52   1      }
+
+
+C51 COMPILER V9.56.0.0   LED                                                               10/26/2018 13:57:21 PAGE 2   
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    122    ----
+   CONSTANT SIZE    =     18    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

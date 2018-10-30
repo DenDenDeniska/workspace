@@ -1,3 +1,4 @@
 ﻿  main.cpp
 e:\_сtrl\reposgit\workspace\ak\lab3\pr3.5.3\pr3.5.3\main.cpp(4): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+e:\_сtrl\reposgit\workspace\ak\lab3\pr3.5.3\pr3.5.3\main.cpp(7): warning C4305: инициализация: усечение из "double" в "float"
   pr3.5.3.vcxproj -> E:\_Сtrl\reposGit\workspace\AK\lab3\pr3.5.3\Debug\pr3.5.3.exe

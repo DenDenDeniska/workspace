@@ -1,0 +1,12 @@
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\bin\Debug\Lab3_CompManager.exe.config
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\bin\Debug\Lab3_CompManager.exe
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\bin\Debug\Lab3_CompManager.pdb
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.csprojAssemblyReference.cache
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.Form1.resources
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.Properties.Resources.resources
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.csproj.GenerateResource.cache
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.csproj.CoreCompileInputs.cache
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.exe
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.pdb
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.Form2.resources
+E:\_Сtrl\reposGit\workspace\SPZ\Lab3_CompManager\Lab3_CompManager\obj\Debug\Lab3_CompManager.Form3.resources
