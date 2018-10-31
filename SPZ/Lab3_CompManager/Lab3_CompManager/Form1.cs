@@ -109,5 +109,10 @@ namespace Lab3_CompManager
                     label_Equals.Text = "Не равны";
             }
         }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,6 +33,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label_Equals = new System.Windows.Forms.Label();
+            this.textBox_PC2 = new System.Windows.Forms.TextBox();
+            this.textBox_PC1 = new System.Windows.Forms.TextBox();
+            this.button3_Equals = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4_NetworkStatus = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,10 +47,6 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button3_Equals = new System.Windows.Forms.Button();
-            this.textBox_PC1 = new System.Windows.Forms.TextBox();
-            this.textBox_PC2 = new System.Windows.Forms.TextBox();
-            this.label_Equals = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -117,6 +117,38 @@
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label_Equals
+            // 
+            this.label_Equals.AutoSize = true;
+            this.label_Equals.Location = new System.Drawing.Point(154, 365);
+            this.label_Equals.Name = "label_Equals";
+            this.label_Equals.Size = new System.Drawing.Size(0, 13);
+            this.label_Equals.TabIndex = 10;
+            // 
+            // textBox_PC2
+            // 
+            this.textBox_PC2.Location = new System.Drawing.Point(37, 336);
+            this.textBox_PC2.Name = "textBox_PC2";
+            this.textBox_PC2.Size = new System.Drawing.Size(210, 20);
+            this.textBox_PC2.TabIndex = 9;
+            // 
+            // textBox_PC1
+            // 
+            this.textBox_PC1.Location = new System.Drawing.Point(37, 313);
+            this.textBox_PC1.Name = "textBox_PC1";
+            this.textBox_PC1.Size = new System.Drawing.Size(210, 20);
+            this.textBox_PC1.TabIndex = 8;
+            // 
+            // button3_Equals
+            // 
+            this.button3_Equals.Location = new System.Drawing.Point(37, 360);
+            this.button3_Equals.Name = "button3_Equals";
+            this.button3_Equals.Size = new System.Drawing.Size(75, 23);
+            this.button3_Equals.TabIndex = 7;
+            this.button3_Equals.Text = "Сравнить";
+            this.button3_Equals.UseVisualStyleBackColor = true;
+            this.button3_Equals.Click += new System.EventHandler(this.button3_Equals_Click);
             // 
             // groupBox1
             // 
@@ -192,6 +224,7 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(559, 23);
             this.progressBar1.TabIndex = 3;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // listBox2
             // 
@@ -206,38 +239,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // button3_Equals
-            // 
-            this.button3_Equals.Location = new System.Drawing.Point(37, 360);
-            this.button3_Equals.Name = "button3_Equals";
-            this.button3_Equals.Size = new System.Drawing.Size(75, 23);
-            this.button3_Equals.TabIndex = 7;
-            this.button3_Equals.Text = "Сравнить";
-            this.button3_Equals.UseVisualStyleBackColor = true;
-            this.button3_Equals.Click += new System.EventHandler(this.button3_Equals_Click);
-            // 
-            // textBox_PC1
-            // 
-            this.textBox_PC1.Location = new System.Drawing.Point(37, 313);
-            this.textBox_PC1.Name = "textBox_PC1";
-            this.textBox_PC1.Size = new System.Drawing.Size(210, 20);
-            this.textBox_PC1.TabIndex = 8;
-            // 
-            // textBox_PC2
-            // 
-            this.textBox_PC2.Location = new System.Drawing.Point(37, 336);
-            this.textBox_PC2.Name = "textBox_PC2";
-            this.textBox_PC2.Size = new System.Drawing.Size(210, 20);
-            this.textBox_PC2.TabIndex = 9;
-            // 
-            // label_Equals
-            // 
-            this.label_Equals.AutoSize = true;
-            this.label_Equals.Location = new System.Drawing.Point(154, 365);
-            this.label_Equals.Name = "label_Equals";
-            this.label_Equals.Size = new System.Drawing.Size(0, 13);
-            this.label_Equals.TabIndex = 10;
             // 
             // Form1
             // 
