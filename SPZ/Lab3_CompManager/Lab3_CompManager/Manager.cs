@@ -1,17 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab3_CompManager
 {
     class Manager
     {
+        //контейнер для хранения компьютеров
         public BindingList<Computer> Computers;
+
+        //Отображение для возможных задач 
         public Dictionary<int, Task> DictionaryOfTasks;
-        private Computer FindComputerByName(string _Name)
+
+        //пароль для изменения состояния сети
+        private string Pass = "admin";
+
+        //Количество количество рабочих компьютеров
+        public int NumberOfWorkspace { get; private set; }
+
+        //Состояние WLAN
+        public bool Wifi { get; private set; }
+
+        //конструктор класса Manger
+        public Manager()
+        {
+            Computers = new BindingList<Computer>();
+            DictionaryOfTasks = new Dictionary<int, Task>();
+        }
+
+        //метод поиска компьютера по имени
+        internal Computer FindComputerByName(string _Name)
         {
             foreach(var element in Computers)
             {
@@ -20,6 +37,8 @@ namespace Lab3_CompManager
             }
             return null;
         }
+
+        //метод поиска существующей задачи по имени
         internal Task FindTaskByName(string _Name)
         {
             foreach (var element in DictionaryOfTasks)
@@ -29,24 +48,8 @@ namespace Lab3_CompManager
             }
             return null;
         }
-        public Manager()
-        {
-            Computers = new BindingList<Computer>();
-            DictionaryOfTasks = new Dictionary<int, Task>();
-        }
-        public int NumberOfWorkspace { get; private set; }
-        public Computer FindComputer(string _Name)
-        {
-            foreach (var element in Computers)
-            {
-                if(_Name == element.Name_of_Computer)
-                {
-                    return element;
-                }
-            }
-            return null;
-        } 
-        public bool Wifi { get; private set; }
+        
+        //метод переключения состояния сети
         public bool EnableWiFi(string _pass)
         {
             if(_pass != this.Pass)
@@ -59,6 +62,8 @@ namespace Lab3_CompManager
                 return true;
             }
         }
+
+        //метод переключения состояния сети
         public bool DisableWiFi(string _pass)
         {
             if (_pass != this.Pass)
@@ -71,22 +76,11 @@ namespace Lab3_CompManager
                 return true;
             }
         }
-        private string Pass = "admin";
-        public void AddTask(string _Name_of_Computer,Task _NewTask)
-        {
-            foreach (var element in Computers)
-            {
-                if (_Name_of_Computer == element.Name_of_Computer)
-                {
-                    element.Tasks.Add(_NewTask);
-                }
-            }
-        }
+        
+        //добавление задачи к нужному компьютеру
         public void AddTask(string _Name_of_Computer,string _Name_of_Task)
         {
-            FindComputerByName(_Name_of_Computer).Tasks.Add(FindTaskByName(_Name_of_Task));
+            FindComputerByName(_Name_of_Computer).Tasks.Add(new Task(FindTaskByName(_Name_of_Task)));
         }
-        
-        
     }
 }

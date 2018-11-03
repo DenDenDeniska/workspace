@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab3_CompManager
@@ -32,16 +26,16 @@ namespace Lab3_CompManager
         private void timer1_Tick(object sender, EventArgs e)
         {
            
-                listBox2.DataSource = Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).Tasks;
+                listBox2.DataSource = Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).Tasks;
                 listBox1.DataSource = MainTasks;
-            if (Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).Tasks.Count != 0)
+            if (Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).Tasks.Count != 0)
             {
 
-                if (Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking != 0)
+                if (Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking != 0)
                 {
-                    progressBar1.Value = (int)Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).GetTimeMil() * 100 / Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking;
-                    label1_timeNow.Text = Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).GetTime().ToString();
-                    label1_devTime.Text = (Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking - (int)Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).GetTimeMil()).ToString();
+                    progressBar1.Value = (int)Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).GetTimeMil() * 100 / Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking;
+                    label1_timeNow.Text = Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).GetTime().ToString();
+                    label1_devTime.Text = (Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking - (int)Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).GetTimeMil()).ToString();
                 }
                 else
                 {
@@ -54,16 +48,16 @@ namespace Lab3_CompManager
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).Tasks.Add(Program.internetBar.FindTaskByName(listBox1.SelectedItem.ToString()));
+            Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).Tasks.Add(new Task(Program.internetBar.FindTaskByName(listBox1.SelectedItem.ToString())));
         }
 
         private void listBox2_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (textBox1_Delay.Text != "")
             {
-                Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking = Int32.Parse(textBox1_Delay.Text);
+                Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking = Int32.Parse(textBox1_Delay.Text);
 
-                Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).StartTask(Int32.Parse(textBox1_Delay.Text));
+                Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).StartTask(Int32.Parse(textBox1_Delay.Text));
 
             }
 
@@ -73,16 +67,16 @@ namespace Lab3_CompManager
         {
             if (textBox1_Delay.Text != "")
             {
-                Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking = Int32.Parse(textBox1_Delay.Text);
+                Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).TimeOfWorking = Int32.Parse(textBox1_Delay.Text);
 
-                Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).StartTask(Int32.Parse(textBox1_Delay.Text));
+                Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).StartTask(Int32.Parse(textBox1_Delay.Text));
 
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Program.internetBar.FindComputer(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).StopTask();
+            Program.internetBar.FindComputerByName(Program.form1.listBox1.SelectedItem.ToString()).FindTaskByName(listBox2.SelectedItem.ToString()).StopTask();
         }
     }
 }

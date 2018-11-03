@@ -8,14 +8,15 @@ namespace Lab3_CompManager
 {
     static class Program
     {
-        public static Manager internetBar;
-        public static Form1 form1;
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
+        // определение екземпляра интернет-бара
+        internal static Manager internetBar;
+        //определение формы, доступной только в текущей сборке
+        internal static Form1 form1;
+        //Главная точка входа для приложения.
         [STAThread]
         static void Main()
         {
+            //Создание экземпляра интернет-бара
             internetBar = new Manager();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

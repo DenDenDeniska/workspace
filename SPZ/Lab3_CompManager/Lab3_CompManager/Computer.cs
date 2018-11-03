@@ -38,22 +38,27 @@ namespace Lab3_CompManager
             return null;
         }
 
+        //Конструктор
         public Computer(string _Name)
         {
             Tasks = new BindingList<Task>();
             Name_of_Computer = _Name;
         }
+
+        //Конструктор копирования
         public Computer(Computer _C)
         {
             this.Tasks = _C.Tasks;
             this.Name_of_Computer = _C.Name_of_Computer;
         }
+
         //готовность к работе
         public bool isReady()
         {
             return true;
         }
         
+        //
         public static bool operator == (Computer comp_1,Computer comp_2)
         {
             foreach (var element1 in comp_1.Tasks)
