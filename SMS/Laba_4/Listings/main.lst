@@ -1,0 +1,78 @@
+C51 COMPILER V9.56.0.0   MAIN                                                              11/15/2018 11:00:51 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: E:\Program files\keilC51\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.
+                    -\Listings\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <REG52.H>
+   2          
+   3          sbit LED_BLINK = P1^0; 
+   4          sbit BUTTON = P3^3;
+   5          unsigned int counter;
+   6          
+   7          void Init_Timer0(void);
+   8          
+   9          void Timer0(void) interrupt 1 
+  10          {
+  11   1        TF0 = 0;
+  12   1        counter--;
+  13   1        //if(BUTTON == 0){
+  14   1          if(counter == 0)
+  15   1          {
+  16   2            counter = 200;
+  17   2          
+  18   2              LED_BLINK = ~LED_BLINK;
+  19   2          
+  20   2          }
+  21   1        //}
+  22   1        TH0 = 0xD8;
+  23   1        TL0 = 0x9E;
+  24   1      }
+  25          
+  26          void Init_Timer0(void) 
+  27          {
+  28   1      
+  29   1        TMOD = 0x01; 
+  30   1        
+  31   1        EA = 1; 
+  32   1        ET0 = 1;  
+  33   1        TH0 = 0xD8; 
+  34   1        TL0 = 0x9E; 
+  35   1        
+  36   1              
+  37   1        TR0 = 1;  
+  38   1      
+  39   1      }
+  40            
+  41          
+  42          void main(void)
+  43          {
+  44   1        Init_Timer0();  
+  45   1        counter = 200;
+  46   1        P1 = 0xFE;
+  47   1      
+  48   1        while(1)
+  49   1        {
+  50   2          
+  51   2        };
+  52   1      }
+
+
+C51 COMPILER V9.56.0.0   MAIN                                                              11/15/2018 11:00:51 PAGE 2   
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     64    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

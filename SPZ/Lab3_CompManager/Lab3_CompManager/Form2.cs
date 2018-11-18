@@ -29,5 +29,10 @@ namespace Lab3_CompManager
                 MessageBox.Show("Empty name");
             }
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
