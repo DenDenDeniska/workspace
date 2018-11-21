@@ -1,0 +1,10 @@
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\bin\Debug\Lab4_WorkWithFiles.exe.config
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\bin\Debug\Lab4_WorkWithFiles.exe
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\bin\Debug\Lab4_WorkWithFiles.pdb
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\obj\Debug\Lab4_WorkWithFiles.Form1.resources
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\obj\Debug\Lab4_WorkWithFiles.Properties.Resources.resources
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\obj\Debug\Lab4_WorkWithFiles.csproj.GenerateResource.cache
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\obj\Debug\Lab4_WorkWithFiles.csproj.CoreCompileInputs.cache
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\obj\Debug\Lab4_WorkWithFiles.exe
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\obj\Debug\Lab4_WorkWithFiles.pdb
+E:\_Сtrl\reposGit\workspace\SPZ\FileCreator\Lab4_WorkWithFiles\obj\Debug\Lab4_WorkWithFiles.csprojAssemblyReference.cache
