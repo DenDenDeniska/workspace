@@ -1,0 +1,10 @@
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\bin\Debug\FactoryVontroller.exe.config
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\bin\Debug\FactoryVontroller.exe
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\bin\Debug\FactoryVontroller.pdb
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\obj\Debug\FactoryVontroller.csprojAssemblyReference.cache
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\obj\Debug\FactoryVontroller.Form1.resources
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\obj\Debug\FactoryVontroller.Properties.Resources.resources
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\obj\Debug\FactoryVontroller.csproj.GenerateResource.cache
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\obj\Debug\FactoryVontroller.csproj.CoreCompileInputs.cache
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\obj\Debug\FactoryVontroller.exe
+E:\_Ctrl\reposGit\workspace\SPZ\lab6_Factory\FactoryVontroller\obj\Debug\FactoryVontroller.pdb

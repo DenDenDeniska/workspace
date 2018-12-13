@@ -1,0 +1,146 @@
+C51 COMPILER V9.56.0.0   LED                                                               11/29/2018 08:53:54 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE LED
+OBJECT MODULE PLACED IN .\Objects\Led.obj
+COMPILER INVOKED BY: E:\Program files\keilC51\C51\BIN\C51.EXE Led.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\
+                    -Listings\Led.lst) TABS(2) OBJECT(.\Objects\Led.obj)
+
+line level    source
+
+   1          
+   2          #include<reg52.h> 
+   3          #include<intrins.h>
+   4          
+   5          sbit RS = P2^4;   
+   6          sbit RW = P2^3;
+   7          sbit EN = P2^2;
+   8          sbit P20=P2^0;
+   9          sbit P21=P2^1;
+  10          sbit P35 = P3^5;
+  11          
+  12          #define DataPort P1
+  13          
+  14          void DelayUs2x(unsigned char t)
+  15          {   
+  16   1       while(--t);
+  17   1      }
+  18          
+  19          void DelayMs(unsigned char t)
+  20          {
+  21   1       while(t--)
+  22   1       {
+  23   2          DelayUs2x(245);
+  24   2        DelayUs2x(245);
+  25   2       }
+  26   1      }
+  27          
+  28           void LCD_Write_Com(unsigned char com) 
+  29           {  
+  30   1        RS = 0; 
+  31   1        RW = 0; 
+  32   1        EN = 1; 
+  33   1        DataPort = com; 
+  34   1        _nop_(); 
+  35   1        EN = 0;
+  36   1       }
+  37          
+  38           void LCD_Write_Data(unsigned char Data) 
+  39           { 
+  40   1        RS = 1; 
+  41   1        RW = 0; 
+  42   1        EN = 1; 
+  43   1        DataPort = Data; 
+  44   1        _nop_();
+  45   1        EN = 0;
+  46   1       }
+  47          
+  48           void LCD_Clear(void) 
+  49           { 
+  50   1        LCD_Write_Com(0x01); 
+  51   1        DelayMs(5);
+  52   1       }
+  53          
+  54           void LCD_Init(void) 
+C51 COMPILER V9.56.0.0   LED                                                               11/29/2018 08:53:54 PAGE 2   
+
+  55           {
+  56   1          LCD_Write_Com(0x38);   
+  57   1          DelayMs(25); 
+  58   1          LCD_Write_Com(0x38); 
+  59   1          DelayMs(25); 
+  60   1          LCD_Write_Com(0x38); 
+  61   1        DelayMs(25); 
+  62   1          LCD_Write_Com(0x38);   
+  63   1          LCD_Write_Com(10);   
+  64   1          LCD_Write_Com(0x38);    
+  65   1          DelayMs(5); 
+  66   1          LCD_Write_Com(0x0c);   
+  67   1       }
+  68           
+  69          void main(void) 
+  70          { 
+  71   1        P1=0x00;
+  72   1        P20=0; 
+  73   1        P21=0; 
+  74   1        P35=0; 
+  75   1        P1=0xFF;
+  76   1          LCD_Init(); 
+  77   1          LCD_Clear();
+  78   1       while (1) 
+  79   1       {  
+  80   2          LCD_Write_Com(0x87);
+  81   2        DelayMs(5);
+  82   2          LCD_Write_Data ('O');
+  83   2        DelayMs(5);
+  84   2          LCD_Write_Com(0x88);
+  85   2        DelayMs(5);
+  86   2          LCD_Write_Data ('k');
+  87   2        DelayMs(5);
+  88   2      
+  89   2          LCD_Write_Com(0xC1);
+  90   2        DelayMs(5);
+  91   2          LCD_Write_Data ('H');
+  92   2        DelayMs(5);
+  93   2          LCD_Write_Com(0xC2);
+  94   2        DelayMs(5);
+  95   2          LCD_Write_Data ('e');
+  96   2        DelayMs(5);
+  97   2          LCD_Write_Com(0xC3);
+  98   2        DelayMs(5);
+  99   2          LCD_Write_Data ('l');
+ 100   2        DelayMs(5);
+ 101   2          LCD_Write_Com(0xC4);
+ 102   2        DelayMs(5);
+ 103   2          LCD_Write_Data ('l');
+ 104   2        DelayMs(5);
+ 105   2          LCD_Write_Com(0xC5);
+ 106   2        DelayMs(5);
+ 107   2          LCD_Write_Data ('o');
+ 108   2        DelayMs(5);
+ 109   2          LCD_Write_Com(0xC6);
+ 110   2        DelayMs(5);
+ 111   2          LCD_Write_Data ('!');  
+ 112   2        DelayMs(5);
+ 113   2                
+ 114   2       
+ 115   2          while(1);
+ 116   2       }
+C51 COMPILER V9.56.0.0   LED                                                               11/29/2018 08:53:54 PAGE 3   
+
+ 117   1      } 
+ 118          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    236    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

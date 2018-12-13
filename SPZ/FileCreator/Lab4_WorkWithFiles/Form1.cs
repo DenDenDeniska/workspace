@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -23,8 +16,6 @@ namespace Lab4_WorkWithFiles
                 directory.Create();
                 lbStatus.Text = "Директория успешно создана";
             }
-
-            
         }
 
         private void btGenerateFile_Click(object sender, EventArgs e)
@@ -52,7 +43,6 @@ namespace Lab4_WorkWithFiles
                     }
                     sw.WriteLine();
                 }
-                
                 sw.Close();
                 lbStatus.Text = "Генерация данных завершена";
             }

@@ -1,0 +1,14 @@
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\bin\Debug\lab5_StudInfo.exe.config
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\bin\Debug\lab5_StudInfo.exe
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\bin\Debug\lab5_StudInfo.pdb
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.csprojAssemblyReference.cache
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.Form1.resources
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.Properties.Resources.resources
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.csproj.GenerateResource.cache
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.csproj.CoreCompileInputs.cache
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.exe
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.pdb
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.DialogNameList.resources
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.Form2.resources
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.Form3.resources
+E:\_Сtrl\reposGit\workspace\SPZ\StudInfo\lab5_StudInfo\obj\Debug\lab5_StudInfo.AddDellLessons.resources
